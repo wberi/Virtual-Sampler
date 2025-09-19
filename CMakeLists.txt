@@ -17,19 +17,19 @@ endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Add the main executable
-add_executable(MyApp
+add_executable(Virtual-Sampler
     src/main.cpp
 )
 
 # Example: add include directories
-target_include_directories(MyApp PRIVATE include)
+target_include_directories(Virtual-Sampler PRIVATE include)
 
 # Example: add libraries if needed
 # target_link_libraries(MyApp PRIVATE mylib)
 
 # Example: enable warnings
 if (MSVC)
-    target_compile_options(MyApp PRIVATE /W4 /permissive-)
+    target_compile_options(Virtual-Sampler PRIVATE /W4 /permissive-)
 else()
-    target_compile_options(MyApp PRIVATE -Wall -Wextra -pedantic)
+    target_compile_options(Virtual-Sampler PRIVATE -Wall -Wextra -pedantic)
 endif()
