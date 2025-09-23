@@ -1,5 +1,9 @@
 #include <iostream>
 
+///This is the main function!
+///Detailed description. 
+///
+///More details on a new line!
 int main()
 {
     int a = 5;
