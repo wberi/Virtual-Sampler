@@ -24,12 +24,7 @@ add_executable(Virtual-Sampler
 # Example: add include directories
 target_include_directories(Virtual-Sampler PRIVATE include)
 
-# Example: add libraries if needed
-# target_link_libraries(MyApp PRIVATE mylib)
+# external libs
+target_link_libraries(Virtual-Sampler PRIVATE wxwidgets)
 
-# Example: enable warnings
-if (MSVC)
-    target_compile_options(Virtual-Sampler PRIVATE /W4 /permissive-)
-else()
-    target_compile_options(Virtual-Sampler PRIVATE -Wall -Wextra -pedantic)
-endif()
+
