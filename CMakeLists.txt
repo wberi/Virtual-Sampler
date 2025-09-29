@@ -25,6 +25,6 @@ add_executable(Virtual-Sampler
 target_include_directories(Virtual-Sampler PRIVATE include)
 
 # external libs
-target_link_libraries(Virtual-Sampler PRIVATE wxwidgets)
+target_link_libraries(Virtual-Sampler PRIVATE wxWidgets)
 
 
