@@ -6,5 +6,5 @@ CXX_DEFINES = -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__
 
 CXX_INCLUDES = -I/home/Hazi/libs/wx-build/lib/wx/include/gtk3-unicode-static-3.2 -I/home/Hazi/libs/wxWidgets/include
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wundef -Wunused-parameter -Wno-deprecated-declarations -Wno-ctor-dtor-privacy -Woverloaded-virtual
+CXX_FLAGS = -g -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wundef -Wunused-parameter -Wno-deprecated-declarations -Wno-ctor-dtor-privacy -Woverloaded-virtual
 

@@ -69,131 +69,164 @@ include libs/aui/CMakeFiles/wxaui.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/aui/CMakeFiles/wxaui.dir/flags.make
 
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch: libs/aui/CMakeFiles/wxaui.dir/flags.make
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.cxx
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxaui.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxaui.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.cxx
+
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.cxx > CMakeFiles/wxaui.dir/cmake_pch.hxx.i
+
+libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxaui.dir/cmake_pch.hxx.s
+
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/framemanager.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/dockart.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/floatpane.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/auibook.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibook.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/auibar.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/auibar.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/tabmdi.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabmdi.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o: /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.o -c /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/aui/tabart.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/aui/tabart.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o: /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/xrc/xh_aui.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.s
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o: libs/aui/CMakeFiles/wxaui.dir/flags.make
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o: /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx
+libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o: libs/aui/CMakeFiles/wxaui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -MD -MT libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o -MF CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o.d -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp > CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.i
 
 libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/aui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/xrc/xh_auitoolb.cpp -o CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.s
 
 # Object files for target wxaui
 wxaui_OBJECTS = \
@@ -210,6 +243,7 @@ wxaui_OBJECTS = \
 # External object files for target wxaui
 wxaui_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/framemanager.cpp.o
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/dockart.cpp.o
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/aui/floatpane.cpp.o
@@ -221,7 +255,7 @@ lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/build.make
 lib/libwx_gtk3u_aui-3.2.a: libs/aui/CMakeFiles/wxaui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ../../lib/libwx_gtk3u_aui-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../../lib/libwx_gtk3u_aui-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/aui && $(CMAKE_COMMAND) -P CMakeFiles/wxaui.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/aui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxaui.dir/link.txt --verbose=$(VERBOSE)
 

@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxribbon.dir/__/__/__/__/src/ribbon/toolbar.cpp.o.d"
   "CMakeFiles/wxribbon.dir/__/__/__/__/src/xrc/xh_ribbon.cpp.o"
   "CMakeFiles/wxribbon.dir/__/__/__/__/src/xrc/xh_ribbon.cpp.o.d"
+  "CMakeFiles/wxribbon.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxribbon.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

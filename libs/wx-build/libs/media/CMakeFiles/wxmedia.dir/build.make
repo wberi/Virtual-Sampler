@@ -69,47 +69,68 @@ include libs/media/CMakeFiles/wxmedia.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/media/CMakeFiles/wxmedia.dir/flags.make
 
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch: libs/media/CMakeFiles/wxmedia.dir/flags.make
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.cxx
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch: libs/media/CMakeFiles/wxmedia.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -MD -MT libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.cxx
+
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxmedia.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.cxx > CMakeFiles/wxmedia.dir/cmake_pch.hxx.i
+
+libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxmedia.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxmedia.dir/cmake_pch.hxx.s
+
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o: libs/media/CMakeFiles/wxmedia.dir/flags.make
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o: /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o: libs/media/CMakeFiles/wxmedia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.i
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/common/mediactrlcmn.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.s
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o: libs/media/CMakeFiles/wxmedia.dir/flags.make
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o: /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o: libs/media/CMakeFiles/wxmedia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.i
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/unix/mediactrl.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.s
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o: libs/media/CMakeFiles/wxmedia.dir/flags.make
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o: /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx
+libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o: libs/media/CMakeFiles/wxmedia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -MD -MT libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o -MF CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o.d -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp > CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.i
 
 libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/media && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/unix/mediactrl_gstplayer.cpp -o CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.s
 
 # Object files for target wxmedia
 wxmedia_OBJECTS = \
@@ -120,12 +141,13 @@ wxmedia_OBJECTS = \
 # External object files for target wxmedia
 wxmedia_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/common/mediactrlcmn.cpp.o
 lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o
 lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o
 lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/build.make
 lib/libwx_gtk3u_media-3.2.a: libs/media/CMakeFiles/wxmedia.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../lib/libwx_gtk3u_media-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libwx_gtk3u_media-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/media && $(CMAKE_COMMAND) -P CMakeFiles/wxmedia.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/media && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxmedia.dir/link.txt --verbose=$(VERBOSE)
 

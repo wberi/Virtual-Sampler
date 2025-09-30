@@ -639,6 +639,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxcore.dir/__/__/__/__/src/unix/utilsx11.cpp.o.d"
   "CMakeFiles/wxcore.dir/__/__/__/__/src/xrc/xmlreshandler.cpp.o"
   "CMakeFiles/wxcore.dir/__/__/__/__/src/xrc/xmlreshandler.cpp.o.d"
+  "CMakeFiles/wxcore.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxcore.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

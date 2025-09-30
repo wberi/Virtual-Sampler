@@ -69,355 +69,420 @@ include libs/html/CMakeFiles/wxhtml.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/html/CMakeFiles/wxhtml.dir/flags.make
 
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch: libs/html/CMakeFiles/wxhtml.dir/flags.make
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.cxx
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.cxx
+
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.cxx > CMakeFiles/wxhtml.dir/cmake_pch.hxx.i
+
+libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxhtml.dir/cmake_pch.hxx.s
+
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o: /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/helpctrl.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o: /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/helpdata.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o: /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/helpdlg.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o: /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/helpfrm.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpfrm.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o: /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/helpwnd.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpwnd.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmlcell.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlcell.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmlfilt.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlfilt.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmlpars.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlpars.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmltag.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmltag.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmlwin.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmlwin.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o: /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/htmprint.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/htmprint.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_dflist.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_dflist.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_fonts.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_fonts.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_hline.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_hline.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_image.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_image.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_image.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_image.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_image.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_image.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_image.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_layout.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_layout.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_links.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_links.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_links.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_links.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_links.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_links.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_links.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_links.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_list.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_list.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_list.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_list.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_list.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_list.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_list.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_pre.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_pre.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_span.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_span.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_span.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_span.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_span.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_span.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_span.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_span.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_style.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_style.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_style.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_style.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_style.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_style.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_style.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_style.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o: /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/m_tables.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/m_tables.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o: /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/styleparams.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o: /home/Hazi/libs/wxWidgets/src/html/winpars.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/winpars.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o -c /home/Hazi/libs/wxWidgets/src/html/winpars.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/html/winpars.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/html/winpars.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/html/winpars.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/html/winpars.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.s
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o: libs/html/CMakeFiles/wxhtml.dir/flags.make
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o: /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx
+libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o: libs/html/CMakeFiles/wxhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o -c /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -MD -MT libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o -MF CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o.d -o CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o -c /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp > CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.i
 
 libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/html && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/generic/htmllbox.cpp -o CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.s
 
 # Object files for target wxhtml
 wxhtml_OBJECTS = \
@@ -450,6 +515,7 @@ wxhtml_OBJECTS = \
 # External object files for target wxhtml
 wxhtml_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpctrl.cpp.o
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdata.cpp.o
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/helpdlg.cpp.o
@@ -477,7 +543,7 @@ lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/generic/htmllbox.cpp.o
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/build.make
 lib/libwx_gtk3u_html-3.2.a: libs/html/CMakeFiles/wxhtml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX static library ../../lib/libwx_gtk3u_html-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library ../../lib/libwx_gtk3u_html-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/html && $(CMAKE_COMMAND) -P CMakeFiles/wxhtml.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/html && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxhtml.dir/link.txt --verbose=$(VERBOSE)
 

@@ -775,6 +775,21 @@ __/__/__/__/src/html/winpars.cpp.s:
 	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/html/CMakeFiles/wxhtml.dir/build.make libs/html/CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.s
 .PHONY : __/__/__/__/src/html/winpars.cpp.s
 
+# target to build an object file
+cmake_pch.hxx.gch:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/html/CMakeFiles/wxhtml.dir/build.make libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/html/CMakeFiles/wxhtml.dir/build.make libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/html/CMakeFiles/wxhtml.dir/build.make libs/html/CMakeFiles/wxhtml.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -863,6 +878,9 @@ help:
 	@echo "... __/__/__/__/src/html/winpars.o"
 	@echo "... __/__/__/__/src/html/winpars.i"
 	@echo "... __/__/__/__/src/html/winpars.s"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
 .PHONY : help
 
 

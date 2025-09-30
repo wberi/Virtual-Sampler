@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_aui.cpp.o.d"
   "CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o"
   "CMakeFiles/wxaui.dir/__/__/__/__/src/xrc/xh_auitoolb.cpp.o.d"
+  "CMakeFiles/wxaui.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxaui.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

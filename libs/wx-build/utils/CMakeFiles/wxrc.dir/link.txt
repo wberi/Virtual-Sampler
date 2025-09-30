@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG  -s CMakeFiles/wxrc.dir/__/__/__/utils/wxrc/wxrc.cpp.o -o ../lib/wxrc-3.2  ../lib/libwx_baseu_xml-3.2.a ../lib/libwx_baseu-3.2.a /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpcre2-32.so -lc -ldl /usr/lib/x86_64-linux-gnu/libexpat.so 
+/usr/bin/c++ -g CMakeFiles/wxrc.dir/__/__/__/utils/wxrc/wxrc.cpp.o -o ../lib/wxrc-3.2  ../lib/libwx_baseu_xml-3.2.a ../lib/libwx_baseu-3.2.a /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpcre2-32.so -lc -ldl /usr/lib/x86_64-linux-gnu/libexpat.so 

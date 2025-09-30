@@ -51,6 +51,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxhtml.dir/__/__/__/__/src/html/styleparams.cpp.o.d"
   "CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o"
   "CMakeFiles/wxhtml.dir/__/__/__/__/src/html/winpars.cpp.o.d"
+  "CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxhtml.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

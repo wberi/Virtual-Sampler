@@ -69,61 +69,84 @@ include libs/gl/CMakeFiles/wxgl.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/gl/CMakeFiles/wxgl.dir/flags.make
 
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch: libs/gl/CMakeFiles/wxgl.dir/flags.make
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.cxx
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch: libs/gl/CMakeFiles/wxgl.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -MD -MT libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxgl.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxgl.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.cxx
+
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxgl.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.cxx > CMakeFiles/wxgl.dir/cmake_pch.hxx.i
+
+libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxgl.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxgl.dir/cmake_pch.hxx.s
+
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o: libs/gl/CMakeFiles/wxgl.dir/flags.make
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o: /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o: libs/gl/CMakeFiles/wxgl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.i
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/common/glcmn.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.s
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o: libs/gl/CMakeFiles/wxgl.dir/flags.make
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o: /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o: libs/gl/CMakeFiles/wxgl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o -c /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o -c /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.i
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/gtk/glcanvas.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.s
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o: libs/gl/CMakeFiles/wxgl.dir/flags.make
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o: /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o: libs/gl/CMakeFiles/wxgl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.i
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/unix/glx11.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.s
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o: libs/gl/CMakeFiles/wxgl.dir/flags.make
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o: /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx
+libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o: libs/gl/CMakeFiles/wxgl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -MD -MT libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o -MF CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o.d -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o -c /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp > CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.i
 
 libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/gl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/unix/glegl.cpp -o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.s
 
 # Object files for target wxgl
 wxgl_OBJECTS = \
@@ -135,13 +158,14 @@ wxgl_OBJECTS = \
 # External object files for target wxgl
 wxgl_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/build.make
 lib/libwx_gtk3u_gl-3.2.a: libs/gl/CMakeFiles/wxgl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libwx_gtk3u_gl-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libwx_gtk3u_gl-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/gl && $(CMAKE_COMMAND) -P CMakeFiles/wxgl.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/gl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxgl.dir/link.txt --verbose=$(VERBOSE)
 

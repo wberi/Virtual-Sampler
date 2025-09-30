@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxnet.dir/__/__/__/__/src/common/webrequest_curl.cpp.o.d"
   "CMakeFiles/wxnet.dir/__/__/__/__/src/unix/sockunix.cpp.o"
   "CMakeFiles/wxnet.dir/__/__/__/__/src/unix/sockunix.cpp.o.d"
+  "CMakeFiles/wxnet.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxnet.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -285,6 +285,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxscintilla.dir/__/__/__/__/src/stc/scintilla/src/ViewStyle.cxx.o.d"
   "CMakeFiles/wxscintilla.dir/__/__/__/__/src/stc/scintilla/src/XPM.cxx.o"
   "CMakeFiles/wxscintilla.dir/__/__/__/__/src/stc/scintilla/src/XPM.cxx.o.d"
+  "CMakeFiles/wxscintilla.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxscintilla.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

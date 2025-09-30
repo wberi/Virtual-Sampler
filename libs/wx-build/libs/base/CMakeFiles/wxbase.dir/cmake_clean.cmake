@@ -227,6 +227,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxbase.dir/__/__/__/__/src/unix/utilsunx.cpp.o.d"
   "CMakeFiles/wxbase.dir/__/__/__/__/src/unix/wakeuppipe.cpp.o"
   "CMakeFiles/wxbase.dir/__/__/__/__/src/unix/wakeuppipe.cpp.o.d"
+  "CMakeFiles/wxbase.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxbase.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

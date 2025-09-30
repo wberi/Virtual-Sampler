@@ -177,7 +177,7 @@ add_library(wx::wxgl STATIC IMPORTED)
 set_target_properties(wx::wxgl PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "_UNICODE;__WXGTK3__;__WXGTK__;_FILE_OFFSET_BITS=64"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/lib/wx/include/gtk3-unicode-static-3.2;${_IMPORT_PREFIX}/include/wx-3.2"
-  INTERFACE_LINK_LIBRARIES "gtk-3;gdk-3;z;pangocairo-1.0;pango-1.0;harfbuzz;atk-1.0;cairo-gobject;cairo;gdk_pixbuf-2.0;gio-2.0;gobject-2.0;glib-2.0;/usr/lib/x86_64-linux-gnu/libSM.so;/usr/lib/x86_64-linux-gnu/libICE.so;/usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so;/usr/lib/x86_64-linux-gnu/libXtst.so;/usr/lib/x86_64-linux-gnu/libxkbcommon.so;wx::wxbase;wx::wxcore;\$<LINK_ONLY:Threads::Threads>;OpenGL::EGL;OpenGL::OpenGL;OpenGL::GL;/usr/lib/x86_64-linux-gnu/libOpenGL.so;/usr/lib/x86_64-linux-gnu/libGLX.so;wayland-egl;wayland-client"
+  INTERFACE_LINK_LIBRARIES "gtk-3;gdk-3;z;pangocairo-1.0;pango-1.0;harfbuzz;atk-1.0;cairo-gobject;cairo;gdk_pixbuf-2.0;gio-2.0;gobject-2.0;glib-2.0;/usr/lib/x86_64-linux-gnu/libSM.so;/usr/lib/x86_64-linux-gnu/libICE.so;/usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so;/usr/lib/x86_64-linux-gnu/libXtst.so;/usr/lib/x86_64-linux-gnu/libxkbcommon.so;wx::wxbase;wx::wxcore;\$<LINK_ONLY:Threads::Threads>;OpenGL::EGL;OpenGL::OpenGL;OpenGL::GLU;OpenGL::GL;/usr/lib/x86_64-linux-gnu/libOpenGL.so;/usr/lib/x86_64-linux-gnu/libGLX.so;/usr/lib/x86_64-linux-gnu/libGLU.so;wayland-egl;wayland-client"
 )
 
 # Create imported target wx::wxqa

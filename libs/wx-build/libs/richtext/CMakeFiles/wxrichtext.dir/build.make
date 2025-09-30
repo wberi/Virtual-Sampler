@@ -69,159 +69,196 @@ include libs/richtext/CMakeFiles/wxrichtext.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.cxx
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.cxx
+
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.cxx > CMakeFiles/wxrichtext.dir/cmake_pch.hxx.i
+
+libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxrichtext.dir/cmake_pch.hxx.s
+
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextbuffer.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextctrl.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextformatdlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtexthtml.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtexthtml.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextimagedlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextimagedlg.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextprint.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextprint.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextstyledlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyledlg.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextstyles.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextstyles.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextsymboldlg.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextsymboldlg.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o: /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.o -c /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/richtext/richtextxml.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextxml.cpp.s
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/flags.make
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o: /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx
+libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o: libs/richtext/CMakeFiles/wxrichtext.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -MD -MT libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o -MF CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o.d -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp > CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.i
 
 libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/richtext && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/xrc/xh_richtext.cpp -o CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.s
 
 # Object files for target wxrichtext
 wxrichtext_OBJECTS = \
@@ -240,6 +277,7 @@ wxrichtext_OBJECTS = \
 # External object files for target wxrichtext
 wxrichtext_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextbuffer.cpp.o
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextctrl.cpp.o
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/richtext/richtextformatdlg.cpp.o
@@ -253,7 +291,7 @@ lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/__/__/__/__/src/xrc/xh_richtext.cpp.o
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/build.make
 lib/libwx_gtk3u_richtext-3.2.a: libs/richtext/CMakeFiles/wxrichtext.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library ../../lib/libwx_gtk3u_richtext-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ../../lib/libwx_gtk3u_richtext-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/richtext && $(CMAKE_COMMAND) -P CMakeFiles/wxrichtext.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/richtext && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxrichtext.dir/link.txt --verbose=$(VERBOSE)
 

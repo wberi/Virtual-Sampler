@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxpropgrid.dir/__/__/__/__/src/propgrid/propgridpagestate.cpp.o.d"
   "CMakeFiles/wxpropgrid.dir/__/__/__/__/src/propgrid/props.cpp.o"
   "CMakeFiles/wxpropgrid.dir/__/__/__/__/src/propgrid/props.cpp.o.d"
+  "CMakeFiles/wxpropgrid.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxpropgrid.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

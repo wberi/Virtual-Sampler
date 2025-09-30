@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o.d"
   "CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o"
   "CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o.d"
+  "CMakeFiles/wxxml.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxxml.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

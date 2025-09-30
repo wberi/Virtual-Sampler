@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o.d"
   "CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o"
   "CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o.d"
+  "CMakeFiles/wxgl.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxgl.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -223,6 +223,21 @@ __/__/__/__/src/generic/dbgrptg.cpp.s:
 	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/qa/CMakeFiles/wxqa.dir/build.make libs/qa/CMakeFiles/wxqa.dir/__/__/__/__/src/generic/dbgrptg.cpp.s
 .PHONY : __/__/__/__/src/generic/dbgrptg.cpp.s
 
+# target to build an object file
+cmake_pch.hxx.gch:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/qa/CMakeFiles/wxqa.dir/build.make libs/qa/CMakeFiles/wxqa.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/qa/CMakeFiles/wxqa.dir/build.make libs/qa/CMakeFiles/wxqa.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/qa/CMakeFiles/wxqa.dir/build.make libs/qa/CMakeFiles/wxqa.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +257,9 @@ help:
 	@echo "... __/__/__/__/src/generic/dbgrptg.o"
 	@echo "... __/__/__/__/src/generic/dbgrptg.i"
 	@echo "... __/__/__/__/src/generic/dbgrptg.s"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
 .PHONY : help
 
 

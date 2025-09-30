@@ -20,9 +20,8 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+//Choose the type of build.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -399,7 +398,7 @@ OPENGL_gles2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLESv2.so
 OPENGL_gles3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLESv2.so
 
 //Path to a library.
-OPENGL_glu_LIBRARY:FILEPATH=OPENGL_glu_LIBRARY-NOTFOUND
+OPENGL_glu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLU.so
 
 //Path to a library.
 OPENGL_glx_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLX.so
@@ -1152,7 +1151,7 @@ wxBUILD_OPTIMISE:BOOL=OFF
 wxBUILD_PIC:BOOL=ON
 
 //Use precompiled headers
-wxBUILD_PRECOMP:STRING=OFF
+wxBUILD_PRECOMP:STRING=ON
 
 //Build only important samples (SOME) or ALL
 wxBUILD_SAMPLES:STRING=OFF
@@ -1891,6 +1890,8 @@ wxWidgets_SOURCE_DIR:STATIC=/home/Hazi/libs/wxWidgets
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//STRINGS property for variable: CMAKE_BUILD_TYPE
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/Hazi/libs/wx-build
 //Major version of cmake used to create the current loaded cache
@@ -3674,7 +3675,7 @@ wxBUILD_PIC-ADVANCED:INTERNAL=1
 wxBUILD_PRECOMP-ADVANCED:INTERNAL=1
 //STRINGS property for variable: wxBUILD_PRECOMP
 wxBUILD_PRECOMP-STRINGS:INTERNAL=ON;OFF;COTIRE
-wxBUILD_PRECOMP_PREV:INTERNAL=OFF
+wxBUILD_PRECOMP_PREV:INTERNAL=ON
 //STRINGS property for variable: wxBUILD_SAMPLES
 wxBUILD_SAMPLES-STRINGS:INTERNAL=SOME;ALL;OFF
 //ADVANCED property for variable: wxBUILD_STRIPPED_RELEASE

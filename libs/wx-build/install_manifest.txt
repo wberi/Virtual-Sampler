@@ -746,6 +746,6 @@
 /home/Hazi/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2/wx/setup.h
 /home/Hazi/libs/wx-install/lib/wx/config/gtk3-unicode-static-3.2
 /home/Hazi/libs/wx-install/lib/cmake/wxWidgets/wxWidgetsTargets.cmake
-/home/Hazi/libs/wx-install/lib/cmake/wxWidgets/wxWidgetsTargets-release.cmake
+/home/Hazi/libs/wx-install/lib/cmake/wxWidgets/wxWidgetsTargets-debug.cmake
 /home/Hazi/libs/wx-install/lib/cmake/wxWidgets/wxWidgetsConfig.cmake
 /home/Hazi/libs/wx-install/lib/cmake/wxWidgets/wxWidgetsConfigVersion.cmake

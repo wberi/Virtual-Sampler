@@ -69,61 +69,84 @@ include libs/stc/CMakeFiles/wxstc.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/stc/CMakeFiles/wxstc.dir/flags.make
 
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch: libs/stc/CMakeFiles/wxstc.dir/flags.make
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.cxx
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch: libs/stc/CMakeFiles/wxstc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -MD -MT libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxstc.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxstc.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.cxx
+
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxstc.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.cxx > CMakeFiles/wxstc.dir/cmake_pch.hxx.i
+
+libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxstc.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxstc.dir/cmake_pch.hxx.s
+
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o: libs/stc/CMakeFiles/wxstc.dir/flags.make
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o: /home/Hazi/libs/wxWidgets/src/stc/stc.cpp
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o: libs/stc/CMakeFiles/wxstc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/stc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/stc.cpp
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/stc/stc.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/stc/stc.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.i
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/stc/stc.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/stc/stc.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.s
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/flags.make
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o: /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.i
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/stc/PlatWX.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.s
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/flags.make
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o: /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o: libs/stc/CMakeFiles/wxstc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o -c /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.i
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/stc/ScintillaWX.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.s
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o: libs/stc/CMakeFiles/wxstc.dir/flags.make
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o: /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx
+libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o: libs/stc/CMakeFiles/wxstc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -MD -MT libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o -MF CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o.d -o CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o -c /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp > CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.i
 
 libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/stc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/xrc/xh_styledtextctrl.cpp -o CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.s
 
 # Object files for target wxstc
 wxstc_OBJECTS = \
@@ -135,13 +158,14 @@ wxstc_OBJECTS = \
 # External object files for target wxstc
 wxstc_EXTERNAL_OBJECTS =
 
+lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/cmake_pch.hxx.gch
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/stc.cpp.o
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/PlatWX.cpp.o
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/stc/ScintillaWX.cpp.o
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/__/__/__/__/src/xrc/xh_styledtextctrl.cpp.o
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/build.make
 lib/libwx_gtk3u_stc-3.2.a: libs/stc/CMakeFiles/wxstc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libwx_gtk3u_stc-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libwx_gtk3u_stc-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/stc && $(CMAKE_COMMAND) -P CMakeFiles/wxstc.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/stc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxstc.dir/link.txt --verbose=$(VERBOSE)
 

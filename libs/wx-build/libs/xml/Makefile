@@ -223,6 +223,21 @@ __/__/__/__/src/xml/xml.cpp.s:
 	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/xml/CMakeFiles/wxxml.dir/build.make libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.s
 .PHONY : __/__/__/__/src/xml/xml.cpp.s
 
+# target to build an object file
+cmake_pch.hxx.gch:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/xml/CMakeFiles/wxxml.dir/build.make libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/xml/CMakeFiles/wxxml.dir/build.make libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/xml/CMakeFiles/wxxml.dir/build.make libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +257,9 @@ help:
 	@echo "... __/__/__/__/src/xml/xml.o"
 	@echo "... __/__/__/__/src/xml/xml.i"
 	@echo "... __/__/__/__/src/xml/xml.s"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
 .PHONY : help
 
 

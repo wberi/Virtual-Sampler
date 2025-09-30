@@ -139,6 +139,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxxrc.dir/__/__/__/__/src/xrc/xmlres.cpp.o.d"
   "CMakeFiles/wxxrc.dir/__/__/__/__/src/xrc/xmlrsall.cpp.o"
   "CMakeFiles/wxxrc.dir/__/__/__/__/src/xrc/xmlrsall.cpp.o.d"
+  "CMakeFiles/wxxrc.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxxrc.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

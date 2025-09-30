@@ -16,6 +16,5 @@ list(APPEND CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/libs/wx-install")
 find_package(wxWidgets CONFIG REQUIRED COMPONENTS core base)
 
 add_executable(Virtual-Sampler src/main.cpp)
-
 target_include_directories(Virtual-Sampler PRIVATE include)
-target_link_libraries(Virtual-Sampler PRIVATE ${wxWidgets_LIBRARIES})
+target_link_libraries(Virtual-Sampler PRIVATE wx::core wx::base)

@@ -69,33 +69,52 @@ include libs/xml/CMakeFiles/wxxml.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/xml/CMakeFiles/wxxml.dir/flags.make
 
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch: libs/xml/CMakeFiles/wxxml.dir/flags.make
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.cxx
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch: libs/xml/CMakeFiles/wxxml.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch"
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -MD -MT libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch -MF CMakeFiles/wxxml.dir/cmake_pch.hxx.gch.d -o CMakeFiles/wxxml.dir/cmake_pch.hxx.gch -c /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.cxx
+
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxxml.dir/cmake_pch.hxx.i"
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -E /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.cxx > CMakeFiles/wxxml.dir/cmake_pch.hxx.i
+
+libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxxml.dir/cmake_pch.hxx.s"
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -S /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.cxx -o CMakeFiles/wxxml.dir/cmake_pch.hxx.s
+
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/flags.make
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o: /home/Hazi/libs/wxWidgets/src/xml/xml.cpp
+libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx
+libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o -MF CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o.d -o CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o -c /home/Hazi/libs/wxWidgets/src/xml/xml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -MD -MT libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o -MF CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o.d -o CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o -c /home/Hazi/libs/wxWidgets/src/xml/xml.cpp
 
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/xml/xml.cpp > CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/xml/xml.cpp > CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.i
 
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/xml/xml.cpp -o CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/xml/xml.cpp -o CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.s
 
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/flags.make
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o: /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp
+libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx
+libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o: libs/xml/CMakeFiles/wxxml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o -MF CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o.d -o CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o"
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -MD -MT libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o -MF CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o.d -o CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o -c /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp
 
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.i"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp > CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.i
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -E /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp > CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.i
 
 libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.s"
-	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp -o CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.s
+	cd /home/Hazi/libs/wx-build/libs/xml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/Hazi/libs/wx-build/libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx -S /home/Hazi/libs/wxWidgets/src/common/xtixml.cpp -o CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.s
 
 # Object files for target wxxml
 wxxml_OBJECTS = \
@@ -105,11 +124,12 @@ wxxml_OBJECTS = \
 # External object files for target wxxml
 wxxml_EXTERNAL_OBJECTS =
 
+lib/libwx_baseu_xml-3.2.a: libs/xml/CMakeFiles/wxxml.dir/cmake_pch.hxx.gch
 lib/libwx_baseu_xml-3.2.a: libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o
 lib/libwx_baseu_xml-3.2.a: libs/xml/CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o
 lib/libwx_baseu_xml-3.2.a: libs/xml/CMakeFiles/wxxml.dir/build.make
 lib/libwx_baseu_xml-3.2.a: libs/xml/CMakeFiles/wxxml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/libwx_baseu_xml-3.2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Hazi/libs/wx-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../lib/libwx_baseu_xml-3.2.a"
 	cd /home/Hazi/libs/wx-build/libs/xml && $(CMAKE_COMMAND) -P CMakeFiles/wxxml.dir/cmake_clean_target.cmake
 	cd /home/Hazi/libs/wx-build/libs/xml && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wxxml.dir/link.txt --verbose=$(VERBOSE)
 

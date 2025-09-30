@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxqa.dir/__/__/__/__/src/common/debugrpt.cpp.o.d"
   "CMakeFiles/wxqa.dir/__/__/__/__/src/generic/dbgrptg.cpp.o"
   "CMakeFiles/wxqa.dir/__/__/__/__/src/generic/dbgrptg.cpp.o.d"
+  "CMakeFiles/wxqa.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxqa.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

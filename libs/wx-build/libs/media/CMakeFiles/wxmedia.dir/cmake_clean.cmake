@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl.cpp.o.d"
   "CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o"
   "CMakeFiles/wxmedia.dir/__/__/__/__/src/unix/mediactrl_gstplayer.cpp.o.d"
+  "CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/wxmedia.dir/cmake_pch.hxx.gch.d"
 )
 
 # Per-language clean rules from dependency scanning.

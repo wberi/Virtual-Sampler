@@ -271,6 +271,21 @@ __/__/__/__/src/unix/glx11.cpp.s:
 	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/gl/CMakeFiles/wxgl.dir/build.make libs/gl/CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.s
 .PHONY : __/__/__/__/src/unix/glx11.cpp.s
 
+# target to build an object file
+cmake_pch.hxx.gch:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/gl/CMakeFiles/wxgl.dir/build.make libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/gl/CMakeFiles/wxgl.dir/build.make libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	cd /home/Hazi/libs/wx-build && $(MAKE) $(MAKESILENT) -f libs/gl/CMakeFiles/wxgl.dir/build.make libs/gl/CMakeFiles/wxgl.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -296,6 +311,9 @@ help:
 	@echo "... __/__/__/__/src/unix/glx11.o"
 	@echo "... __/__/__/__/src/unix/glx11.i"
 	@echo "... __/__/__/__/src/unix/glx11.s"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
 .PHONY : help
 
 
