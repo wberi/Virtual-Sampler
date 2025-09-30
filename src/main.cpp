@@ -1,18 +1,12 @@
-#include <iostream>
-#include <wx-3.2/wx/wx.h>
-
-///This is the main function!
-///Detailed description. 
-///
-///More details on a new line!
-
+ #ifndef WX_PRECOMP
+    #include <wx/wx.h>
+#endif
+ 
 class MyApp : public wxApp
 {
 public:
-    bool OnInit() override;
+    virtual bool OnInit();
 };
- 
-wxIMPLEMENT_APP(MyApp);
  
 class MyFrame : public wxFrame
 {
@@ -30,6 +24,8 @@ enum
     ID_Hello = 1
 };
  
+wxIMPLEMENT_APP(MyApp);
+ 
 bool MyApp::OnInit()
 {
     MyFrame *frame = new MyFrame();
@@ -38,7 +34,7 @@ bool MyApp::OnInit()
 }
  
 MyFrame::MyFrame()
-    : wxFrame(nullptr, wxID_ANY, "Hello World")
+    : wxFrame(NULL, wxID_ANY, "Hello World")
 {
     wxMenu *menuFile = new wxMenu;
     menuFile->Append(ID_Hello, "&Hello...\tCtrl-H",
@@ -79,9 +75,8 @@ void MyFrame::OnHello(wxCommandEvent& event)
     wxLogMessage("Hello world from wxWidgets!");
 }
 
-int main()
-{
-    int a = 5;
-    std::cout << "Hello World!\n" << a << std::endl;
-    return 0;
-}
+
+///This is the main function!
+///Detailed description. 
+///
+///More details on a new line!

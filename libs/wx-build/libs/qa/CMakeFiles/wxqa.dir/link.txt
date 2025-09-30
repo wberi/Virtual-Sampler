@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libwx_gtk3u_qa-3.2.a CMakeFiles/wxqa.dir/__/__/__/__/src/common/debugrpt.cpp.o CMakeFiles/wxqa.dir/__/__/__/__/src/generic/dbgrptg.cpp.o
+/usr/bin/ranlib ../../lib/libwx_gtk3u_qa-3.2.a
