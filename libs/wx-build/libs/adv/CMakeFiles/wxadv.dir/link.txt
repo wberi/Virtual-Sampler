@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libwx_gtk3u_adv-3.2.a CMakeFiles/wxadv.dir/__/__/__/__/src/common/dummy.cpp.o
+/usr/bin/ranlib ../../lib/libwx_gtk3u_adv-3.2.a

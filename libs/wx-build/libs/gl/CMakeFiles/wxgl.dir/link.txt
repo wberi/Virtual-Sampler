@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libwx_gtk3u_gl-3.2.a CMakeFiles/wxgl.dir/__/__/__/__/src/common/glcmn.cpp.o CMakeFiles/wxgl.dir/__/__/__/__/src/gtk/glcanvas.cpp.o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glx11.cpp.o CMakeFiles/wxgl.dir/__/__/__/__/src/unix/glegl.cpp.o
+/usr/bin/ranlib ../../lib/libwx_gtk3u_gl-3.2.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libwx_gtk3u_webview-3.2.a CMakeFiles/wxwebview.dir/__/__/__/__/src/common/webview.cpp.o CMakeFiles/wxwebview.dir/__/__/__/__/src/common/webviewarchivehandler.cpp.o CMakeFiles/wxwebview.dir/__/__/__/__/src/common/webviewfshandler.cpp.o CMakeFiles/wxwebview.dir/__/__/__/__/src/gtk/webview_webkit.cpp.o CMakeFiles/wxwebview.dir/__/__/__/__/src/gtk/webview_webkit2.cpp.o
+/usr/bin/ranlib ../../lib/libwx_gtk3u_webview-3.2.a

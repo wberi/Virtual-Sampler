@@ -1,4 +1,9 @@
- #ifndef WX_PRECOMP
+// wxWidgets "Hello World" Program
+ 
+// For compilers that support precompilation, includes "wx/wx.h".
+#include <wx/wxprec.h>
+ 
+#ifndef WX_PRECOMP
     #include <wx/wx.h>
 #endif
  
@@ -75,8 +80,3 @@ void MyFrame::OnHello(wxCommandEvent& event)
     wxLogMessage("Hello world from wxWidgets!");
 }
 
-
-///This is the main function!
-///Detailed description. 
-///
-///More details on a new line!
