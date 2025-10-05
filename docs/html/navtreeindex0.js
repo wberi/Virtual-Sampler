@@ -1,22 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"annotated.html":[0,0],
-"class_test_class.html":[0,0,0],
-"class_test_class.html#a09903432ed60c7c38f1beccc4cf18987":[0,0,0,0],
-"class_test_class.html#a2ca2a5c4f5dca287c48e814abb82884b":[0,0,0,1],
-"classes.html":[0,1],
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
-"dir_d0381950fc41278198232cb047ffc1f9.html":[1,0,0,0],
-"files.html":[1,0],
-"functions.html":[0,2,0],
-"functions_func.html":[0,2,1],
-"globals.html":[1,1,0],
-"globals_func.html":[1,1,1],
 "index.html":[],
-"main_8cpp.html":[1,0,0,1],
-"main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[1,0,0,1,0],
-"main_8cpp_source.html":[1,0,0,1],
-"pages.html":[],
-"test_8h.html":[1,0,0,0,0],
-"test_8h_source.html":[1,0,0,0,0]
+"pages.html":[]
 };
