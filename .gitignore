@@ -46,3 +46,4 @@
 
 #make
 build/*
+.cache/*

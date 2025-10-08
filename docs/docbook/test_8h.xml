@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_test_8h" xml:lang="en-US">
+<title>D:/Hazi/src/headers/test.h File Reference</title>
+<indexterm><primary>D:/Hazi/src/headers/test.h</primary></indexterm>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_test_class">TestClass</link></para>
+
+<para>This is a test class! </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

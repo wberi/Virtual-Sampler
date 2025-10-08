@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG  -s -Wl,--dependency-file=CMakeFiles/wxrc.dir/link.d CMakeFiles/wxrc.dir/__/__/__/utils/wxrc/wxrc.cpp.o -o ../lib/wxrc-3.2  ../lib/libwx_baseu_xml-3.2.a ../lib/libwx_baseu-3.2.a /usr/lib/libz.so /usr/lib/libpcre2-32.so -lsecret-1 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lc -ldl /usr/lib/libexpat.so

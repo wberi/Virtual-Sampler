@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libwx_baseu_xml-3.2.a CMakeFiles/wxxml.dir/__/__/__/__/src/xml/xml.cpp.o CMakeFiles/wxxml.dir/__/__/__/__/src/common/xtixml.cpp.o
+/usr/bin/ranlib ../../lib/libwx_baseu_xml-3.2.a

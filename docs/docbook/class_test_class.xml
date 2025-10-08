@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_test_class" xml:lang="en-US">
+<title>TestClass Class Reference</title>
+<indexterm><primary>TestClass</primary></indexterm>
+<para>
+
+<para>This is a test class! </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;test.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_test_class_1a09903432ed60c7c38f1beccc4cf18987">TestClass</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_test_class_1a2ca2a5c4f5dca287c48e814abb82884b">getTest</link> ()</para>
+
+<para>This is a member function! </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is a test class! </para>
+
+
+
+<para>The details. </para>
+<para>
+Definition at line <link linkend="_test_8h_source_1l00005">5</link> of file <link linkend="_test_8h_source">test.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_test_class_1a09903432ed60c7c38f1beccc4cf18987"/><section>
+    <title>TestClass()</title>
+<indexterm><primary>TestClass</primary><secondary>TestClass</secondary></indexterm>
+<indexterm><primary>TestClass</primary><secondary>TestClass</secondary></indexterm>
+<para><computeroutput>TestClass::TestClass ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_test_8h_source_1l00011">11</link> of file <link linkend="_test_8h_source">test.h</link>.</para>
+<programlisting linenumbering="unnumbered">00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;test&#32;=&#32;0;
+00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_test_class_1a2ca2a5c4f5dca287c48e814abb82884b"/><section>
+    <title>getTest()</title>
+<indexterm><primary>getTest</primary><secondary>TestClass</secondary></indexterm>
+<indexterm><primary>TestClass</primary><secondary>getTest</secondary></indexterm>
+<para><computeroutput>int TestClass::getTest ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>This is a member function! </para>
+</para>
+
+<para>It returns an integer. </para>
+<para>
+Definition at line <link linkend="_test_8h_source_1l00018">18</link> of file <link linkend="_test_8h_source">test.h</link>.</para>
+<programlisting linenumbering="unnumbered">00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;test;
+00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+</section>

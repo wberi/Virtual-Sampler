@@ -1,0 +1,26 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/locale/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/base/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/net/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/core/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/adv/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/aui/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/html/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/propgrid/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/ribbon/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/richtext/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/webview/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/stc/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/xrc/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/media/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/gl/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/qa/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/libs/xml/cmake_install.cmake",
+		"/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-build/utils/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
