@@ -18,8 +18,10 @@ file(GLOB_RECURSE SOURCE_FILES
   "${CMAKE_SOURCE_DIR}/source/*.cpp"
 )
 
+#Added the miniaudio library here, since it's just one header
 file(GLOB_RECURSE HEADER_FILES 
   "${CMAKE_SOURCE_DIR}/source/**/*.hpp"
+  "${CMAKE_SOURCE_DIR}/libs/miniaudio/*.h"
 )
 
 include_directories(
