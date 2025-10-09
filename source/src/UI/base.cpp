@@ -12,10 +12,6 @@ bool MainApp::OnInit()
   main->Show(true);
   SetTopWindow(main);
 
-  //Message window setup
-  MessageFrame *msgs = new MessageFrame(wxT("Messages"));
-  msgs->Show(true);
-
   return true;
 }
 
@@ -61,5 +57,8 @@ void MainFrame::loadProfile(wxCommandEvent& event)
 
 void MainFrame::onExit(wxCommandEvent& event)
 {
-  Close(true);
+  if(ShowQuitMessage() == wxID_YES)
+  {
+    Close(true);
+  }
 }
