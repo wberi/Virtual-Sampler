@@ -23,7 +23,7 @@ file(GLOB_RECURSE SOURCE_FILES
 #get header (*.h, *.hpp) files
 #Added the miniaudio and nlohmann-json libs here, since they're just one header
 file(GLOB_RECURSE HEADER_FILES 
-  "${CMAKE_SOURCE_DIR}/source/**/*.hpp"
+  "${CMAKE_SOURCE_DIR}/source/*.hpp"
   "${CMAKE_SOURCE_DIR}/libs/nlohmann-json/*.hpp" #lib for interacting with json files
   "${CMAKE_SOURCE_DIR}/libs/miniaudio/*.h" #audio lib
 )

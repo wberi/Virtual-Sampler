@@ -1,21 +1,5 @@
 #include <base.hpp>
 #include <messages.hpp>
-#include <wx/chartype.h>
-#include <wx/event.h>
-
-const int WIDTH = 300;
-const int HEIGHT = 300;
-
-IMPLEMENT_APP(MainApp);
-
-bool MainApp::OnInit()
-{
-  MainFrame* main = new MainFrame(wxT("Virtual Sampler"), wxDefaultPosition, wxSize(WIDTH, HEIGHT));
-  main->Show(true);
-  SetTopWindow(main);
-
-  return true;
-}
 
 //event table init
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
@@ -25,15 +9,14 @@ BEGIN_EVENT_TABLE(MainFrame, wxFrame)
   EVT_MENU(MENU_QUIT, MainFrame::onExit)
 END_EVENT_TABLE()
   
-
 MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size) 
 :wxFrame((wxFrame*) NULL, -1, title, pos, size)
 {
   //init buttons and other widgets here
   mainMenu = new wxMenuBar();
-  wxMenu* profileMenu = new wxMenu();
-  wxMenu* recordMenu = new wxMenu();
-  wxMenu* aboutMenu = new wxMenu();
+  auto profileMenu = new wxMenu(); //TODO: define these in the header file
+  auto recordMenu = new wxMenu();
+  auto aboutMenu = new wxMenu();
 
   //add menu options to the "Profile" menu
   profileMenu->Append(MENU_SAVE, wxT("Save profile\tCtrl-S"));

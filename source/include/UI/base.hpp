@@ -5,15 +5,6 @@
   #include <wx/wx.h>
 #endif
 
-///A MainApp osztály
-///
-///Ez kezel minden eseményt, ami az alkalmazásban történik.
-class MainApp: public wxApp
-{
-  public:
-    virtual bool OnInit();
-};
-
 ///A MainFrame osztály
 ///
 ///Az vizuális elemek megjelenítéséért felelős osztály.
@@ -42,5 +33,3 @@ enum
   MENU_ABOUT,
   MENU_QUIT,
 };
-
-DECLARE_APP(MainApp);
