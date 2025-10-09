@@ -8,4 +8,4 @@
 int ShowMessage1();
 int ShowMessage2();
 int ShowQuitMessage();
-int ShowMessage4();
+int ShowAboutMessage();

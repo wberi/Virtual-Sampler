@@ -28,6 +28,7 @@ public:
     //declare events
     void saveProfile(wxCommandEvent& event);
     void loadProfile(wxCommandEvent& event);
+    void showAbout(wxCommandEvent& event);
     void onExit(wxCommandEvent& event);
 
     DECLARE_EVENT_TABLE()  
@@ -38,6 +39,7 @@ enum
 {
   MENU_SAVE,
   MENU_LOAD,
+  MENU_ABOUT,
   MENU_QUIT,
 };
 

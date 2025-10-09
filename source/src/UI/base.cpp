@@ -1,5 +1,7 @@
 #include <base.hpp>
 #include <messages.hpp>
+#include <wx/chartype.h>
+#include <wx/event.h>
 
 const int WIDTH = 300;
 const int HEIGHT = 300;
@@ -19,6 +21,7 @@ bool MainApp::OnInit()
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
   EVT_MENU(MENU_SAVE, MainFrame::saveProfile)
   EVT_MENU(MENU_LOAD, MainFrame::loadProfile)
+  EVT_MENU(MENU_ABOUT, MainFrame::showAbout)
   EVT_MENU(MENU_QUIT, MainFrame::onExit)
 END_EVENT_TABLE()
   
@@ -37,6 +40,8 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   profileMenu->Append(MENU_LOAD, wxT("Load profile\tCtrl-O"));
   profileMenu->Append(MENU_QUIT, wxT("Quit\tCtrl-Q"));
 
+  aboutMenu->Append(MENU_ABOUT, wxT("Information"));
+
   //add "Profile" to the bar and activate the bar
   mainMenu->Append(profileMenu, wxT("Profile"));
   mainMenu->Append(recordMenu, wxT("Recording"));
@@ -53,6 +58,11 @@ void MainFrame::saveProfile(wxCommandEvent& event)
 void MainFrame::loadProfile(wxCommandEvent& event)
 {
   //TODO: implement
+}
+
+void MainFrame::showAbout(wxCommandEvent& event)
+{
+  ShowAboutMessage();
 }
 
 void MainFrame::onExit(wxCommandEvent& event)
