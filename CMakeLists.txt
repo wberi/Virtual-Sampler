@@ -11,24 +11,32 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+#wxWidgets setup 
 list(APPEND CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/libs/wx-install")
 find_package(wxWidgets CONFIG REQUIRED COMPONENTS core base)
 
+#Get source (*.cpp) files
 file(GLOB_RECURSE SOURCE_FILES
   "${CMAKE_SOURCE_DIR}/source/*.cpp"
 )
 
-#Added the miniaudio library here, since it's just one header
+#get header (*.h, *.hpp) files
+#Added the miniaudio and nlohmann-json libs here, since they're just one header
 file(GLOB_RECURSE HEADER_FILES 
   "${CMAKE_SOURCE_DIR}/source/**/*.hpp"
-  "${CMAKE_SOURCE_DIR}/libs/miniaudio/*.h"
+  "${CMAKE_SOURCE_DIR}/libs/nlohmann-json/*.hpp" #lib for interacting with json files
+  "${CMAKE_SOURCE_DIR}/libs/miniaudio/*.h" #audio lib
 )
 
+#set include directories
 include_directories(
   ${CMAKE_SOURCE_DIR}/source/include 
   ${CMAKE_SOURCE_DIR}/source/include/UI
+  ${CMAKE_SOURCE_DIR}/libs/miniaudio
+  ${CMAKE_SOURCE_DIR}/libs/nlohmann-json
 )
 
 add_executable(Virtual-Sampler ${SOURCE_FILES} ${HEADER_FILES})
 
+#link wxWidgets
 target_link_libraries(Virtual-Sampler PRIVATE wx::core wx::base)
