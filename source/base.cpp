@@ -1,6 +1,6 @@
 #include <base.hpp>
 #include <messages.hpp>
-#include <wx/generic/panelg.h>
+#include <key.hpp>
 
 //Event table to store all events
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
@@ -48,7 +48,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
 
     for(int j = 0; j < 4; ++j)
     {
-      auto button = new wxButton(buttonPanel, BUTTON_PLAY, wxT("No sound"), wxDefaultPosition, wxSize(150, 150), 0);
+      auto button = new Key(buttonPanel, BUTTON_PLAY);
       buttonGridSizer->Add(button);
     }
   }
@@ -71,6 +71,18 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
   //checks if the button has a sound to play 
   //if not (or the path is invalid) it brings up a window to select a sound 
   //if there is a valid path it will play the sound
+
+  Key* button = dynamic_cast<Key*>(event.GetEventObject());
+}
+
+void MainFrame::saveProfile(wxCommandEvent& event)
+{
+
+}
+
+void MainFrame::loadProfile(wxCommandEvent& event)
+{
+
 }
 
 //Brings up a window with the about information

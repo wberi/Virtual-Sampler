@@ -31,7 +31,6 @@ file(GLOB_RECURSE HEADER_FILES
 #set include directories
 include_directories(
   ${CMAKE_SOURCE_DIR}/source/include 
-  ${CMAKE_SOURCE_DIR}/source/include/UI
   ${CMAKE_SOURCE_DIR}/libs/miniaudio
   ${CMAKE_SOURCE_DIR}/libs/nlohmann-json
 )
