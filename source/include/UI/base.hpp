@@ -15,16 +15,21 @@ private:
 public:
     MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 
-    //declare widget
-    wxMenuBar* mainMenu;
-    wxPanel* panel;
+    //Declare widgets------------------------
+  
+    //Buttons and sliders are on a different panel
+    wxPanel* buttonPanel;
+    wxPanel* sliderPanel;
     wxBoxSizer* windowSizer;
     wxFlexGridSizer* buttonGridSizer;
+
+    //Menu bar elements
+    wxMenuBar* mainMenu;
     wxMenu* profileMenu;
     wxMenu* recordMenu;
     wxMenu* aboutMenu;
 
-    //declare events
+    //Declare events
     void pressPlayButton(wxCommandEvent& event);
 
     void saveProfile(wxCommandEvent& event);

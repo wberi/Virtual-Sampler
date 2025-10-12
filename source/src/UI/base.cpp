@@ -1,14 +1,16 @@
 #include <base.hpp>
 #include <messages.hpp>
+#include <wx/generic/panelg.h>
 
-//event table init
+//Event table to store all events
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
   EVT_MENU(MENU_SAVE, MainFrame::saveProfile)
   EVT_MENU(MENU_LOAD, MainFrame::loadProfile)
   EVT_MENU(MENU_ABOUT, MainFrame::showAbout)
   EVT_MENU(MENU_QUIT, MainFrame::onExit)
 END_EVENT_TABLE()
-  
+
+//declaring the constructor for MainFrame
 MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size) 
 :wxFrame((wxFrame*) NULL, -1, title, pos, size)
 {
@@ -26,15 +28,16 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   //add menu options to "About" menu
   aboutMenu->Append(MENU_ABOUT, wxT("Information"));
 
-  //add "Profile" to the bar and activate the bar
+  //add options to the bar and activate the bar
   mainMenu->Append(profileMenu, wxT("Profile"));
   mainMenu->Append(recordMenu, wxT("Recording"));
   mainMenu->Append(aboutMenu, wxT("About"));
   SetMenuBar(mainMenu);
 
   //Init widgets for button grid
-  windowSizer = new wxBoxSizer(wxVERTICAL);
-  panel = new wxPanel(this, wxID_ANY);
+  windowSizer = new wxBoxSizer(wxHORIZONTAL);
+  buttonPanel = new wxPanel(this, wxID_ANY);
+  sliderPanel = new wxPanel(this, wxID_ANY);
   buttonGridSizer = new wxFlexGridSizer(4, 4, margin, margin);
 
   //Create button grid
@@ -45,40 +48,38 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
 
     for(int j = 0; j < 4; ++j)
     {
-      auto button = new wxButton(panel, BUTTON_PLAY, wxT("No sound"), wxDefaultPosition, wxDefaultSize, 0);
+      auto button = new wxButton(buttonPanel, BUTTON_PLAY, wxT("No sound"), wxDefaultPosition, wxSize(150, 150), 0);
       buttonGridSizer->Add(button);
     }
   }
 
+  //Add the button panel to a sizer
   buttonGridSizer->SetMinSize(wxDefaultSize.GetWidth(), wxDefaultSize.GetHeight());
-  panel->SetSizer(buttonGridSizer);
+  buttonPanel->SetSizer(buttonGridSizer);
 
-  windowSizer->Add(panel, 1, wxEXPAND | wxALL, margin);
+  //add all the panels to the main sizer and set it as default sizer
+  windowSizer->Add(buttonPanel, 1, wxEXPAND | wxALL, margin);
+  windowSizer->Add(sliderPanel, 1, wxEXPAND | wxALL, margin);
   this->SetSizerAndFit(windowSizer);
 }
 
-//Events
+//Events--------------------------------------------------------
 
+//This runs when a play button is pressed
 void MainFrame::pressPlayButton(wxCommandEvent& event)
 {
-
+  //checks if the button has a sound to play 
+  //if not (or the path is invalid) it brings up a window to select a sound 
+  //if there is a valid path it will play the sound
 }
 
-void MainFrame::saveProfile(wxCommandEvent& event)
-{
- //TODO: implement
-}
-
-void MainFrame::loadProfile(wxCommandEvent& event)
-{
-  //TODO: implement
-}
-
+//Brings up a window with the about information
 void MainFrame::showAbout(wxCommandEvent& event)
 {
   ShowAboutMessage();
 }
 
+//Shows exit message on exit
 void MainFrame::onExit(wxCommandEvent& event)
 {
   if(ShowQuitMessage() == wxID_YES)
