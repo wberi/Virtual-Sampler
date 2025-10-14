@@ -5,7 +5,7 @@
   #include <wx/wx.h>
 #endif
 
-int ShowMessage1();
-int ShowMessage2();
+int ShowInvalidPathMessage();
+int ShowMissingFileMessage();
 int ShowQuitMessage();
 int ShowAboutMessage();

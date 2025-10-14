@@ -5,6 +5,8 @@
   #include <wx/wx.h>
 #endif
 
+#include <miniaudio.h>
+
 ///A MainFrame osztály
 ///
 ///Az vizuális elemek megjelenítéséért felelős osztály.
@@ -13,10 +15,16 @@ class MainFrame: public wxFrame
 private:
   const double margin = 10;
 public:
+    //ctor
     MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 
+    //dtor
+    ~MainFrame();
+
+    //Sound stuff
+    ma_engine engine;
+
     //Declare widgets------------------------
-  
     //Buttons and sliders are on a different panel
     wxPanel* buttonPanel;
     wxPanel* sliderPanel;
@@ -29,9 +37,12 @@ public:
     wxMenu* recordMenu;
     wxMenu* aboutMenu;
 
+    //Functions for clearer ctor declaration
+    void initMenuBar();
+    void createButtonGrid();
+
     //Declare events
     void pressPlayButton(wxCommandEvent& event);
-
     void saveProfile(wxCommandEvent& event);
     void loadProfile(wxCommandEvent& event);
     void showAbout(wxCommandEvent& event);

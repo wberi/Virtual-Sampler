@@ -6,7 +6,7 @@ const int HEIGHT = 150;
 Key::Key(wxWindow* parent, wxWindowID event)
   :wxButton(parent, event, wxT("No sound"), wxDefaultPosition, wxSize(WIDTH, HEIGHT), 0)
 {
-  pathToSound = "";
+  pathToSound = "no_path";
 }
 
 void Key::setPathToSound(std::string newPathToSound)
