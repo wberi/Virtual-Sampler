@@ -6,10 +6,11 @@
 #endif
 
 #include <miniaudio.h>
+#include <messages.hpp>
 
-///A MainFrame osztály
+///This class is responsible for showing and handling the GUI.
 ///
-///Az vizuális elemek megjelenítéséért felelős osztály.
+///This class is derived from the wxFrame class.
 class MainFrame: public wxFrame 
 {
 private:
@@ -23,7 +24,11 @@ public:
 
     //Sound stuff
     ma_engine engine;
+    ma_sound* preLoadedSounds;
 
+    //Messages
+    Messages* messages; 
+  
     //Declare widgets------------------------
     //Buttons and sliders are on a different panel
     wxPanel* buttonPanel;

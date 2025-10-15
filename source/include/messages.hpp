@@ -5,7 +5,19 @@
   #include <wx/wx.h>
 #endif
 
-int ShowInvalidPathMessage();
-int ShowMissingFileMessage();
-int ShowQuitMessage();
-int ShowAboutMessage();
+class Messages
+{
+private:
+  wxMessageDialog* dial;
+
+public:
+  Messages();
+
+  int ShowEngineFailureMessage();
+  int ShowInvalidPathMessage();
+  int ShowMissingFileMessage();
+  int ShowQuitMessage();
+  int ShowAboutMessage();
+};
+
+

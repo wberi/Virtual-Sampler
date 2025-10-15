@@ -5,9 +5,8 @@
  #include <wx/wx.h>
 #endif 
 
-///A Key osztaly
-///
-///A wxButton kibovitett valtozata. El tudja tarolni az utvonalat egy hangoz.
+///A class that provides the logic behind the key buttons.
+///This class is derived from the wxButton class.
 class Key: public wxButton 
 {
 private:

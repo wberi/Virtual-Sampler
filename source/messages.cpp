@@ -1,31 +1,39 @@
-#include <cstddef>
 #include <messages.hpp>
-#include <wx/chartype.h>
 #include <wx/gtk/msgdlg.h>
 
-int ShowInvalidPathMessage()
+
+Messages::Messages()
 {
-  wxMessageDialog *dial = 
-    new wxMessageDialog(NULL, wxT("szar path"), wxT("Invalid path")); //TODO: write normal error message
+  dial = new wxMessageDialog(NULL, wxT("This is a default message."), wxT("Message")); 
+}
+
+int Messages::ShowEngineFailureMessage()
+{
+  dial = new wxMessageDialog(NULL, wxT("Sound engine failure!"), wxT("Error"), wxOK_DEFAULT);
   return dial->ShowModal();
 }
 
-int ShowMissingFileMessage() 
+int Messages::ShowInvalidPathMessage()
 {
-   wxMessageDialog *dial = 
+  dial = new wxMessageDialog(NULL, wxT("Invalid path"), wxT("Error")); //TODO: write normal error message
+  return dial->ShowModal();
+}
+
+int Messages::ShowMissingFileMessage() 
+{
+   dial = 
     new wxMessageDialog(NULL, wxT("There is no sound file attached to this key.\nA new file will be assigned now."), wxT("Missing sound file"));
    return dial->ShowModal();
 }
 
-int ShowQuitMessage() 
+int Messages::ShowQuitMessage() 
 {
-  wxMessageDialog *dial 
-    = new wxMessageDialog(NULL, wxT("Are you sure to quit?"), wxT("You are about to quit..."), wxYES_NO | wxNO_DEFAULT | wxICON_QUESTION);
+  dial = new wxMessageDialog(NULL, wxT("Are you sure to quit?"), wxT("You are about to quit..."), wxYES_NO | wxNO_DEFAULT | wxICON_QUESTION);
   return dial->ShowModal();
 }
 
-int ShowAboutMessage() 
+int Messages::ShowAboutMessage() 
 {
-  wxMessageDialog *dial = new wxMessageDialog(NULL, wxT("Virtual Sampler\nBéri Márk\n2025"), wxT("About"), wxOK_DEFAULT | wxICON_INFORMATION);
+  dial = new wxMessageDialog(NULL, wxT("Virtual Sampler\nBéri Márk\n2025"), wxT("About"), wxOK_DEFAULT | wxICON_INFORMATION);
   return dial->ShowModal();
 }

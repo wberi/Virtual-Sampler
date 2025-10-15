@@ -1,4 +1,9 @@
 var annotated_dup =
 [
-    [ "TestClass", "class_test_class.html", "class_test_class" ]
+    [ "Key", "classKey.html", "classKey" ],
+    [ "MainApp", "classMainApp.html", "classMainApp" ],
+    [ "MainFrame", "classMainFrame.html", "classMainFrame" ],
+    [ "wxApp", "classwxApp.html", null ],
+    [ "wxButton", "classwxButton.html", null ],
+    [ "wxFrame", "classwxFrame.html", null ]
 ];

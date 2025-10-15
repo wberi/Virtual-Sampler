@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testclass_0',['TestClass',['../class_test_class.html#a09903432ed60c7c38f1beccc4cf18987',1,'TestClass']]]
+  ['initmenubar_0',['initMenuBar',['../classMainFrame.html#ab3f75415dfd05f8913c150ec76e677a8',1,'MainFrame']]]
 ];

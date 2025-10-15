@@ -6,9 +6,9 @@
   #include<wx/wx.h>
 #endif
 
-///A MainApp osztály
+///This class is responsible for handling events inside the app.
 ///
-///Ez kezel minden eseményt, ami az alkalmazásban történik.
+///It class is derived from the wxApp class.
 class MainApp: public wxApp
 {
   public:

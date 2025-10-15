@@ -1,6 +1,6 @@
+#include "messages.hpp"
 #include <base.hpp>
 #include <fstream>
-#include <messages.hpp>
 #include <key.hpp>
 #include <miniaudio.h>
 
@@ -51,6 +51,9 @@ END_EVENT_TABLE()
 MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size) 
 :wxFrame((wxFrame*) NULL, -1, title, pos, size)
 {
+  //Init messages 
+  messages = new Messages(); 
+
   //Sound stuff 
   ma_result result;
 
@@ -105,7 +108,7 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
 
   if(path == "no_path")
   {
-    ShowMissingFileMessage();
+    messages->ShowMissingFileMessage();
 
     wxFileDialog fileBrowser(this, wxT("Open sound file"), "", "", "*.wav|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
     if(fileBrowser.ShowModal() == wxID_CANCEL)
@@ -118,25 +121,20 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
     std::ifstream testStream(filePath);
     if(!testStream)
     {
-      ShowInvalidPathMessage(); 
+      messages->ShowInvalidPathMessage(); 
       return;
     }
+    
+    std::string path = fileBrowser.GetPath();
+    std::string fname = fileBrowser.GetFilename();
+    wxString wName(fname.c_str(), wxConvUTF8);
 
-    button->setPathToSound(fileBrowser.GetPath());
+    button->setPathToSound(path);
+    button->SetLabel(wName);
   }
   else 
   {
-    ma_result result;
-    ma_sound sound;
-
-    result = ma_sound_init_from_file(&engine, path.c_str(), 0, NULL, NULL, &sound);
-    if(result != MA_SUCCESS)
-    {
-      return;
-    }
-
-    ma_sound_start(&sound);
-    ma_sound_uninit(&sound);
+    ma_engine_play_sound(&engine, button->getPathToSound().c_str(), NULL);
   }
 }
 
@@ -153,13 +151,13 @@ void MainFrame::loadProfile(wxCommandEvent& event)
 //Brings up a window with the about information
 void MainFrame::showAbout(wxCommandEvent& event)
 {
-  ShowAboutMessage();
+  messages->ShowAboutMessage();
 }
 
 //Shows exit message on exit
 void MainFrame::onExit(wxCommandEvent& event)
 {
-  if(ShowQuitMessage() == wxID_YES)
+  if(messages->ShowQuitMessage() == wxID_YES)
   {
     Close(true);
   }
