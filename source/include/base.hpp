@@ -24,7 +24,6 @@ public:
 
     //Sound stuff
     ma_engine engine;
-    ma_sound* preLoadedSounds;
 
     //Messages
     Messages* messages; 

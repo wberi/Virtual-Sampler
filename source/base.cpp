@@ -104,9 +104,8 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
   //if there is a valid path it will play the sound
   
   Key* button = dynamic_cast<Key*>(event.GetEventObject());
-  std::string path = button->getPathToSound();
 
-  if(path == "no_path")
+  if(!true) //TODO: fix!!!
   {
     messages->ShowMissingFileMessage();
 
@@ -124,17 +123,19 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
       messages->ShowInvalidPathMessage(); 
       return;
     }
-    
-    std::string path = fileBrowser.GetPath();
-    std::string fname = fileBrowser.GetFilename();
-    wxString wName(fname.c_str(), wxConvUTF8);
 
-    button->setPathToSound(path);
-    button->SetLabel(wName);
+    ma_result res;
+    //res = ma_sound_init_from_file(&engine, filePath.c_str(), 0, NULL, NULL, ???); TODO: fix!
+    if(res != MA_SUCCESS)
+    {
+      messages->ShowEngineFailureMessage();
+      return;
+    }
+    button->SetLabel(fileBrowser.GetFilename().c_str());
   }
   else 
   {
-    ma_engine_play_sound(&engine, button->getPathToSound().c_str(), NULL);
+    //ma_sound_start(button->getSound()); TODO: fix!
   }
 }
 

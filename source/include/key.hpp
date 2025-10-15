@@ -5,20 +5,18 @@
  #include <wx/wx.h>
 #endif 
 
+#include <miniaudio.h>
+
 ///A class that provides the logic behind the key buttons.
 ///This class is derived from the wxButton class.
 class Key: public wxButton 
 {
-private:
-  std::string pathToSound;
-
 public:
+  ma_sound sound;
+
   //ctor
   Key(wxWindow* parent, wxWindowID event);
 
-  //setter 
-  void setPathToSound(std::string newPathToSound);
-
-  //getter
-  std::string getPathToSound();
+  //dtor 
+  ~Key();
 };
