@@ -1,0 +1,17 @@
+<map id="MainFrame" name="MainFrame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="295,195,443,446"/>
+<area shape="rect" id="Node000002" href="$classwxFrame.html" title=" " alt="" coords="5,5,76,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,88,110,129,149,169,223,227,297,275,294,280,220,232,146,173,106,133,72,91"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,5,183,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,77,161,123,183,170,204,197,229,222,283,266,279,270,225,226,200,201,178,173,155,125,144,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,5,284,78"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,77,254,122,266,170,288,214,283,216,261,172,248,123,244,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="317,5,415,78"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="369,77,370,178,365,178,364,77"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="440,5,567,78"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="501,78,491,124,474,172,454,210,449,207,469,170,486,122,496,77"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="602,5,701,78"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="652,78,643,125,634,150,620,173,585,211,545,242,501,269,459,289,457,284,499,264,542,238,582,207,616,170,629,148,638,124,647,77"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="732,5,808,78"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="773,78,765,126,756,151,741,173,712,202,679,227,643,249,605,267,530,293,460,310,459,305,528,288,603,262,641,244,676,223,709,198,737,170,751,148,760,125,768,77"/>
+</map>

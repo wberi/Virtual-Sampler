@@ -1,0 +1,5 @@
+<map id="MainApp" name="MainApp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,126,81,198"/>
+<area shape="rect" id="Node000002" href="$classwxApp.html" title=" " alt="" coords="16,5,71,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,93,46,126,41,126,41,93"/>
+</map>

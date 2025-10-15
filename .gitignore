@@ -48,5 +48,3 @@
 build/*
 .cache/*
 
-#doxygen
-docs/*

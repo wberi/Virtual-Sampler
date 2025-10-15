@@ -1,0 +1,11 @@
+<map id="MainFrame::pressPlayButton" name="MainFrame::pressPlayButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,214,112"/>
+<area shape="rect" id="Node000002" href="$classKey.html#a10b93ca6114e38a3fbe37e45a8449336" title=" " alt="" coords="277,5,434,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,81,261,43,287,35,288,40,262,48,152,86"/>
+<area shape="rect" id="Node000003" href="$classKey.html#a031f67093df2e52f3fbd2e9636f2b7c5" title=" " alt="" coords="278,57,433,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,84,262,79,263,84,215,89"/>
+<area shape="rect" id="Node000004" href="$messages_8cpp.html#a18c41984b65f923a6d34da116bcc767a" title=" " alt="" coords="262,109,449,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,106,246,109,246,115,214,111"/>
+<area shape="rect" id="Node000005" href="$messages_8cpp.html#aa3e7c07cfb307bf335761cdaa3bfec84" title=" " alt="" coords="262,161,448,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="153,110,262,146,289,154,287,159,261,151,151,115"/>
+</map>
