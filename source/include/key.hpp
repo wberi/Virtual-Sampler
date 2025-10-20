@@ -13,10 +13,13 @@ class Key: public wxButton
 {
 public:
   ma_sound sound;
+  bool hasSound;
 
   //ctor
   Key(wxWindow* parent, wxWindowID event);
 
   //dtor 
   ~Key();
+
+  ma_sound* getSound();
 };

@@ -1,5 +1,6 @@
 #include "messages.hpp"
 #include <base.hpp>
+#include <cstdio>
 #include <fstream>
 #include <key.hpp>
 #include <miniaudio.h>
@@ -105,7 +106,7 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
   
   Key* button = dynamic_cast<Key*>(event.GetEventObject());
 
-  if(!true) //TODO: fix!!!
+  if(!button->hasSound)
   {
     messages->ShowMissingFileMessage();
 
@@ -123,19 +124,21 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
       messages->ShowInvalidPathMessage(); 
       return;
     }
+    testStream.close();
 
     ma_result res;
-    //res = ma_sound_init_from_file(&engine, filePath.c_str(), 0, NULL, NULL, ???); TODO: fix!
+    res = ma_sound_init_from_file(&engine, filePath.c_str(), 0, NULL, NULL, button->getSound());
     if(res != MA_SUCCESS)
     {
       messages->ShowEngineFailureMessage();
       return;
     }
     button->SetLabel(fileBrowser.GetFilename().c_str());
+    button->hasSound = true;
   }
   else 
   {
-    //ma_sound_start(button->getSound()); TODO: fix!
+    ma_sound_start(button->getSound());
   }
 }
 
