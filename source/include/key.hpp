@@ -13,7 +13,7 @@ class Key: public wxButton
 {
 public:
   ma_sound sound;
-  bool hasSound;
+  std::string sound_path;
 
   //ctor
   Key(wxWindow* parent, wxWindowID event);
@@ -21,5 +21,6 @@ public:
   //dtor 
   ~Key();
 
+  //getter
   ma_sound* getSound();
 };

@@ -106,11 +106,11 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
   
   Key* button = dynamic_cast<Key*>(event.GetEventObject());
 
-  if(!button->hasSound)
+  if(button->sound_path.empty())
   {
     messages->ShowMissingFileMessage();
 
-    wxFileDialog fileBrowser(this, wxT("Open sound file"), "", "", "*.wav|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
+    wxFileDialog fileBrowser(this, wxT("Open sound file"), "", "", "Sound files (*.wav, *.mp3)|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
     if(fileBrowser.ShowModal() == wxID_CANCEL)
     {
       return; 
@@ -133,12 +133,26 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
       messages->ShowEngineFailureMessage();
       return;
     }
+
     button->SetLabel(fileBrowser.GetFilename().c_str());
-    button->hasSound = true;
+    button->sound_path = filePath;
   }
   else 
   {
-    ma_sound_start(button->getSound());
+    if(ma_sound_is_playing(button->getSound()))
+    {
+     ma_sound_seek_to_pcm_frame(button->getSound(), 0);
+    }
+    else 
+    {
+     ma_sound_start(button->getSound());
+    }
+
+    /*
+     * TODO: 
+     * shorten button name (maybe custom)
+     * do XML export
+    */
   }
 }
 
