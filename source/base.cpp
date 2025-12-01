@@ -1,27 +1,11 @@
-#include "MessageHandler.hpp"
-#include "KeyNameDialog.hpp"
+#include "MenuBarHandler.hpp"
+#include <MessageHandler.hpp>
+#include <KeyNameDialog.hpp>
 #include <AppBase.hpp>
 #include <cstdio>
 #include <fstream>
 #include <Key.hpp>
 #include <miniaudio.h>
-
-void MainFrame::initMenuBar()
-{
-  //add menu options to the "Profile" menu
-  profileMenu->Append(MENU_SAVE, wxT("Save profile\tCtrl-S"));
-  profileMenu->Append(MENU_LOAD, wxT("Load profile\tCtrl-O"));
-  profileMenu->Append(MENU_QUIT, wxT("Quit\tCtrl-Q"));
-
-  //add menu options to "About" menu
-  aboutMenu->Append(MENU_ABOUT, wxT("Information"));
-
-  //add options to the bar and activate the bar
-  mainMenu->Append(profileMenu, wxT("Profile"));
-  mainMenu->Append(recordMenu, wxT("Recording"));
-  mainMenu->Append(aboutMenu, wxT("About"));
-  SetMenuBar(mainMenu);
-}
 
 void MainFrame::createButtonGrid()
 {
@@ -42,10 +26,6 @@ void MainFrame::createButtonGrid()
 //Event table to store all events
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
   EVT_BUTTON(BUTTON_PLAY, MainFrame::pressPlayButton)
-  EVT_MENU(MENU_SAVE, MainFrame::saveProfile)
-  EVT_MENU(MENU_LOAD, MainFrame::loadProfile)
-  EVT_MENU(MENU_ABOUT, MainFrame::showAbout)
-  EVT_MENU(MENU_QUIT, MainFrame::onExit)
 END_EVENT_TABLE()
 
 //declaring the constructor for MainFrame
@@ -65,12 +45,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   }
 
   //Init widgets for menu bar
-  mainMenu = new wxMenuBar();
-  profileMenu = new wxMenu(); 
-  recordMenu = new wxMenu();
-  aboutMenu = new wxMenu();
-
-  initMenuBar();
+  SetMenuBar(new MenuBarHandler(this, messages));
 
   //Init widgets for button grid
   windowSizer = new wxBoxSizer(wxHORIZONTAL);
@@ -137,10 +112,10 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
     button->sound_path = filePath;
     
     //TODO: dialog for name here
-    KeyNameDialog name_dialog ( this, -1, _("Choose button name"),
+    KeyNameDialog nameDialog ( this, -1, _("Choose button name"),
 	                          wxPoint(100, 100), wxSize(200, 200) );
-	  if (name_dialog.ShowModal() != wxID_OK)
-      button->SetLabel(name_dialog.GetText());
+	  if (nameDialog.ShowModal() != wxID_OK)
+      button->SetLabel(nameDialog.GetText());
   }
   else 
   {
@@ -152,30 +127,5 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
     {
      ma_sound_start(button->getSound());
     }
-  }
-}
-
-void MainFrame::saveProfile(wxCommandEvent& event)
-{
-
-}
-
-void MainFrame::loadProfile(wxCommandEvent& event)
-{
-
-}
-
-//Brings up a window with the about information
-void MainFrame::showAbout(wxCommandEvent& event)
-{
-  messages->ShowAboutMessage();
-}
-
-//Shows exit message on exit
-void MainFrame::onExit(wxCommandEvent& event)
-{
-  if(messages->ShowQuitMessage() == wxID_YES)
-  {
-    Close(true);
   }
 }

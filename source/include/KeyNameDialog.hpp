@@ -20,5 +20,5 @@ class KeyNameDialog: public wxDialog
     private:
 	    void OnOk(wxCommandEvent& event);
 
-	wxDECLARE_EVENT_TABLE();
+	DECLARE_EVENT_TABLE();
 };

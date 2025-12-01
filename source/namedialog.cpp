@@ -21,9 +21,9 @@ KeyNameDialog::KeyNameDialog (wxWindow* parent, wxWindowID id, const wxString& t
 
 //Event table
 
-wxBEGIN_EVENT_TABLE(KeyNameDialog, wxDialog)
+BEGIN_EVENT_TABLE(KeyNameDialog, wxDialog)
   EVT_BUTTON(wxID_OK, KeyNameDialog::OnOk)
-wxEND_EVENT_TABLE()
+END_EVENT_TABLE()
 
 wxString KeyNameDialog::GetText()
 {

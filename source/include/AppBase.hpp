@@ -7,6 +7,7 @@
 
 #include <miniaudio.h>
 #include <MessageHandler.hpp>
+#include <MenuBarHandler.hpp>
 
 ///This class is responsible for showing and handling the GUI.
 ///
@@ -27,6 +28,9 @@ public:
 
     //Messages
     Messages* messages; 
+
+    //Menubar
+    wxMenuBar menubar;
   
     //Declare widgets------------------------
     //Buttons and sliders are on a different panel
@@ -35,32 +39,17 @@ public:
     wxBoxSizer* windowSizer;
     wxFlexGridSizer* buttonGridSizer;
 
-    //Menu bar elements
-    wxMenuBar* mainMenu;
-    wxMenu* profileMenu;
-    wxMenu* recordMenu;
-    wxMenu* aboutMenu;
-
     //Functions for clearer ctor declaration
-    void initMenuBar();
     void createButtonGrid();
 
     //Declare events
     void pressPlayButton(wxCommandEvent& event);
-    void saveProfile(wxCommandEvent& event);
-    void loadProfile(wxCommandEvent& event);
-    void showAbout(wxCommandEvent& event);
-    void onExit(wxCommandEvent& event);
 
-    DECLARE_EVENT_TABLE()  
+    DECLARE_EVENT_TABLE();
 };
 
 //button IDs
 enum
 {
-  BUTTON_PLAY,
-  MENU_SAVE,
-  MENU_LOAD,
-  MENU_ABOUT,
-  MENU_QUIT,
+  BUTTON_PLAY
 };
