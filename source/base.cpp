@@ -1,8 +1,9 @@
-#include "messages.hpp"
-#include <base.hpp>
+#include "MessageHandler.hpp"
+#include "KeyNameDialog.hpp"
+#include <AppBase.hpp>
 #include <cstdio>
 #include <fstream>
-#include <key.hpp>
+#include <Key.hpp>
 #include <miniaudio.h>
 
 void MainFrame::initMenuBar()
@@ -38,7 +39,6 @@ void MainFrame::createButtonGrid()
   }
 }
 
-
 //Event table to store all events
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
   EVT_BUTTON(BUTTON_PLAY, MainFrame::pressPlayButton)
@@ -50,7 +50,7 @@ END_EVENT_TABLE()
 
 //declaring the constructor for MainFrame
 MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size) 
-:wxFrame((wxFrame*) NULL, -1, title, pos, size)
+:wxFrame((wxFrame*) nullptr, -1, title, pos, size)
 {
   //Init messages 
   messages = new Messages(); 
@@ -58,7 +58,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   //Sound stuff 
   ma_result result;
 
-  result = ma_engine_init(NULL, &engine);
+  result = ma_engine_init(nullptr, &engine);
   if(result != MA_SUCCESS)
   {
     return;
@@ -104,7 +104,7 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
   //if not (or the path is invalid) it brings up a window to select a sound 
   //if there is a valid path it will play the sound
   
-  Key* button = dynamic_cast<Key*>(event.GetEventObject());
+  auto button = dynamic_cast<Key*>(event.GetEventObject());
 
   if(button->sound_path.empty())
   {
@@ -118,13 +118,13 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
 
     std::string filePath = fileBrowser.GetPath();
 
-    std::ifstream testStream(filePath);
-    if(!testStream)
+    std::ifstream testFilePath(filePath);
+    if(!testFilePath)
     {
       messages->ShowInvalidPathMessage(); 
       return;
     }
-    testStream.close();
+    testFilePath.close();
 
     ma_result res;
     res = ma_sound_init_from_file(&engine, filePath.c_str(), 0, NULL, NULL, button->getSound());
@@ -134,8 +134,13 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
       return;
     }
 
-    button->SetLabel(fileBrowser.GetFilename().c_str());
     button->sound_path = filePath;
+    
+    //TODO: dialog for name here
+    KeyNameDialog name_dialog ( this, -1, _("Choose button name"),
+	                          wxPoint(100, 100), wxSize(200, 200) );
+	  if (name_dialog.ShowModal() != wxID_OK)
+      button->SetLabel(name_dialog.GetText());
   }
   else 
   {
@@ -147,12 +152,6 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
     {
      ma_sound_start(button->getSound());
     }
-
-    /*
-     * TODO: 
-     * shorten button name (maybe custom)
-     * do XML export
-    */
   }
 }
 

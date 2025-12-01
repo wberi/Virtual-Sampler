@@ -27,7 +27,7 @@ file(GLOB_RECURSE SOURCE_FILES
 
 #get header (*.h, *.hpp) files
 file(GLOB_RECURSE HEADER_FILES 
-  "${CMAKE_SOURCE_DIR}/source/*.hpp"
+  "${CMAKE_SOURCE_DIR}/source/include/*.hpp"
 )
 
 add_executable(Virtual-Sampler ${SOURCE_FILES} ${HEADER_FILES})

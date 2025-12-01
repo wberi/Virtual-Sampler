@@ -1,5 +1,5 @@
-#include <app.hpp>
-#include <base.hpp>
+#include <App.hpp>
+#include <AppBase.hpp>
 
 const int WIDTH = 300;
 const int HEIGHT = 300;

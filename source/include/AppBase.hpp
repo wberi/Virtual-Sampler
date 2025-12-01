@@ -6,7 +6,7 @@
 #endif
 
 #include <miniaudio.h>
-#include <messages.hpp>
+#include <MessageHandler.hpp>
 
 ///This class is responsible for showing and handling the GUI.
 ///

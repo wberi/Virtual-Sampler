@@ -1,4 +1,4 @@
-#include <messages.hpp>
+#include <MessageHandler.hpp>
 #include <wx/gtk/msgdlg.h>
 
 
