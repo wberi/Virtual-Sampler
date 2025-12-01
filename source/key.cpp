@@ -12,7 +12,7 @@ Key::Key(wxWindow* parent, wxWindowID event)
 
 Key::~Key()
 {
-  //ma_sound_uninit(&sound); TODO: this is REALLY slow!
+  ma_sound_uninit(&sound); 
 }
 
 ma_sound* Key::getSound()

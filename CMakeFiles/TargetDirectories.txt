@@ -1,0 +1,3 @@
+/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles/Virtual-Sampler.dir
+/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles/edit_cache.dir
+/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles/rebuild_cache.dir
