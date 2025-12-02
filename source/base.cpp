@@ -1,4 +1,6 @@
+#include "KeyFieldHandler.hpp"
 #include "MenuBarHandler.hpp"
+#include "SliderFieldHandler.hpp"
 #include <MessageHandler.hpp>
 #include <KeyNameDialog.hpp>
 #include <AppBase.hpp>
@@ -6,22 +8,6 @@
 #include <fstream>
 #include <Key.hpp>
 #include <miniaudio.h>
-
-void MainFrame::createButtonGrid()
-{
-  //Create button grid
-  for(int i = 0; i < 4; ++i)
-  {
-    buttonGridSizer->AddGrowableRow(i);
-    buttonGridSizer->AddGrowableCol(i);
-
-    for(int j = 0; j < 4; ++j)
-    {
-      auto button = new Key(buttonPanel, BUTTON_PLAY);
-      buttonGridSizer->Add(button);
-    }
-  }
-}
 
 //Event table to store all events
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
@@ -45,23 +31,22 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   }
 
   //Init widgets for menu bar
-  SetMenuBar(new MenuBarHandler(this, messages));
+  menubar = new MenuBarHandler(this, messages);
+  SetMenuBar(menubar);
 
-  //Init widgets for button grid
+  //Init widgets
   windowSizer = new wxBoxSizer(wxHORIZONTAL);
-  buttonPanel = new wxPanel(this, wxID_ANY);
-  sliderPanel = new wxPanel(this, wxID_ANY);
-  buttonGridSizer = new wxFlexGridSizer(4, 4, margin, margin);
 
-  createButtonGrid();
+  //Setup keyfield
+  keyfield = new KeyFieldHandler(this);
+  keyfield->createKeyField();
 
-  //Add the button panel to a sizer
-  buttonGridSizer->SetMinSize(wxDefaultSize.GetWidth(), wxDefaultSize.GetHeight());
-  buttonPanel->SetSizer(buttonGridSizer);
+  //Setup sliderfield
+  sliderfield = new SliderFieldHandler(this);
 
   //add all the panels to the main sizer and set it as default sizer
-  windowSizer->Add(buttonPanel, 1, wxEXPAND | wxALL, margin);
-  windowSizer->Add(sliderPanel, 1, wxEXPAND | wxALL, margin);
+  windowSizer->Add(keyfield->getKeyPanel(), 1, wxEXPAND | wxALL, margin);
+  windowSizer->Add(sliderfield->getSliderPanel(), 1, wxEXPAND | wxALL, margin);
   this->SetSizerAndFit(windowSizer);
 }
 
@@ -111,7 +96,6 @@ void MainFrame::pressPlayButton(wxCommandEvent& event)
 
     button->sound_path = filePath;
     
-    //TODO: dialog for name here
     KeyNameDialog nameDialog ( this, -1, _("Choose button name"),
 	                          wxPoint(100, 100), wxSize(200, 200) );
 	  if (nameDialog.ShowModal() != wxID_OK)

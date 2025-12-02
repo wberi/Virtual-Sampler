@@ -2,21 +2,23 @@
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
-  #include <wx/wx.h>
+#include <wx/wx.h>
 #endif
 
 #include <miniaudio.h>
-#include <MessageHandler.hpp>
-#include <MenuBarHandler.hpp>
+#include "MessageHandler.hpp"
+#include "MenuBarHandler.hpp"
+#include "KeyFieldHandler.hpp"
+#include "SliderFieldHandler.hpp"
 
 ///This class is responsible for showing and handling the GUI.
 ///
 ///This class is derived from the wxFrame class.
 class MainFrame: public wxFrame 
 {
-private:
-  const double margin = 10;
 public:
+    const double margin = 10;
+
     //ctor
     MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 
@@ -30,17 +32,13 @@ public:
     Messages* messages; 
 
     //Menubar
-    wxMenuBar menubar;
+    MenuBarHandler* menubar;
   
     //Declare widgets------------------------
     //Buttons and sliders are on a different panel
-    wxPanel* buttonPanel;
-    wxPanel* sliderPanel;
     wxBoxSizer* windowSizer;
-    wxFlexGridSizer* buttonGridSizer;
-
-    //Functions for clearer ctor declaration
-    void createButtonGrid();
+    KeyFieldHandler* keyfield;
+    SliderFieldHandler* sliderfield;
 
     //Declare events
     void pressPlayButton(wxCommandEvent& event);
