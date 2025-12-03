@@ -14,49 +14,49 @@ class Key;
 // Refactoring of this file from AppBase.hpp was done with AI assistance!
 class SliderFieldHandler: public wxPanel
 {
-    // Fields parent object
+    //Parent object
     wxFrame* parent;
 
-    // Content panel
+    //Content panel
     wxFlexGridSizer* fieldGridSizer;
 
-    // Sound Group Reference
+    //Important sound references
     ma_sound_group* current_group_ptr = nullptr;
     Key* current_key_ptr = nullptr;
 
-    // Volume slider
+    //Volume slider
     wxSlider* volumeSlider;
     
-    // ADSR sliders
+    //ADSR sliders
     wxSlider* attackSlider;
     wxSlider* decaySlider;
     wxSlider* sustainSlider;
     wxSlider* releaseSlider;
     
-    // Pitch slider
+    //Pitch slider
     wxSlider* pitchSlider;
     
-    // Filter sliders
+    //Filter sliders
     wxSlider* cutoffSlider;
     wxSlider* resonanceSlider;
 
-    // Helper functions
+    //Helper functions
     void addSliderRow(wxString label_text, wxString tooltip_text,
         wxSlider*& slider_ptr, int id, int min_val, int max_val, int initial_val);
 
 public:
-    // ctor (Updated: Removed ma_sound_group* argument)
+    //Constructor
     SliderFieldHandler(wxFrame* parent);
 
-    // New Key/Group management methods
+    //Methods for managing Key values
     void SetCurrentKey(Key* key);
     void UpdateControlsFromKey(); 
     void SaveControlsToKey(); 
 
-    // events
+    //Events
     void setVolume(wxCommandEvent& event);
     void setAttack(wxCommandEvent& event);
-    void setDelay(wxCommandEvent& event); // Note: Should probably be setDecay
+    void setDecay(wxCommandEvent& event);
     void setSustain(wxCommandEvent& event);
     void setRelease(wxCommandEvent& event);
     void setPitch(wxCommandEvent& event);
@@ -64,4 +64,4 @@ public:
     void setResonance(wxCommandEvent& event);
 };
 
-#endif // SLIDERFIELDHANDLER_HPP
+#endif

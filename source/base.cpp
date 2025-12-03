@@ -6,31 +6,28 @@
 #include <Key.hpp>
 #include <miniaudio.h>
 
-//declaring the constructor for MainFrame
+//Constructor
 MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
 :wxFrame((wxFrame*) nullptr, -1, title, pos, size)
 {
-  //Init messages
+  //Initialize messages
   messages = new Messages();
 
-  //Init widgets for menu bar
+  //Initialize widgets for menu bar
   menubar = new MenuBarHandler(this, messages);
   SetMenuBar(menubar);
 
-  //Init widgets
+  //Initialize widgets
   windowSizer = new wxBoxSizer(wxHORIZONTAL);
-
-  // --- REFACTOR START ---
   
-  // 1. Initialize SliderFieldHandler first (no longer needs a sound group pointer)
+  //Initialize SliderFieldHandler
   sliderfield = new SliderFieldHandler(this);
 
-  // 2. Initialize KeyFieldHandler and pass the slider panel pointer
+  //Initialize KeyFieldHandler
   keyfield = new KeyFieldHandler(this, messages, sliderfield);
   keyfield->createKeyField();
 
-  // --- REFACTOR END ---
-
+  //Add both fields to the main window
   windowSizer->Add(keyfield->getKeyPanel(), 1, wxEXPAND | wxALL, margin);
   windowSizer->Add(sliderfield, 1, wxEXPAND | wxALL, margin);
   this->SetSizerAndFit(windowSizer);

@@ -20,18 +20,19 @@ class KeyFieldHandler
   wxPanel* keyPanel;
   wxFlexGridSizer* keyGridSizer;
   Messages* messages;
-  SliderFieldHandler* sliderPanel; // Reference to the main slider panel
+  SliderFieldHandler* sliderPanel;
 
-  //Sound stuff
+  //Sound engine
   ma_engine engine;
-  // ma_sound_group soundGroup; // REMOVED
 
   //Map for keeping track of button shortcuts
   std::map<char, Key*> keyMap;
 
 public:
-    //Constructor and destructor (Updated: Added SliderFieldHandler* argument)
+    //Constructor
     KeyFieldHandler(wxFrame* parent, Messages* messages, SliderFieldHandler* sliderPanel);
+
+    //Destructor
     ~KeyFieldHandler();
 
     //Create keyfield
@@ -51,7 +52,6 @@ public:
     
     //Getters
     wxPanel* getKeyPanel();
-    //ma_sound_group* getSoundGroup(); // REMOVED
 };
 
-#endif // KEYFIELDHANDLER_HPP
+#endif

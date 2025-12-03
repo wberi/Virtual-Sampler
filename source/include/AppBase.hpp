@@ -19,7 +19,7 @@ class MainFrame: public wxFrame
 public:
     const double margin = 10;
 
-    //ctor
+    //Constructor
     MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 
     //Messages

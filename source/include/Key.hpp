@@ -15,56 +15,46 @@ class Key: public wxButton
 {
 public:
   ma_sound sound;
-  ma_sound_group* soundGroupPtr = nullptr; // Pointer to the group created by the handler
+  ma_sound_group* soundGroupPtr = nullptr;
   std::string sound_path;
 
-  // --- New Per-Key Audio Attributes ---
-  // Store slider values directly as member variables
-  int volume;     // 0-100
-  int attack;     // 0-1000 ms
-  int decay;      // 0-1000 ms
-  int sustain;    // 0-100 %
-  int release;    // 0-2000 ms
-  int pitchShift; // -12 to 12 st
-  int cutoff;     // 20 to 20000 Hz
-  int resonance;  // 0 to 10
+  //Store slider values 
+  int volume;     
+  int attack;
+  int decay;
+  int sustain;
+  int release;
+  int pitchShift;
+  int cutoff;
+  int resonance;
 
-  //ctor
+  //Constructor
   Key(wxWindow* parent);
 
-  //dtor 
+  //Destructor (for destroying sounds?)
   ~Key();
 
-  //Setter for the sound group pointer
+  //Setters
   void setSoundGroupPtr(ma_sound_group* groupPtr);
+  void setVolume(int val) {volume = val;}
+  void setAttack(int val) {attack = val;}
+  void setDecay(int val) { decay = val; }
+  void setSustain(int val) { sustain = val; }
+  void setRelease(int val) { release = val; }
+  void setPitchShift(int val) { pitchShift = val; }
+  void setCutoff(int val) { cutoff = val; }
+  void setResonance(int val) { resonance = val; }
 
   //Getters
   ma_sound* getSound();
   ma_sound_group* getSoundGroupPtr();
-
-  // --- New Attribute Getters/Setters ---
-  void setVolume(int val) { volume = val; }
   int getVolume() const { return volume; }
-
-  void setAttack(int val) { attack = val; }
   int getAttack() const { return attack; }
-
-  void setDecay(int val) { decay = val; }
   int getDecay() const { return decay; }
-
-  void setSustain(int val) { sustain = val; }
   int getSustain() const { return sustain; }
-
-  void setRelease(int val) { release = val; }
   int getRelease() const { return release; }
-
-  void setPitchShift(int val) { pitchShift = val; }
   int getPitchShift() const { return pitchShift; }
-
-  void setCutoff(int val) { cutoff = val; }
   int getCutoff() const { return cutoff; }
-
-  void setResonance(int val) { resonance = val; }
   int getResonance() const { return resonance; }
 };
 #endif
