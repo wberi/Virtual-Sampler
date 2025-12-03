@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MESSAGEHANDLER_HPP
+#define MESSAGEHANDLER_HPP
 
 #include <wx/wxprec.h>
 #ifndef WC_PRECOMP
@@ -19,5 +20,4 @@ public:
   int ShowQuitMessage();
   int ShowAboutMessage();
 };
-
-
+#endif

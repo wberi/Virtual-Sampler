@@ -1,4 +1,5 @@
 #include "KeyNameDialog.hpp"
+#include <wx/gtk/combobox.h>
 #include <wx/wx.h>
 
 KeyNameDialog::KeyNameDialog (wxWindow* parent, wxWindowID id, const wxString& title,
@@ -13,21 +14,21 @@ KeyNameDialog::KeyNameDialog (wxWindow* parent, wxWindowID id, const wxString& t
 
 	position_helper.x = 6; position_helper.y = 2;
 
-	dialogText = new wxTextCtrl (this, -1, "button name", position_helper, window_size);
+	keyOptions = new wxComboBox(this, -1, wxEmptyString, position_helper, window_size, 
+		sizeof(keyChoices) / sizeof(wxString), keyChoices, wxCB_READONLY);
 
 	position_helper.y += window_size.GetHeight() + 10;
 	wxButton* ok_button = new wxButton(this, wxID_OK, _("OK"), position_helper, wxDefaultSize);
 }
 
 //Event table
-
 BEGIN_EVENT_TABLE(KeyNameDialog, wxDialog)
   EVT_BUTTON(wxID_OK, KeyNameDialog::OnOk)
 END_EVENT_TABLE()
 
 wxString KeyNameDialog::GetText()
 {
-	return dialogText->GetLineText(0);
+	return keyOptions->GetStringSelection();
 }
 
 void KeyNameDialog::OnOk(wxCommandEvent& event)

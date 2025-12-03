@@ -1,11 +1,11 @@
-#pragma once
+#ifndef APPBASE_HPP
+#define APPBASE_HPP
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
 
-#include <miniaudio.h>
 #include "MessageHandler.hpp"
 #include "MenuBarHandler.hpp"
 #include "KeyFieldHandler.hpp"
@@ -14,7 +14,7 @@
 ///This class is responsible for showing and handling the GUI.
 ///
 ///This class is derived from the wxFrame class.
-class MainFrame: public wxFrame 
+class MainFrame: public wxFrame
 {
 public:
     const double margin = 10;
@@ -22,18 +22,12 @@ public:
     //ctor
     MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 
-    //dtor
-    ~MainFrame();
-
-    //Sound stuff
-    ma_engine engine;
-
     //Messages
-    Messages* messages; 
+    Messages* messages;
 
     //Menubar
     MenuBarHandler* menubar;
-  
+
     //Declare widgets------------------------
     //Buttons and sliders are on a different panel
     wxBoxSizer* windowSizer;
@@ -42,12 +36,5 @@ public:
 
     //Declare events
     void pressPlayButton(wxCommandEvent& event);
-
-    DECLARE_EVENT_TABLE();
 };
-
-//button IDs
-enum
-{
-  BUTTON_PLAY
-};
+#endif

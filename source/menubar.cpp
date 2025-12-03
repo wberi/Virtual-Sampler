@@ -24,7 +24,6 @@ MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages): wxMenuBar()
 
     //add options to the bar and activate the bar
     this->Append(profileMenu, wxT("Profile"));
-    this->Append(recordMenu, wxT("Recording"));
     this->Append(aboutMenu, wxT("About"));
 }
 

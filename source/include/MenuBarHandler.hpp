@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MENUBARHANDLER_HPP
+#define MENUBARHANDLER_HPP
 
 #include "MessageHandler.hpp"
 #include <wx/wxprec.h>
@@ -40,3 +41,4 @@ enum
   MENU_ABOUT,
   MENU_QUIT,
 };
+#endif
