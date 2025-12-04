@@ -58,9 +58,12 @@ void SliderFieldHandler::UpdateControlsFromKey()
 {
     if(!current_key_ptr) 
     {
+        this->Hide();
         return;
     }
     
+    this->Show();
+
     //Load values
     volumeSlider->SetValue(current_key_ptr->getVolume());
     attackSlider->SetValue(current_key_ptr->getAttack());

@@ -126,10 +126,10 @@ void KeyFieldHandler::setupKey(wxCommandEvent& event)
     if(setupDialog.ShowModal() != wxID_OK) 
     {
       //Get the choosen character from the combo box
-      wxString text = setupDialog.GetText();
+      wxString text = setupDialog.GetShortcut();
 
       //Set the name of the key accordingly
-      button->SetLabel(text); 
+      button->SetLabel(setupDialog.GetName() + " (" + text + ")"); //the name contains the shortcut
 
       //Add the shortcut combination to the keyMap structure for easy lookup
       //Assuming a single character is selected

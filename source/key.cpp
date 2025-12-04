@@ -5,12 +5,13 @@ const int WIDTH = 150;
 const int HEIGHT = 150;
 
 //Default values from SliderFieldHandler
-const int DEFAULT_VOLUME = 80;
+const int DEFAULT_VOLUME = 8; //Real sound volume scale: 0.0 - 10.0
 const int DEFAULT_ATTACK = 10;
 const int DEFAULT_DECAY = 50;
 const int DEFAULT_SUSTAIN = 75;
 const int DEFAULT_RELEASE = 500;
-const int DEFAULT_PITCH = 0;
+const int DEFAULT_PITCH = 0; //Real pitch scale: 0.0 - 1.0 
+                             //Based on this formula: F = 2^(N/12)
 const int DEFAULT_CUTOFF = 5000;
 const int DEFAULT_RESONANCE = 1;
 

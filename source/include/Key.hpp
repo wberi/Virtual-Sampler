@@ -38,23 +38,23 @@ public:
   void setSoundGroupPtr(ma_sound_group* groupPtr);
   void setVolume(int val) {volume = val;}
   void setAttack(int val) {attack = val;}
-  void setDecay(int val) { decay = val; }
-  void setSustain(int val) { sustain = val; }
-  void setRelease(int val) { release = val; }
-  void setPitchShift(int val) { pitchShift = val; }
-  void setCutoff(int val) { cutoff = val; }
-  void setResonance(int val) { resonance = val; }
+  void setDecay(int val) {decay = val;}
+  void setSustain(int val) {sustain = val;}
+  void setRelease(int val) {release = val;}
+  void setPitchShift(int val) {pitchShift = val;}
+  void setCutoff(int val) {cutoff = val;}
+  void setResonance(int val) {resonance = val;}
 
   //Getters
   ma_sound* getSound();
   ma_sound_group* getSoundGroupPtr();
-  int getVolume() const { return volume; }
-  int getAttack() const { return attack; }
-  int getDecay() const { return decay; }
-  int getSustain() const { return sustain; }
-  int getRelease() const { return release; }
-  int getPitchShift() const { return pitchShift; }
-  int getCutoff() const { return cutoff; }
-  int getResonance() const { return resonance; }
+  int getVolume() const {return volume * 10.0;} //Needs to be multiplied by 10 because of slider display
+  int getAttack() const {return attack;}
+  int getDecay() const {return decay;}
+  int getSustain() const {return sustain;}
+  int getRelease() const {return release;}
+  int getPitchShift() const {return pitchShift;}
+  int getCutoff() const {return cutoff;}
+  int getResonance() const {return resonance;}
 };
 #endif

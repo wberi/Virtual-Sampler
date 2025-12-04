@@ -15,8 +15,9 @@ class KeyNameDialog: public wxDialog
 	              long style = wxDEFAULT_DIALOG_STYLE);
 
 	    wxComboBox* keyOptions;
-	    wxString GetText();
-
+		wxTextCtrl* nameField;
+	    wxString GetShortcut();
+		wxString GetName();
 
     private:
 		wxString keyChoices[36] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
