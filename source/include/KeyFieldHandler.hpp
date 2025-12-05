@@ -28,6 +28,7 @@ class KeyFieldHandler
 
   //Map for keeping track of button shortcuts
   std::map<char, Key*> keyMap;
+  std::vector<Key*> keyList;
 
 public:
     //Constructor
@@ -42,6 +43,7 @@ public:
     //Setup the Key's sound file and shortcut
     void setupKeyEvent(wxCommandEvent& event);
     void setupKey(Key* button);
+    void setKeyBind(Key* button); //binds Key with sound playing
     void resetKey(wxCommandEvent& event);
 
     //Refresh the slider panel
@@ -55,10 +57,12 @@ public:
 
     //Listen to keyboard events
     void listenToKbEvents(wxKeyEvent& event);
-    
+
     //Getters
     wxPanel* getKeyPanel();
-    std::vector<Key*> getKeys();
+    std::vector<Key*>& getKeys();
+    ma_engine* getEngine();
+    std::map<char, Key*>& getKeyMap();
 };
 
 #endif

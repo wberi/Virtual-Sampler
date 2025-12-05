@@ -32,6 +32,7 @@ MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHand
     this->Append(aboutMenu, wxT("About"));
 }
 
+//Event table
 BEGIN_EVENT_TABLE(MenuBarHandler, wxMenuBar)
   EVT_MENU(MENU_SAVE, MenuBarHandler::saveProfile)
   EVT_MENU(MENU_LOAD, MenuBarHandler::loadProfile)
@@ -39,15 +40,16 @@ BEGIN_EVENT_TABLE(MenuBarHandler, wxMenuBar)
   EVT_MENU(MENU_QUIT, MenuBarHandler::onExit)
 END_EVENT_TABLE()
 
-//Event handling
+//Save Profile to file
 void MenuBarHandler::saveProfile(wxCommandEvent& event)
 {
   FileManager::SaveProfile(parent, kField->getKeys());
 }
 
+//Load Profile from file
 void MenuBarHandler::loadProfile(wxCommandEvent& event)
 {
-    //TODO
+  FileManager::LoadProfile(parent, kField);
 }
 
 //Brings up a window with the about information

@@ -61,6 +61,7 @@ void KeyFieldHandler::createKeyField()
     for(int j = 0; j < 4; ++j)
     {
       auto key = new Key(keyPanel);
+      keyList.push_back(key);
       
       //Bind setup method
       key->Bind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
@@ -146,12 +147,17 @@ void KeyFieldHandler::setupKey(Key* button)
     button->setShortCut(shortcutChar); //Store shortczt in Key
 
     //Unbind setupKey and bind the new updateSliderPanel function
-    button->Unbind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
-    button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
+    setKeyBind(button);
     
     //Manually trigger the update function to set the sliders for the newly configured key
     refreshControls(button);
   }
+}
+
+void KeyFieldHandler::setKeyBind(Key* button)
+{
+  button->Unbind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
+  button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
 }
 
 void KeyFieldHandler::resetKey(wxCommandEvent& event)
@@ -233,13 +239,17 @@ void KeyFieldHandler::listenToKbEvents(wxKeyEvent& event)
   }
 }
 
-std::vector<Key*> KeyFieldHandler::getKeys()
+std::vector<Key*>& KeyFieldHandler::getKeys()
 {
-  std::vector<Key*> tmp;
-  for(auto i : keyMap)
-  {
-    tmp.push_back(i.second);
-  }
+  return keyList;
+}
 
-  return tmp;
+ma_engine* KeyFieldHandler::getEngine()
+{
+  return &engine;
+}
+
+std::map<char, Key*>& KeyFieldHandler::getKeyMap()
+{
+  return keyMap;
 }
