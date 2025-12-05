@@ -24,6 +24,9 @@ class SliderFieldHandler: public wxPanel
     ma_sound_group* current_group_ptr = nullptr;
     Key* current_key_ptr = nullptr;
 
+    //Display selected name
+    wxStaticText* selectedName;
+
     //Volume slider
     wxSlider* volumeSlider;
     
@@ -39,6 +42,9 @@ class SliderFieldHandler: public wxPanel
     //Filter sliders
     wxSlider* cutoffSlider;
     wxSlider* resonanceSlider;
+
+    //Reset button
+    wxButton* resetButton;
 
     //Helper functions
     void addSliderRow(wxString label_text, wxString tooltip_text,
@@ -62,6 +68,10 @@ public:
     void setPitch(wxCommandEvent& event);
     void setCutoff(wxCommandEvent& event);
     void setResonance(wxCommandEvent& event);
+
+    //Getters
+    wxButton* getResetButton();
+    Key* getCurrentKeyPtr();
 };
 
 #endif

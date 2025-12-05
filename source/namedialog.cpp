@@ -41,6 +41,7 @@ KeyNameDialog::KeyNameDialog (wxWindow* parent, wxWindowID id, const wxString& t
     wxSize textctrl_size(TEXTCTRL_WIDTH, TEXTCTRL_HEIGHT);
     
     nameField = new wxTextCtrl(this, wxID_ANY, wxEmptyString, textctrl_pos, textctrl_size, 0);
+    nameField->SetMaxLength(13); //set character limit, so it fits inside the Key
 
     int y_start_row_3 = y_start_row_2 + textctrl_size.GetHeight() + SPACING;
     
@@ -74,5 +75,6 @@ wxString KeyNameDialog::GetName()
 
 void KeyNameDialog::OnOk(wxCommandEvent& event)
 {
+  //Close the dialog
 	EndModal(0);
 }

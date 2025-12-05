@@ -17,6 +17,7 @@ public:
   int ShowEngineFailureMessage();
   int ShowInvalidPathMessage();
   int ShowMissingFileMessage();
+  int ShowBlockedShortcutMessage();
   int ShowQuitMessage();
   int ShowAboutMessage();
 };

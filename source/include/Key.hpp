@@ -1,6 +1,7 @@
 #ifndef KEY_HPP
 #define KEY_HPP
 
+#include <wx/event.h>
 #include <wx/wxprec.h>
 #ifndef WC_PRECOMP   
  #include <wx/wx.h>
@@ -13,10 +14,18 @@
 ///This class is derived from the wxButton class.
 class Key: public wxButton
 {
-public:
-  ma_sound sound;
+  //Sound
+  ma_sound* sound = nullptr;
   ma_sound_group* soundGroupPtr = nullptr;
   std::string sound_path;
+
+  //Shortcut
+  char shortcut = '-'; //It it unbound by default
+
+  //Animation
+  wxTimer* animationTimer;
+  const wxColour DEFAULT_COLOR = *wxWHITE;
+  const wxColour ACTIVE_COLOR = *wxGREEN;
 
   //Store slider values 
   int volume;     
@@ -27,15 +36,32 @@ public:
   int pitchShift;
   int cutoff;
   int resonance;
+public:
 
   //Constructor
   Key(wxWindow* parent);
 
-  //Destructor (for destroying sounds?)
+  //Destructor
   ~Key();
 
+  //Uninit sound
+  void uninitSound();
+
+  //Setup sound from file path
+  ma_result setupSound(ma_engine* engine, std::string filePath);
+
+  //Setup sound group
+  ma_result setupGroup(ma_engine* engine);
+
+  //Play sound
+  void playSound();
+
+  //Animation methods
+  void beginAnimateKey();
+  void endAnimatekey(wxTimerEvent& event);
+
   //Setters
-  void setSoundGroupPtr(ma_sound_group* groupPtr);
+  void setShortCut(char shortcut);
   void setVolume(int val) {volume = val;}
   void setAttack(int val) {attack = val;}
   void setDecay(int val) {decay = val;}
@@ -46,9 +72,9 @@ public:
   void setResonance(int val) {resonance = val;}
 
   //Getters
-  ma_sound* getSound();
   ma_sound_group* getSoundGroupPtr();
-  int getVolume() const {return volume * 10.0;} //Needs to be multiplied by 10 because of slider display
+  char getShortCut();
+  int getVolume() const {return volume;}
   int getAttack() const {return attack;}
   int getDecay() const {return decay;}
   int getSustain() const {return sustain;}

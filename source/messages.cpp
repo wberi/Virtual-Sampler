@@ -26,6 +26,13 @@ int Messages::ShowMissingFileMessage()
    return dial->ShowModal();
 }
 
+int Messages::ShowBlockedShortcutMessage()
+{
+     dial = 
+    new wxMessageDialog(NULL, wxT("This key is already in use. Please choose another one."), wxT("Shortcut blocked"));
+   return dial->ShowModal();
+}
+
 int Messages::ShowQuitMessage() 
 {
   dial = new wxMessageDialog(NULL, wxT("Are you sure to quit?"), wxT("You are about to quit..."), wxYES_NO | wxNO_DEFAULT | wxICON_QUESTION);

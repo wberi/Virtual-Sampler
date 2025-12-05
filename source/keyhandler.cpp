@@ -3,7 +3,11 @@
 #include "Key.hpp"
 #include "SliderFieldHandler.hpp"
 #include <KeyNameDialog.hpp>
+#include <wx/event.h>
+#include <wx/gtk/colour.h>
 #include <wx/log.h>
+#include <wx/timer.h>
+#include <wx/utils.h>
 
 //Refactoring of this file from base.cpp was done with AI assistance!
 //Constructor for basic GUI setup
@@ -35,12 +39,14 @@ KeyFieldHandler::KeyFieldHandler(wxFrame* parent, Messages* messages, SliderFiel
 
   //Bind key listener event to the parent frame
   parent->Bind(wxEVT_CHAR_HOOK, &KeyFieldHandler::listenToKbEvents, this);
+
+  //Bind key reset button from SliderFieldHandler
+  sliderPanel->getResetButton()->Bind(wxEVT_BUTTON, &KeyFieldHandler::resetKey, this);
 }
 
 //Uninitialize things
 KeyFieldHandler::~KeyFieldHandler()
 {   
-    //TODO: sound group uninit
     ma_engine_uninit(&engine);
 }
 
@@ -57,22 +63,17 @@ void KeyFieldHandler::createKeyField()
       auto key = new Key(keyPanel);
       
       //Bind setup method
-      key->Bind(wxEVT_BUTTON, &KeyFieldHandler::setupKey, this);
+      key->Bind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
       
       //Create sound group
-      ma_sound_group* newGroup = new ma_sound_group();
-      ma_result result =  ma_sound_group_init(&engine, MA_SOUND_FLAG_NO_SPATIALIZATION, NULL, newGroup);
-      if(result != MA_SUCCESS)
+      if(key->setupGroup(&engine) != MA_SUCCESS)
       {
         messages->ShowEngineFailureMessage();
         exit(1);
       }
       
-      //Store the pointer of the sound group
-      key->setSoundGroupPtr(newGroup);
-      
       //Set scaling of volume 
-      ma_sound_group_set_volume(newGroup, key->getVolume() / 10.0);
+      ma_sound_group_set_volume(key->getSoundGroupPtr(), key->getVolume() / 100.0);
       
       keyGridSizer->Add(key);
     }
@@ -86,92 +87,125 @@ wxPanel* KeyFieldHandler::getKeyPanel()
 }
 
 //Method for setting up the button when it is pressed
-void KeyFieldHandler::setupKey(wxCommandEvent& event)
+void KeyFieldHandler::setupKeyEvent(wxCommandEvent& event)
 {
   auto button = dynamic_cast<Key*>(event.GetEventObject());
   if(button)
   {
-    //Notify user of setup
-    messages->ShowMissingFileMessage();
-    
-    //Create and show file browser window
-    wxFileDialog fileBrowser(parent, wxT("Open sound file"), "", "",
-     "Sound files (*.wav, *.mp3)|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
-    if(fileBrowser.ShowModal() == wxID_CANCEL)
-    {
-      //return if users cancels
-      return;
-    }
-    
-    //Get the path to the file
-    std::string filePath = fileBrowser.GetPath().ToStdString();
-    
-    //Initialize the sound, error if unsuccessful
-    ma_result res;
-    //Use the Key's specific sound group pointer
-    res = ma_sound_init_from_file(&engine, filePath.c_str(), 
-    MA_SOUND_FLAG_NO_SPATIALIZATION, button->getSoundGroupPtr(), NULL, button->getSound());
-    if(res != MA_SUCCESS)
-    {
-      messages->ShowEngineFailureMessage();
-      return;
-    }
-    
-    //Set Key filepath property
-    button->sound_path = filePath;
-    
-    //Create and show setup dialog
-    KeyNameDialog setupDialog ( parent, -1, _("Select button shortcut"),
-                            wxPoint(0, 0), wxSize(200, 100) );
-    if(setupDialog.ShowModal() != wxID_OK) 
-    {
-      //Get the choosen character from the combo box
-      wxString text = setupDialog.GetShortcut();
-
-      //Set the name of the key accordingly
-      button->SetLabel(setupDialog.GetName() + " (" + text + ")"); //the name contains the shortcut
-
-      //Add the shortcut combination to the keyMap structure for easy lookup
-      //Assuming a single character is selected
-      char shortcutChar = (char)text[0];
-      keyMap.insert({shortcutChar, button});
-
-      //Unbind setupKey and bind the new updateSliderPanel function
-      button->Unbind(wxEVT_BUTTON, &KeyFieldHandler::setupKey, this);
-      button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
-      
-      //Manually trigger the update function to set the sliders for the newly configured key
-      wxCommandEvent updateEvent(wxEVT_BUTTON, button->GetId());
-      updateSliderPanel(updateEvent);
-    }
+    setupKey(button);
   }
 }
 
-//New method to update the slider panel when a configured Key is clicked
+void KeyFieldHandler::setupKey(Key* button)
+{      
+  //Create and show file browser window
+  wxFileDialog fileBrowser(parent, wxT("Open sound file"), "", "",
+    "Sound files (*.wav, *.mp3)|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
+  if(fileBrowser.ShowModal() == wxID_CANCEL)
+  {
+    //return if users cancels
+    return;
+  }
+  
+  //Get the path to the file
+  std::string filePath = fileBrowser.GetPath().ToStdString();  
+
+  if(button->setupSound(&engine, filePath) != MA_SUCCESS)
+  {
+    messages->ShowEngineFailureMessage();
+    return;
+  }
+  
+  //Create and show setup dialog
+  KeyNameDialog setupDialog ( parent, -1, _("Select button shortcut"),
+                          wxPoint(0, 0), wxSize(200, 100) );
+  if(setupDialog.ShowModal() != wxID_CANCEL) 
+  {
+    //Get the choosen character from the combo box
+    wxString text = setupDialog.GetShortcut();
+    char shortcutChar = (char)text[0];
+    
+    if(keyMap.count(shortcutChar))
+    {
+      //If key had a shortcut, restore it
+      messages->ShowBlockedShortcutMessage();
+      char keyShortcut = button->getShortCut();
+      if(keyShortcut != '-')
+      {
+        keyMap.insert({keyShortcut, button});
+      }
+      return;
+    }
+    
+    //Set the name of the key accordingly
+    button->SetLabel(setupDialog.GetName() + " (" + text + ")"); //the name contains the shortcut
+
+    //Add the shortcut combination to the keyMap structure for easy lookup
+    //Assuming a single character is selected
+    keyMap.insert({shortcutChar, button});
+    button->setShortCut(shortcutChar); //Store shortczt in Key
+
+    //Unbind setupKey and bind the new updateSliderPanel function
+    button->Unbind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
+    button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
+    
+    //Manually trigger the update function to set the sliders for the newly configured key
+    refreshControls(button);
+  }
+}
+
+void KeyFieldHandler::resetKey(wxCommandEvent& event)
+{
+  Key* currentKey = sliderPanel->getCurrentKeyPtr();
+  if(currentKey == nullptr)
+  {
+    //error msg
+    return;
+  }
+
+  //Uninit sound 
+  currentKey->uninitSound();
+
+  //Delete bind (if it exists)
+  char k;
+  for(auto& key : keyMap)
+  {
+    if(key.second == currentKey)
+    {
+      k = key.first;
+    }
+  }
+  keyMap.erase(k);
+  
+  //redo setup
+  setupKey(sliderPanel->getCurrentKeyPtr());
+}
+
+//Helper function, so both events can refresh
+void KeyFieldHandler::refreshControls(Key* button)
+{
+  sliderPanel->SetCurrentKey(button);
+  sliderPanel->UpdateControlsFromKey();
+}
+
+//Update the slider panel when a configured Key is clicked
 void KeyFieldHandler::updateSliderPanel(wxCommandEvent& event)
 {
     auto button = dynamic_cast<Key*>(event.GetEventObject());
     if(button && sliderPanel)
     {
-        sliderPanel->SetCurrentKey(button);
-        sliderPanel->UpdateControlsFromKey();
+      refreshControls(button);
     }
 }
-
 
 //Play the corresponding sound after the Key is pressed
 void KeyFieldHandler::playSound(Key* key)
 {
-  if(ma_sound_is_playing(key->getSound()))
-  {
-    //If the sound is still playing, we need to restart it 
-    ma_sound_seek_to_pcm_frame(key->getSound(), 0);
-  }
-  else
-  {
-    //We just play the sound
-    ma_sound_start(key->getSound());
-  }
+  //Start animation
+  key->beginAnimateKey(); 
+
+  //Play sound
+  key->playSound();
 }
 
 void KeyFieldHandler::listenToKbEvents(wxKeyEvent& event)
@@ -189,11 +223,6 @@ void KeyFieldHandler::listenToKbEvents(wxKeyEvent& event)
 
     //Play the sound
     playSound(targetKey);
-    
-
-    //Update slider visuals
-    wxCommandEvent updateEvent(wxEVT_BUTTON, targetKey->GetId());
-    updateSliderPanel(updateEvent);
 
     //Consume the event
     event.Skip(false);

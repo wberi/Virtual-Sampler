@@ -2,6 +2,7 @@
 #define KEYFIELDHANDLER_HPP
 
 #include <wx/event.h>
+#include <wx/gdicmn.h>
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
   #include <wx/wx.h>
@@ -38,8 +39,13 @@ public:
     //Create keyfield
     void createKeyField();
 
-    //Setup the button's sound file and shortcut
-    void setupKey(wxCommandEvent& event);
+    //Setup the Key's sound file and shortcut
+    void setupKeyEvent(wxCommandEvent& event);
+    void setupKey(Key* button);
+    void resetKey(wxCommandEvent& event);
+
+    //Refresh the slider panel
+    void refreshControls(Key* button);
     
     //Update the slider panel to match the clicked button's attributes
     void updateSliderPanel(wxCommandEvent& event);
