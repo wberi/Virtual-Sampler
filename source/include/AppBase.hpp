@@ -16,25 +16,22 @@
 ///This class is derived from the wxFrame class.
 class MainFrame: public wxFrame
 {
-public:
-    const double margin = 10;
-
-    //Constructor
-    MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
-
     //Messages
     Messages* messages;
-
+    
     //Menubar
     MenuBarHandler* menubar;
-
+    
     //Declare widgets------------------------
     //Buttons and sliders are on a different panel
     wxBoxSizer* windowSizer;
     KeyFieldHandler* keyfield;
     SliderFieldHandler* sliderfield;
 
-    //Declare events
-    void pressPlayButton(wxCommandEvent& event);
+public:
+    const double margin = 10;
+
+    //Constructor
+    MainFrame(const wxString &title, const wxPoint &pos, const wxSize &size);
 };
 #endif

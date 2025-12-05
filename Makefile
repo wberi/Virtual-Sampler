@@ -201,6 +201,30 @@ source/base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/base.cpp.s
 .PHONY : source/base.cpp.s
 
+source/filemanager.o: source/filemanager.cpp.o
+.PHONY : source/filemanager.o
+
+# target to build an object file
+source/filemanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o
+.PHONY : source/filemanager.cpp.o
+
+source/filemanager.i: source/filemanager.cpp.i
+.PHONY : source/filemanager.i
+
+# target to preprocess a source file
+source/filemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.i
+.PHONY : source/filemanager.cpp.i
+
+source/filemanager.s: source/filemanager.cpp.s
+.PHONY : source/filemanager.s
+
+# target to generate assembly for a file
+source/filemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.s
+.PHONY : source/filemanager.cpp.s
+
 source/key.o: source/key.cpp.o
 .PHONY : source/key.o
 
@@ -224,6 +248,54 @@ source/key.s: source/key.cpp.s
 source/key.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/key.cpp.s
 .PHONY : source/key.cpp.s
+
+source/keyhandler.o: source/keyhandler.cpp.o
+.PHONY : source/keyhandler.o
+
+# target to build an object file
+source/keyhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o
+.PHONY : source/keyhandler.cpp.o
+
+source/keyhandler.i: source/keyhandler.cpp.i
+.PHONY : source/keyhandler.i
+
+# target to preprocess a source file
+source/keyhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.i
+.PHONY : source/keyhandler.cpp.i
+
+source/keyhandler.s: source/keyhandler.cpp.s
+.PHONY : source/keyhandler.s
+
+# target to generate assembly for a file
+source/keyhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.s
+.PHONY : source/keyhandler.cpp.s
+
+source/menubar.o: source/menubar.cpp.o
+.PHONY : source/menubar.o
+
+# target to build an object file
+source/menubar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o
+.PHONY : source/menubar.cpp.o
+
+source/menubar.i: source/menubar.cpp.i
+.PHONY : source/menubar.i
+
+# target to preprocess a source file
+source/menubar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.i
+.PHONY : source/menubar.cpp.i
+
+source/menubar.s: source/menubar.cpp.s
+.PHONY : source/menubar.s
+
+# target to generate assembly for a file
+source/menubar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.s
+.PHONY : source/menubar.cpp.s
 
 source/messages.o: source/messages.cpp.o
 .PHONY : source/messages.o
@@ -249,6 +321,54 @@ source/messages.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.s
 .PHONY : source/messages.cpp.s
 
+source/namedialog.o: source/namedialog.cpp.o
+.PHONY : source/namedialog.o
+
+# target to build an object file
+source/namedialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o
+.PHONY : source/namedialog.cpp.o
+
+source/namedialog.i: source/namedialog.cpp.i
+.PHONY : source/namedialog.i
+
+# target to preprocess a source file
+source/namedialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.i
+.PHONY : source/namedialog.cpp.i
+
+source/namedialog.s: source/namedialog.cpp.s
+.PHONY : source/namedialog.s
+
+# target to generate assembly for a file
+source/namedialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.s
+.PHONY : source/namedialog.cpp.s
+
+source/sliderhandler.o: source/sliderhandler.cpp.o
+.PHONY : source/sliderhandler.o
+
+# target to build an object file
+source/sliderhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o
+.PHONY : source/sliderhandler.cpp.o
+
+source/sliderhandler.i: source/sliderhandler.cpp.i
+.PHONY : source/sliderhandler.i
+
+# target to preprocess a source file
+source/sliderhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.i
+.PHONY : source/sliderhandler.cpp.i
+
+source/sliderhandler.s: source/sliderhandler.cpp.s
+.PHONY : source/sliderhandler.s
+
+# target to generate assembly for a file
+source/sliderhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Virtual-Sampler.dir/build.make CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.s
+.PHONY : source/sliderhandler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,12 +387,27 @@ help:
 	@echo "... source/base.o"
 	@echo "... source/base.i"
 	@echo "... source/base.s"
+	@echo "... source/filemanager.o"
+	@echo "... source/filemanager.i"
+	@echo "... source/filemanager.s"
 	@echo "... source/key.o"
 	@echo "... source/key.i"
 	@echo "... source/key.s"
+	@echo "... source/keyhandler.o"
+	@echo "... source/keyhandler.i"
+	@echo "... source/keyhandler.s"
+	@echo "... source/menubar.o"
+	@echo "... source/menubar.i"
+	@echo "... source/menubar.s"
 	@echo "... source/messages.o"
 	@echo "... source/messages.i"
 	@echo "... source/messages.s"
+	@echo "... source/namedialog.o"
+	@echo "... source/namedialog.i"
+	@echo "... source/namedialog.s"
+	@echo "... source/sliderhandler.o"
+	@echo "... source/sliderhandler.i"
+	@echo "... source/sliderhandler.s"
 .PHONY : help
 
 

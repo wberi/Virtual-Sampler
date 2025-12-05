@@ -106,3 +106,13 @@ char Key::getShortCut()
 {
   return shortcut;
 }
+
+void Key::setSoundPath(std::string soundPath)
+{
+  this->sound_path = soundPath;
+}
+
+std::string Key::getSoundPath()
+{
+  return sound_path;
+}

@@ -13,10 +13,6 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   //Initialize messages
   messages = new Messages();
 
-  //Initialize widgets for menu bar
-  menubar = new MenuBarHandler(this, messages);
-  SetMenuBar(menubar);
-
   //Initialize widgets
   windowSizer = new wxBoxSizer(wxHORIZONTAL);
   
@@ -26,6 +22,10 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
   //Initialize KeyFieldHandler
   keyfield = new KeyFieldHandler(this, messages, sliderfield);
   keyfield->createKeyField();
+
+  //Initialize widgets for menu bar
+  menubar = new MenuBarHandler(this, messages, keyfield);
+  SetMenuBar(menubar);
 
   //Add both fields to the main window
   windowSizer->Add(keyfield->getKeyPanel(), 1, wxEXPAND | wxALL, margin);

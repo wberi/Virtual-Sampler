@@ -58,6 +58,7 @@ public:
     
     //Getters
     wxPanel* getKeyPanel();
+    std::vector<Key*> getKeys();
 };
 
 #endif

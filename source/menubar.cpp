@@ -1,13 +1,18 @@
+#include "KeyFieldHandler.hpp"
 #include "MenuBarHandler.hpp"
+#include "FileManager.hpp"
 
 //ctor
-MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages): wxMenuBar()
+MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHandler* kField): wxMenuBar()
 {
     //Set parent frame
     this->parent = parent;
 
     //Set message instance
     this->messages = messages;
+    
+    //Set keyfield instance
+    this->kField = kField;
 
     //init submenus
     profileMenu = new wxMenu(); 
@@ -37,7 +42,7 @@ END_EVENT_TABLE()
 //Event handling
 void MenuBarHandler::saveProfile(wxCommandEvent& event)
 {
-    //TODO
+  FileManager::SaveProfile(parent, kField->getKeys());
 }
 
 void MenuBarHandler::loadProfile(wxCommandEvent& event)

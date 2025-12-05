@@ -232,3 +232,14 @@ void KeyFieldHandler::listenToKbEvents(wxKeyEvent& event)
     event.Skip();
   }
 }
+
+std::vector<Key*> KeyFieldHandler::getKeys()
+{
+  std::vector<Key*> tmp;
+  for(auto i : keyMap)
+  {
+    tmp.push_back(i.second);
+  }
+
+  return tmp;
+}

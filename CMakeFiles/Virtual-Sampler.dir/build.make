@@ -114,10 +114,24 @@ CMakeFiles/Virtual-Sampler.dir/source/base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/base.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/base.cpp -o CMakeFiles/Virtual-Sampler.dir/source/base.cpp.s
 
+CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
+CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o: source/filemanager.cpp
+CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/filemanager.cpp
+
+CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Programming/LP_hazi/Virtual-Sampler/source/filemanager.cpp > CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.i
+
+CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/filemanager.cpp -o CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.s
+
 CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
 CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o: source/key.cpp
 CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/key.cpp
 
 CMakeFiles/Virtual-Sampler.dir/source/key.cpp.i: cmake_force
@@ -128,10 +142,38 @@ CMakeFiles/Virtual-Sampler.dir/source/key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/key.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/key.cpp -o CMakeFiles/Virtual-Sampler.dir/source/key.cpp.s
 
+CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
+CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o: source/keyhandler.cpp
+CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/keyhandler.cpp
+
+CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Programming/LP_hazi/Virtual-Sampler/source/keyhandler.cpp > CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.i
+
+CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/keyhandler.cpp -o CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.s
+
+CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
+CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o: source/menubar.cpp
+CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/menubar.cpp
+
+CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Programming/LP_hazi/Virtual-Sampler/source/menubar.cpp > CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.i
+
+CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/menubar.cpp -o CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.s
+
 CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
 CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o: source/messages.cpp
 CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/messages.cpp
 
 CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.i: cmake_force
@@ -142,13 +184,46 @@ CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/messages.cpp -o CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.s
 
+CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
+CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o: source/namedialog.cpp
+CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/namedialog.cpp
+
+CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Programming/LP_hazi/Virtual-Sampler/source/namedialog.cpp > CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.i
+
+CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/namedialog.cpp -o CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.s
+
+CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o: CMakeFiles/Virtual-Sampler.dir/flags.make
+CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o: source/sliderhandler.cpp
+CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o -MF CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o.d -o CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/sliderhandler.cpp
+
+CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mark/Programming/LP_hazi/Virtual-Sampler/source/sliderhandler.cpp > CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.i
+
+CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mark/Programming/LP_hazi/Virtual-Sampler/source/sliderhandler.cpp -o CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.s
+
 # Object files for target Virtual-Sampler
 Virtual__Sampler_OBJECTS = \
 "CMakeFiles/Virtual-Sampler.dir/libs/miniaudio/miniaudio.c.o" \
 "CMakeFiles/Virtual-Sampler.dir/source/app.cpp.o" \
 "CMakeFiles/Virtual-Sampler.dir/source/base.cpp.o" \
+"CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o" \
 "CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o" \
-"CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o"
+"CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o" \
+"CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o" \
+"CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o" \
+"CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o" \
+"CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o"
 
 # External object files for target Virtual-Sampler
 Virtual__Sampler_EXTERNAL_OBJECTS =
@@ -156,8 +231,13 @@ Virtual__Sampler_EXTERNAL_OBJECTS =
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/libs/miniaudio/miniaudio.c.o
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/app.cpp.o
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/base.cpp.o
+Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o
+Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o
+Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o
+Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o
+Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/build.make
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/compiler_depend.ts
 Virtual-Sampler: libs/wx-install/lib/libwx_gtk3u_core-3.2.a
@@ -188,7 +268,7 @@ Virtual-Sampler: /usr/lib/libSDL2main.a
 Virtual-Sampler: /usr/lib/libSDL2.so
 Virtual-Sampler: /usr/lib/libz.so
 Virtual-Sampler: CMakeFiles/Virtual-Sampler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Virtual-Sampler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mark/Programming/LP_hazi/Virtual-Sampler/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Virtual-Sampler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Virtual-Sampler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

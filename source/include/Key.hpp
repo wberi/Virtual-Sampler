@@ -62,6 +62,7 @@ public:
 
   //Setters
   void setShortCut(char shortcut);
+  void setSoundPath(std::string soundPath);
   void setVolume(int val) {volume = val;}
   void setAttack(int val) {attack = val;}
   void setDecay(int val) {decay = val;}
@@ -74,6 +75,7 @@ public:
   //Getters
   ma_sound_group* getSoundGroupPtr();
   char getShortCut();
+  std::string getSoundPath();
   int getVolume() const {return volume;}
   int getAttack() const {return attack;}
   int getDecay() const {return decay;}

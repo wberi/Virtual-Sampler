@@ -19,10 +19,10 @@ int Messages::ShowInvalidPathMessage()
   return dial->ShowModal();
 }
 
-int Messages::ShowMissingFileMessage() 
+int Messages::ShowSaveErrorMessage() 
 {
    dial = 
-    new wxMessageDialog(NULL, wxT("There is no sound file attached to this key.\nA new file will be assigned now."), wxT("Missing sound file"));
+    new wxMessageDialog(NULL, wxT("Could not open file for writing."), wxT("Save error"));
    return dial->ShowModal();
 }
 

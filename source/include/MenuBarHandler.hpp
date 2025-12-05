@@ -2,6 +2,7 @@
 #define MENUBARHANDLER_HPP
 
 #include "MessageHandler.hpp"
+#include "KeyFieldHandler.hpp"
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
   #include <wx/wx.h>
@@ -20,9 +21,12 @@ class MenuBarHandler: public wxMenuBar
     //MessageHandler instance
     Messages* messages;
 
+    //KeyFieldHandler instance
+    KeyFieldHandler* kField;
+
 public:
     //ctor
-    MenuBarHandler(wxFrame* parent, Messages* messages);
+    MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHandler* kField);
 
     //Event handling
     void saveProfile(wxCommandEvent& event);
