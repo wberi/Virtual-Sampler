@@ -29,8 +29,7 @@ KeyFieldHandler::KeyFieldHandler(wxFrame* parent, Messages* messages, SliderFiel
   keyPanel->SetSizer(keyGridSizer);
 
   //Initialize sound engine
-  ma_result result = ma_engine_init(nullptr, &engine);
-  if(result != MA_SUCCESS)
+  if(createEngine() != MA_SUCCESS)
   {
     //error if it fails
     messages->ShowEngineFailureMessage();
@@ -50,7 +49,16 @@ KeyFieldHandler::~KeyFieldHandler()
     ma_engine_uninit(&engine);
 }
 
-//Create a 4x4 panel if Keys
+ma_result KeyFieldHandler::createEngine()
+{
+  engineConfig = ma_engine_config_init();
+  engineConfig.channels = 2;
+  engineConfig.sampleRate = 48000;
+
+  return ma_engine_init(&engineConfig, &engine);
+}
+
+//Create a 4x4 panel of Keys
 void KeyFieldHandler::createKeyField()
 {
   for(int i = 0; i < 4; ++i)

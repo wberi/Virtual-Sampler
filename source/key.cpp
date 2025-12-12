@@ -1,5 +1,6 @@
 #include "miniaudio.h"
 #include <Key.hpp>
+#include <cstddef>
 #include <wx/timer.h>
 
 //Default button dimension values
@@ -8,10 +9,6 @@ const int HEIGHT = 150;
 
 //Default values from SliderFieldHandler
 const int DEFAULT_VOLUME = 80; //Real sound volume scale: 0.0 - 1.0
-const int DEFAULT_ATTACK = 10;
-const int DEFAULT_DECAY = 50;
-const int DEFAULT_SUSTAIN = 75;
-const int DEFAULT_RELEASE = 500;
 const int DEFAULT_PITCH = 0; //Real pitch scale: 0.0 - 1.0 
                              //Based on this formula: F = 2^(N/12)
 const int DEFAULT_CUTOFF = 5000;
@@ -23,10 +20,6 @@ Key::Key(wxWindow* parent)
 {
     //Initialize sound attributes
     setVolume(DEFAULT_VOLUME);
-    setAttack(DEFAULT_ATTACK);
-    setDecay(DEFAULT_DECAY);
-    setSustain(DEFAULT_SUSTAIN);
-    setRelease(DEFAULT_RELEASE);
     setPitchShift(DEFAULT_PITCH);
     setCutoff(DEFAULT_CUTOFF);
     setResonance(DEFAULT_RESONANCE);
@@ -55,14 +48,16 @@ ma_result Key::setupSound(ma_engine* engine, std::string filePath)
   sound = new ma_sound(); //initialize sound
   
   return ma_sound_init_from_file(engine, filePath.c_str(), 
-    MA_SOUND_FLAG_NO_SPATIALIZATION, soundGroupPtr, NULL, sound);
+    MA_SOUND_FLAG_NO_SPATIALIZATION | MA_SOUND_FLAG_DECODE | MA_SOUND_FLAG_ASYNC, soundGroupPtr, NULL, sound);
 }
 
 ma_result Key::setupGroup(ma_engine* engine)
-{    
+{ 
+  this->engine=engine;
   soundGroupPtr = new ma_sound_group();
   return ma_sound_group_init(engine, MA_SOUND_FLAG_NO_SPATIALIZATION, NULL, soundGroupPtr);
 }
+
 
 void Key::playSound()
 {

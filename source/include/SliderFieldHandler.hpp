@@ -30,12 +30,6 @@ class SliderFieldHandler: public wxPanel
     //Volume slider
     wxSlider* volumeSlider;
     
-    //ADSR sliders
-    wxSlider* attackSlider;
-    wxSlider* decaySlider;
-    wxSlider* sustainSlider;
-    wxSlider* releaseSlider;
-    
     //Pitch slider
     wxSlider* pitchSlider;
     
@@ -61,10 +55,6 @@ public:
 
     //Events
     void setVolume(wxCommandEvent& event);
-    void setAttack(wxCommandEvent& event);
-    void setDecay(wxCommandEvent& event);
-    void setSustain(wxCommandEvent& event);
-    void setRelease(wxCommandEvent& event);
     void setPitch(wxCommandEvent& event);
     void setCutoff(wxCommandEvent& event);
     void setResonance(wxCommandEvent& event);

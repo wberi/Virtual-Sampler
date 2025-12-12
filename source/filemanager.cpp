@@ -34,10 +34,6 @@ void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
         keyData["label"] = key->GetLabel().ToStdString();
 
         keyData["volume"] = key->getVolume();
-        keyData["attack"] = key->getAttack();
-        keyData["decay"] = key->getDecay();
-        keyData["sustain"] = key->getSustain();
-        keyData["release"] = key->getRelease();
         keyData["pitch"] = key->getPitchShift();
         keyData["cutoff"] = key->getCutoff();
         keyData["resonance"] = key->getResonance();
@@ -153,10 +149,6 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
 
             //Set the rest of the values
             key->setVolume(data.value("volume", 80));
-            key->setAttack(data.value("attack", 10));
-            key->setDecay(data.value("decay", 50));
-            key->setSustain(data.value("sustain", 75));
-            key->setRelease(data.value("release", 500));
             key->setPitchShift(data.value("pitch", 0));
             key->setCutoff(data.value("cutoff", 5000));
             key->setResonance(data.value("resonance", 1));

@@ -25,19 +25,6 @@ SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_AN
     addSliderRow("Volume", "The volume of the sound currently playing.", volumeSlider, -1, 0, 100, 80);
     volumeSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setVolume, this);
 
-    //ADSR sliders
-    addSliderRow("Attack (ms)", "The time taken for the rise of the level from nil to peak.",attackSlider, -1, 0, 1000, 10); 
-    attackSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setAttack, this);
-
-    addSliderRow("Decay (ms)", "The time taken for the level to reduce from the attack level to the sustain level.",decaySlider, -1, 0, 1000, 50); 
-    decaySlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setDecay, this); // Typo in original: was setDelay, should be setDecay
-
-    addSliderRow("Sustain (%)", "The level maintained until the key is released." ,sustainSlider, -1, 0, 100, 75); 
-    sustainSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setSustain, this);
-
-    addSliderRow("Release (ms)", "The time taken for the level to decay to nil." ,releaseSlider, -1, 0, 2000, 500); 
-    releaseSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setRelease, this);
-
     //Pitch slider
     addSliderRow("Pitch Shift (st)", "The pitch of the sound currently playing." ,pitchSlider, -1, -12, 12, 0); 
     pitchSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setPitch, this);
@@ -85,10 +72,6 @@ void SliderFieldHandler::UpdateControlsFromKey()
 
     //Load values
     volumeSlider->SetValue(current_key_ptr->getVolume());
-    attackSlider->SetValue(current_key_ptr->getAttack());
-    decaySlider->SetValue(current_key_ptr->getDecay());
-    sustainSlider->SetValue(current_key_ptr->getSustain());
-    releaseSlider->SetValue(current_key_ptr->getRelease());
     pitchSlider->SetValue(current_key_ptr->getPitchShift());
     cutoffSlider->SetValue(current_key_ptr->getCutoff());
     resonanceSlider->SetValue(current_key_ptr->getResonance());
@@ -105,10 +88,6 @@ void SliderFieldHandler::SaveControlsToKey()
 
     //Save values
     current_key_ptr->setVolume(volumeSlider->GetValue());
-    current_key_ptr->setAttack(attackSlider->GetValue());
-    current_key_ptr->setDecay(decaySlider->GetValue());
-    current_key_ptr->setSustain(sustainSlider->GetValue());
-    current_key_ptr->setRelease(releaseSlider->GetValue());
     current_key_ptr->setPitchShift(pitchSlider->GetValue());
     current_key_ptr->setCutoff(cutoffSlider->GetValue());
     current_key_ptr->setResonance(resonanceSlider->GetValue());
@@ -126,21 +105,6 @@ void SliderFieldHandler::setVolume(wxCommandEvent& event)
     ma_sound_group_set_volume(current_group_ptr, current_key_ptr->getVolume() / 100.0);
 }
 
-void SliderFieldHandler::setAttack(wxCommandEvent& event)
-{
-}
-
-void SliderFieldHandler::setDecay(wxCommandEvent& event)
-{
-}
-
-void SliderFieldHandler::setSustain(wxCommandEvent& event)
-{
-}
-
-void SliderFieldHandler::setRelease(wxCommandEvent& event)
-{
-}
 
 void SliderFieldHandler::setPitch(wxCommandEvent& event)
 {

@@ -25,6 +25,7 @@ class KeyFieldHandler
 
   //Sound engine
   ma_engine engine;
+  ma_engine_config engineConfig;
 
   //Map for keeping track of button shortcuts
   std::map<char, Key*> keyMap;
@@ -36,6 +37,8 @@ public:
 
     //Destructor
     ~KeyFieldHandler();
+
+    ma_result createEngine();
 
     //Create keyfield
     void createKeyField();
