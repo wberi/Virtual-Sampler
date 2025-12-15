@@ -32,10 +32,18 @@ class SliderFieldHandler: public wxPanel
     
     //Pitch slider
     wxSlider* pitchSlider;
-    
-    //Filter sliders
+
+    //Pan slider
+    wxSlider* panSlider;
+
+    //ADSR sliders
+    wxSlider* attackSlider;
+    wxSlider* decaySlider;
+    wxSlider* sustainSlider;
+    wxSlider* releaseSlider;
+
+    //Filter slider
     wxSlider* cutoffSlider;
-    wxSlider* resonanceSlider;
 
     //Reset button
     wxButton* resetButton;
@@ -43,6 +51,7 @@ class SliderFieldHandler: public wxPanel
     //Helper functions
     void addSliderRow(wxString label_text, wxString tooltip_text,
         wxSlider*& slider_ptr, int id, int min_val, int max_val, int initial_val);
+    void actualizeFadeOut();
 
 public:
     //Constructor
@@ -56,8 +65,8 @@ public:
     //Events
     void setVolume(wxCommandEvent& event);
     void setPitch(wxCommandEvent& event);
+    void setPan(wxCommandEvent& event);
     void setCutoff(wxCommandEvent& event);
-    void setResonance(wxCommandEvent& event);
 
     //Getters
     wxButton* getResetButton();

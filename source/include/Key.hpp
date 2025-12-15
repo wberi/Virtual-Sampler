@@ -10,6 +10,14 @@
 #include <miniaudio.h>
 #include <string>
 
+typedef struct Sound 
+{
+  ma_sound* sound = nullptr;
+  ma_hpf_node hpfNode;
+  std::string sound_path;
+  ma_sound_group* soundGroupPtr = nullptr;
+} Sound;
+
 ///A class that provides the logic behind the key buttons.
 ///This class is derived from the wxButton class.
 class Key: public wxButton
@@ -18,11 +26,7 @@ class Key: public wxButton
   ma_engine* engine;
 
   //Sound
-  ma_sound* sound = nullptr;
-  std::string sound_path;
-
-  //Sound group
-  ma_sound_group* soundGroupPtr = nullptr;
+  Sound sound;
 
   //Shortcut
   char shortcut = '-'; //It it unbound by default
@@ -35,8 +39,11 @@ class Key: public wxButton
   //Store slider values 
   int volume;
   int pitchShift;
+  int pan;
   int cutoff;
-  int resonance;
+
+  //Helper function
+  void connectHpfNode();
 public:
 
   //Constructor
@@ -64,13 +71,16 @@ public:
   void beginAnimateKey();
   void endAnimatekey(wxTimerEvent& event);
 
+  void setupHighPassFilter();
+
   //Setters
+  void setNewFilterFreq();
   void setShortCut(char shortcut);
   void setSoundPath(std::string soundPath);
   void setVolume(int val) {volume = val;}
   void setPitchShift(int val) {pitchShift = val;}
+  void setPan(int val) {pan = val;}
   void setCutoff(int val) {cutoff = val;}
-  void setResonance(int val) {resonance = val;}
 
   //Getters
   ma_sound_group* getSoundGroupPtr();
@@ -78,7 +88,7 @@ public:
   std::string getSoundPath();
   int getVolume() const {return volume;}
   int getPitchShift() const {return pitchShift;}
+  int getPan() const {return pan;}
   int getCutoff() const {return cutoff;}
-  int getResonance() const {return resonance;}
 };
 #endif

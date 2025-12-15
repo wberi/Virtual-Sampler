@@ -45,15 +45,16 @@ KeyFieldHandler::KeyFieldHandler(wxFrame* parent, Messages* messages, SliderFiel
 
 //Uninitialize things
 KeyFieldHandler::~KeyFieldHandler()
-{   
-    ma_engine_uninit(&engine);
+{
+  ma_engine_uninit(&engine);
 }
 
 ma_result KeyFieldHandler::createEngine()
 {
   engineConfig = ma_engine_config_init();
   engineConfig.channels = 2;
-  engineConfig.sampleRate = 48000;
+  engineConfig.sampleRate = 0; //Original sample rate
+  engineConfig.listenerCount = 1;
 
   return ma_engine_init(&engineConfig, &engine);
 }

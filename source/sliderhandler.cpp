@@ -26,15 +26,16 @@ SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_AN
     volumeSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setVolume, this);
 
     //Pitch slider
-    addSliderRow("Pitch Shift (st)", "The pitch of the sound currently playing." ,pitchSlider, -1, -12, 12, 0); 
+    addSliderRow("Pitch Shift", "The pitch of the sound currently playing." ,pitchSlider, -1, -12, 12, 0); 
     pitchSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setPitch, this);
 
-    //Cutoff, Resonance sliders
-    addSliderRow("Filter Cutoff (Hz)","The frequency level, required for the sound to get cut off.", cutoffSlider, -1, 20, 20000, 5000); 
+    //Pan slider
+    addSliderRow("Panning", "The direction the sound is playing from." ,panSlider, -1, -1, 1, 0); 
+    panSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setPan, this);
+
+    //Cutoff slider
+    addSliderRow("Filter Cutoff (Hz)","The frequency level, required for the sound to get cut off.", cutoffSlider, -1, 0, 5000, 0); 
     cutoffSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setCutoff, this);
-    
-    addSliderRow("Filter Resonance", "The amount frequencies are boosted with, that are around the cutoff frequency.",resonanceSlider, -1, 0, 10, 1); 
-    resonanceSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setResonance, this);
 
     //Make second column flexible
     fieldGridSizer->AddGrowableCol(1); 
@@ -73,24 +74,10 @@ void SliderFieldHandler::UpdateControlsFromKey()
     //Load values
     volumeSlider->SetValue(current_key_ptr->getVolume());
     pitchSlider->SetValue(current_key_ptr->getPitchShift());
+    panSlider->SetValue(current_key_ptr->getPan());
     cutoffSlider->SetValue(current_key_ptr->getCutoff());
-    resonanceSlider->SetValue(current_key_ptr->getResonance());
 
     selectedName->SetLabel("Selected " + current_key_ptr->GetLabelText());
-}
-
-void SliderFieldHandler::SaveControlsToKey()
-{
-    if(!current_key_ptr) 
-    {
-        return;
-    }
-
-    //Save values
-    current_key_ptr->setVolume(volumeSlider->GetValue());
-    current_key_ptr->setPitchShift(pitchSlider->GetValue());
-    current_key_ptr->setCutoff(cutoffSlider->GetValue());
-    current_key_ptr->setResonance(resonanceSlider->GetValue());
 }
 
 //Events implementation: Now saves to Key and updates group pointer
@@ -101,7 +88,7 @@ void SliderFieldHandler::setVolume(wxCommandEvent& event)
         return;
     }
     
-    SaveControlsToKey();
+    current_key_ptr->setVolume(volumeSlider->GetValue());
     ma_sound_group_set_volume(current_group_ptr, current_key_ptr->getVolume() / 100.0);
 }
 
@@ -112,19 +99,32 @@ void SliderFieldHandler::setPitch(wxCommandEvent& event)
     {
         return;
     }
-    
-    SaveControlsToKey();
 
+    current_key_ptr->setPitchShift(pitchSlider->GetValue());
     float pitch_factor = pow(2.0, current_key_ptr->getPitchShift() / 12.0);
     ma_sound_group_set_pitch(current_group_ptr, pitch_factor);
 }
 
-void SliderFieldHandler::setCutoff(wxCommandEvent& event)
+void SliderFieldHandler::setPan(wxCommandEvent& event)
 {
+    if(!current_group_ptr || !current_key_ptr) 
+    {
+        return;
+    }
+    
+    current_key_ptr->setPan(panSlider->GetValue());
+    ma_sound_group_set_pan(current_group_ptr, current_key_ptr->getPan());
 }
 
-void SliderFieldHandler::setResonance(wxCommandEvent& event)
+void SliderFieldHandler::setCutoff(wxCommandEvent& event)
 {
+    if(!current_group_ptr || !current_key_ptr) 
+    {
+        return;
+    }
+    
+    current_key_ptr->setCutoff(cutoffSlider->GetValue());
+    current_key_ptr->setNewFilterFreq();
 }
 
 //Add new slider to the panel

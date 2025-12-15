@@ -11,7 +11,7 @@
 void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
 {
     //Create and show file browser
-    wxFileDialog saveFileDialog(parent, _("Save JSON Profile"), "", "",
+    wxFileDialog saveFileDialog(parent, _("Save JSON Profile"), "", "save.json",
                                 "JSON files (*.json)|*.json", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
 
     if(saveFileDialog.ShowModal() == wxID_CANCEL)
@@ -35,8 +35,8 @@ void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
 
         keyData["volume"] = key->getVolume();
         keyData["pitch"] = key->getPitchShift();
+        keyData["panning"] = key->getPan();
         keyData["cutoff"] = key->getCutoff();
-        keyData["resonance"] = key->getResonance();
 
         //add to JSON object
         profileJson.push_back(keyData);
@@ -96,7 +96,7 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
             return;
         }
 
-        //Clear out any bindsto avoid errors
+        //Clear out any binds to avoid errors
         keyMap.clear();
 
         //Start reading
@@ -140,7 +140,7 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
                 }
             }
 
-            //Set the label
+            //Set the labelkey->setPitchShift(data.value("pitch", 0));
             std::string label = data.value("label", "");
             if(!label.empty()) 
             {
@@ -150,15 +150,17 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
             //Set the rest of the values
             key->setVolume(data.value("volume", 80));
             key->setPitchShift(data.value("pitch", 0));
+            key->setPan(data.value("panning", 0));
             key->setCutoff(data.value("cutoff", 5000));
-            key->setResonance(data.value("resonance", 1));
 
             if(!path.empty())
             {
-                 ma_sound_group_set_volume(key->getSoundGroupPtr(), key->getVolume() / 100.0);
+                ma_sound_group_set_volume(key->getSoundGroupPtr(), key->getVolume() / 100.0);
                  
-                 float pitch_factor = pow(2.0f, key->getPitchShift() / 12.0f);
-                 ma_sound_group_set_pitch(key->getSoundGroupPtr(), pitch_factor);
+                float pitch_factor = pow(2.0f, key->getPitchShift() / 12.0f);
+                ma_sound_group_set_pitch(key->getSoundGroupPtr(), pitch_factor);
+
+                ma_sound_group_set_pan(key->getSoundGroupPtr(), key->getPan());
             }
         }
     }
