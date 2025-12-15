@@ -9,11 +9,14 @@
 class Messages
 {
 private:
+  //Base message dialog
   wxMessageDialog* dial;
 
 public:
+  //Constructor
   Messages();
 
+  //Messages
   int ShowEngineFailureMessage();
   int ShowInvalidPathMessage();
   int ShowSaveErrorMessage();

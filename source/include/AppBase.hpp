@@ -11,9 +11,6 @@
 #include "KeyFieldHandler.hpp"
 #include "SliderFieldHandler.hpp"
 
-///This class is responsible for showing and handling the GUI.
-///
-///This class is derived from the wxFrame class.
 class MainFrame: public wxFrame
 {
     //Messages

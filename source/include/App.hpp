@@ -6,9 +6,6 @@
   #include<wx/wx.h>
 #endif
 
-///This class is responsible for handling events inside the app.
-///
-///It class is derived from the wxApp class.
 class MainApp: public wxApp
 {
   public:

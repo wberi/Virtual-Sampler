@@ -25,7 +25,7 @@ class MenuBarHandler: public wxMenuBar
     KeyFieldHandler* kField;
 
 public:
-    //ctor
+    //Constructor
     MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHandler* kField);
 
     //Event handling

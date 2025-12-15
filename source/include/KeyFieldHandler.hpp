@@ -38,6 +38,7 @@ public:
     //Destructor
     ~KeyFieldHandler();
 
+    //Create engine
     ma_result createEngine();
 
     //Create keyfield

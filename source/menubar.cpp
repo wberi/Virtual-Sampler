@@ -2,7 +2,7 @@
 #include "MenuBarHandler.hpp"
 #include "FileManager.hpp"
 
-//ctor
+//Constructor
 MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHandler* kField): wxMenuBar()
 {
     //Set parent frame
@@ -14,20 +14,20 @@ MenuBarHandler::MenuBarHandler(wxFrame* parent, Messages* messages, KeyFieldHand
     //Set keyfield instance
     this->kField = kField;
 
-    //init submenus
+    //Init submenus
     profileMenu = new wxMenu(); 
     recordMenu = new wxMenu();
     aboutMenu = new wxMenu();
 
-    //add menu options to the "Profile" menu
+    //Add menu options to the "Profile" menu
     profileMenu->Append(MENU_SAVE, wxT("Save profile\tCtrl-S"));
     profileMenu->Append(MENU_LOAD, wxT("Load profile\tCtrl-O"));
     profileMenu->Append(MENU_QUIT, wxT("Quit\tCtrl-Q"));
 
-    //add menu options to "About" menu
+    //Add menu options to "About" menu
     aboutMenu->Append(MENU_ABOUT, wxT("Information"));
 
-    //add options to the bar and activate the bar
+    //Add options to the bar and activate the bar
     this->Append(profileMenu, wxT("Profile"));
     this->Append(aboutMenu, wxT("About"));
 }

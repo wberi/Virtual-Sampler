@@ -26,23 +26,27 @@ Key::Key(wxWindow* parent)
     setCutoff(DEFAULT_CUTOFF);
     sound.sound_path = "";
 
+    //Set default ani,ation values
     this->SetForegroundColour(DEFAULT_COLOR); //set default color
     animationTimer = new wxTimer(); //create timer
     animationTimer->Bind(wxEVT_TIMER, &Key::endAnimatekey, this);
 }
 
+//Destructor
 Key::~Key()
 {
   uninitSound();
   ma_sound_group_uninit(sound.soundGroupPtr);
 }
 
+//Separate function for sound init (because of reset)
 void Key::uninitSound()
 {
   ma_sound_uninit(sound.sound);
   ma_hpf_node_uninit(sound.hpfNode, NULL);
 }
 
+//Sound init
 ma_result Key::setupSound(ma_engine* engine, std::string filePath)
 {
     this->sound.sound_path = filePath;
@@ -57,12 +61,14 @@ ma_result Key::setupSound(ma_engine* engine, std::string filePath)
       return result; 
     }
 
+    //Filter setup
     setupHighPassFilter();
     connectHpfNode();
 
     return MA_SUCCESS;
 }
 
+//Sound group init
 ma_result Key::setupGroup(ma_engine* engine)
 { 
   this->engine=engine;
@@ -71,14 +77,21 @@ ma_result Key::setupGroup(ma_engine* engine)
   return ma_sound_group_init(engine, MA_SOUND_FLAG_NO_SPATIALIZATION, NULL, sound.soundGroupPtr);
 }
 
+//Function to connect the filter node to the right nodes in the graph
 void Key::connectHpfNode()
 {
+  //Connect filter to the sound group node
   ma_node_attach_output_bus(sound.hpfNode, 0, sound.soundGroupPtr, 0);
+
+  //Connect sound to the filter node
   ma_node_attach_output_bus(sound.sound, 0, sound.hpfNode, 0);
+
+  //Connect group to the output node
   ma_node_attach_output_bus(sound.soundGroupPtr, 0, 
         ma_node_graph_get_endpoint(ma_engine_get_node_graph(engine)), 0);
 }
 
+//Filter init
 void Key::setupHighPassFilter()
 {
   //Node configuration
@@ -111,6 +124,7 @@ void Key::setupHighPassFilter()
     }
 }
 
+//Refresh filter with new cutoff freq
 void Key::setNewFilterFreq()
 {
   hpfConfig.cutoffFrequency = cutoff;
@@ -123,6 +137,7 @@ void Key::setNewFilterFreq()
 
 }
 
+//Plays the sound on button press
 void Key::playSound()
 {
   if(ma_sound_is_playing(sound.sound))
@@ -137,12 +152,14 @@ void Key::playSound()
   }
 }
 
+//Start the animation
 void Key::beginAnimateKey()
 {
   this->SetForegroundColour(ACTIVE_COLOR);
   animationTimer->Start(100, wxTIMER_ONE_SHOT);
 }
 
+//Finish the animation
 void Key::endAnimatekey(wxTimerEvent& event)
 {
   this->SetForegroundColour(DEFAULT_COLOR);

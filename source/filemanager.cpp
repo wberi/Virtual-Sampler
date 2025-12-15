@@ -43,7 +43,7 @@ void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
         profileJson.push_back(keyData);
     }
 
-    //Write to file
+    //Try to write to file
     std::ofstream file(saveFileDialog.GetPath().ToStdString());
     if(file.is_open())
     {
@@ -75,11 +75,10 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
         return;
     }
 
-    //Open file
+    //Try to open file
     std::ifstream file(openFileDialog.GetPath().ToStdString());
     if(!file.is_open())
     {
-        //Show error
         wxMessageBox("Could not open file for reading.", "Error", wxICON_ERROR);
         return;
     }
@@ -141,7 +140,7 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
                 }
             }
 
-            //Set the labelkey->setPitchShift(data.value("pitch", 0));
+            //Set Key label
             std::string label = data.value("label", "");
             if(!label.empty()) 
             {
@@ -154,6 +153,7 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
             key->setPan(data.value("panning", 0));
             key->setCutoff(data.value("cutoff", 5000));
 
+            //Set values
             if(!path.empty())
             {
                 ma_sound_group_set_volume(key->getSoundGroupPtr(), key->getVolume() / 100.0);

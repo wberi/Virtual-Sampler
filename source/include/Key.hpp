@@ -10,6 +10,7 @@
 #include <miniaudio.h>
 #include <string>
 
+//Structure to store all sound related data
 typedef struct Sound 
 {
   ma_sound* sound = nullptr;
@@ -18,8 +19,7 @@ typedef struct Sound
   ma_sound_group* soundGroupPtr = nullptr;
 } Sound;
 
-///A class that provides the logic behind the key buttons.
-///This class is derived from the wxButton class.
+
 class Key: public wxButton
 {
   //engine
@@ -47,7 +47,8 @@ class Key: public wxButton
   int cutoff;
 
   //Helper function
-  void connectHpfNode();
+  void connectHpfNode(); //Connects filter node to the output
+
 public:
 
   //Constructor
@@ -75,21 +76,22 @@ public:
   void beginAnimateKey();
   void endAnimatekey(wxTimerEvent& event);
 
+  //Sets the base values of the filter
   void setupHighPassFilter();
 
   //Setters
-  void setNewFilterFreq();
-  void setShortCut(char shortcut);
-  void setSoundPath(std::string soundPath);
+  void setNewFilterFreq(); //Refreshes the filter to work with new cutoff freq
+  void setShortCut(char shortcut); //sets shortcut character
+  void setSoundPath(std::string soundPath); //sets sound file path
   void setVolume(int val) {volume = val;}
   void setPitchShift(int val) {pitchShift = val;}
   void setPan(int val) {pan = val;}
   void setCutoff(int val) {cutoff = val;}
 
   //Getters
-  ma_sound_group* getSoundGroupPtr();
-  char getShortCut();
-  std::string getSoundPath();
+  ma_sound_group* getSoundGroupPtr(); //returns the pointer to the Key soundgroup 
+  char getShortCut(); //returns shortcut character
+  std::string getSoundPath(); //returns sound file path
   int getVolume() const {return volume;}
   int getPitchShift() const {return pitchShift;}
   int getPan() const {return pan;}

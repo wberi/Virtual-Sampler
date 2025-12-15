@@ -10,6 +10,7 @@
 #include <wx/utils.h>
 
 //Refactoring of this file from base.cpp was done with AI assistance!
+
 //Constructor for basic GUI setup
 KeyFieldHandler::KeyFieldHandler(wxFrame* parent, Messages* messages, SliderFieldHandler* sliderPanel)
 {
@@ -69,6 +70,7 @@ void KeyFieldHandler::createKeyField()
 
     for(int j = 0; j < 4; ++j)
     {
+      //New key
       auto key = new Key(keyPanel);
       keyList.push_back(key);
       
@@ -85,6 +87,7 @@ void KeyFieldHandler::createKeyField()
       //Set scaling of volume 
       ma_sound_group_set_volume(key->getSoundGroupPtr(), key->getVolume() / 100.0);
       
+      //Add key
       keyGridSizer->Add(key);
     }
   }
@@ -106,6 +109,7 @@ void KeyFieldHandler::setupKeyEvent(wxCommandEvent& event)
   }
 }
 
+//Set up a new key
 void KeyFieldHandler::setupKey(Key* button)
 {      
   //Create and show file browser window
@@ -184,10 +188,12 @@ void KeyFieldHandler::setupKey(Key* button)
 
 void KeyFieldHandler::setKeyBind(Key* button)
 {
+  //Change bindings if the Key is valid
   button->Unbind(wxEVT_BUTTON, &KeyFieldHandler::setupKeyEvent, this);
   button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
 }
 
+//For rebinding Keys
 void KeyFieldHandler::resetKey(wxCommandEvent& event)
 {
   setupKey(sliderPanel->getCurrentKeyPtr());

@@ -2,16 +2,15 @@
 #define SLIDERFIELDHANDLER_HPP
 
 #include <miniaudio.h>
+#include "Key.hpp"
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
 
-// Forward declaration of Key class
-class Key;
+//Refactoring of this file from AppBase.hpp was done with AI assistance!
 
-// Refactoring of this file from AppBase.hpp was done with AI assistance!
 class SliderFieldHandler: public wxPanel
 {
     //Parent object

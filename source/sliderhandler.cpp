@@ -1,12 +1,12 @@
 #include "AppBase.hpp"
 #include "KeyFieldHandler.hpp"
 #include "SliderFieldHandler.hpp"
-#include "Key.hpp"
 #include <wx/event.h>
 #include <wx/sizer.h>
 #include <wx/string.h>
 
 //Constructor implementation was written with AI assistance!
+
 SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_ANY)
 {
     this->parent = parent;
@@ -34,7 +34,7 @@ SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_AN
     panSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setPan, this);
 
     //Cutoff slider
-    addSliderRow("Filter Cutoff (Hz)","The frequency level, required for the sound to get cut off.", cutoffSlider, -1, 1, 500, 0); 
+    addSliderRow("Filter Cutoff (Hz)","The boundary at which the sound gets cut off, ", cutoffSlider, -1, 1, 500, 0); 
     cutoffSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setCutoff, this);
 
     //Make second column flexible
@@ -80,7 +80,7 @@ void SliderFieldHandler::UpdateControlsFromKey()
     selectedName->SetLabel("Selected " + current_key_ptr->GetLabelText());
 }
 
-//Events implementation: Now saves to Key and updates group pointer
+//Set Key volume and update group pointer
 void SliderFieldHandler::setVolume(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr)
@@ -92,7 +92,7 @@ void SliderFieldHandler::setVolume(wxCommandEvent& event)
     ma_sound_group_set_volume(current_group_ptr, current_key_ptr->getVolume() / 100.0);
 }
 
-
+//Set Key pitch and update group pointer
 void SliderFieldHandler::setPitch(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
@@ -105,6 +105,7 @@ void SliderFieldHandler::setPitch(wxCommandEvent& event)
     ma_sound_group_set_pitch(current_group_ptr, pitch_factor);
 }
 
+//Set Key panning and update group pointer
 void SliderFieldHandler::setPan(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
@@ -116,6 +117,7 @@ void SliderFieldHandler::setPan(wxCommandEvent& event)
     ma_sound_group_set_pan(current_group_ptr, current_key_ptr->getPan());
 }
 
+//Set Key cutoff and update group pointer
 void SliderFieldHandler::setCutoff(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
