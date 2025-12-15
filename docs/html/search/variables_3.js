@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height_0',['HEIGHT',['../app_8cpp.html#af728b7647e0b8c49832983a31f9a2e9b',1,'HEIGHT:&#160;app.cpp'],['../key_8cpp.html#af728b7647e0b8c49832983a31f9a2e9b',1,'HEIGHT:&#160;key.cpp']]]
+  ['decimal_5fpoint_0',['decimal_point',['../classdetail_1_1serializer.html#a5f01fcbf64cb1e5f36d8853ebcd96412',1,'detail::serializer']]]
 ];

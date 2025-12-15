@@ -1,8 +1,0 @@
-<map id="MainFrame::MainFrame" name="MainFrame::MainFrame">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,181,60"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="52,33,45,23,50,13,67,7,93,5,121,8,137,14,135,19,120,13,93,11,68,13,54,17,50,23,56,30"/>
-<area shape="rect" id="Node000002" href="$classMainFrame.html#a8be123bd266f4ba6dcf645add20bc978" title=" " alt="" coords="229,5,442,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,34,213,30,213,35,181,39"/>
-<area shape="rect" id="Node000003" href="$classMainFrame.html#ab3f75415dfd05f8913c150ec76e677a8" title=" " alt="" coords="245,57,426,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,52,229,57,229,63,181,58"/>
-</map>

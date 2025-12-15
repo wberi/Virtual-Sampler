@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Virtual Sampler<span id="projectnumber">&#160;0.0</span>
+   <div id="projectname">Virtual Sampler
    </div>
-   <div id="projectbrief">A simple virtual sampler program.</div>
   </td>
  </tr>
  </tbody>
@@ -95,9 +94,30 @@ $(function(){initNavTree('classKey.html','',''); });
 
 <p>This is the complete list of members for <a class="el" href="classKey.html">Key</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classKey.html#a10b93ca6114e38a3fbe37e45a8449336">getPathToSound</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classKey.html#adb0414884bc46cae76de0636ee0eded5">Key</a>(wxWindow *parent, wxWindowID event)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classKey.html#a031f67093df2e52f3fbd2e9636f2b7c5">setPathToSound</a>(std::string newPathToSound)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#a3247bc0d3d9fbb91c5a3a54b7a3ff18e">beginAnimateKey</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classKey.html#a0aad418e9b69b5bde7e04c1c5006ba07">endAnimatekey</a>(wxTimerEvent &amp;event)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getCutoff</b>() const (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>getPan</b>() const (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPitchShift</b>() const (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>getShortCut</b>() (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getSoundGroupPtr</b>() (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>getSoundPath</b>() (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getVolume</b>() const (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Key</b>(wxWindow *parent) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#abf3f7b38ceb1d47d476e412bc92ccebc">playSound</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setCutoff</b>(int val) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#ae2096b65b010b848886af61cc489c9b0">setNewFilterFreq</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setPan</b>(int val) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setPitchShift</b>(int val) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setShortCut</b>(char shortcut) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setSoundPath</b>(std::string soundPath) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setupEngine</b>() (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#a817a5ff74578a0f893af42994077d3f4">setupGroup</a>(ma_engine *engine)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classKey.html#a2f81ad7a3d21a783f24e901c751a693a">setupHighPassFilter</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#afa0bb67611714f097862f5ef77750eed">setupSound</a>(ma_engine *engine, std::string filePath)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>setVolume</b>(int val) (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classKey.html#a492ffdd6f3dc544ed01719a5eae073e6">uninitSound</a>()</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Key</b>() (defined in <a class="el" href="classKey.html">Key</a>)</td><td class="entry"><a class="el" href="classKey.html">Key</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

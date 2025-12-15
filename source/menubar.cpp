@@ -40,25 +40,37 @@ BEGIN_EVENT_TABLE(MenuBarHandler, wxMenuBar)
   EVT_MENU(MENU_QUIT, MenuBarHandler::onExit)
 END_EVENT_TABLE()
 
-//Save Profile to file
+/////////////////////////////////////////////////
+/// Starts the saving process.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void MenuBarHandler::saveProfile(wxCommandEvent& event)
 {
   FileManager::SaveProfile(parent, kField->getKeys());
 }
 
-//Load Profile from file
+/////////////////////////////////////////////////
+/// Starts the loading process.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void MenuBarHandler::loadProfile(wxCommandEvent& event)
 {
   FileManager::LoadProfile(parent, kField);
 }
 
-//Brings up a window with the about information
+/////////////////////////////////////////////////
+/// Shows the about section.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void MenuBarHandler::showAbout(wxCommandEvent& event)
 {
     messages->ShowAboutMessage();
 }
 
-//Shows exit message on exit
+/////////////////////////////////////////////////
+/// Shows exit confirmation message.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void MenuBarHandler::onExit(wxCommandEvent& event)
 {
   if(messages->ShowQuitMessage() == wxID_YES)

@@ -10,7 +10,9 @@
 #include <miniaudio.h>
 #include <string>
 
-//Structure to store all sound related data
+/////////////////////////////////////////////////
+/// Stores all sound related data.
+/////////////////////////////////////////////////
 typedef struct Sound 
 {
   ma_sound* sound = nullptr;
@@ -19,7 +21,9 @@ typedef struct Sound
   ma_sound_group* soundGroupPtr = nullptr;
 } Sound;
 
-
+/////////////////////////////////////////////////
+/// Handles sound operations and manages Key UI.
+/////////////////////////////////////////////////
 class Key: public wxButton
 {
   //engine

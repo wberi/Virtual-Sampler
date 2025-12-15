@@ -2,83 +2,124 @@
 \hypertarget{classKey}{}\label{classKey}\index{Key@{Key}}
 
 
-{\ttfamily \#include $<$key.\+hpp$>$}
+Handles sound operations and manages \doxylink{classKey}{Key} UI.  
 
 
 
-Inheritance diagram for Key\+:\nopagebreak
-\begin{figure}[H]
+
+{\ttfamily \#include $<$Key.\+hpp$>$}
+
+Inheritance diagram for Key\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=186pt]{classKey__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Key\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=186pt]{classKey__coll__graph}
+\includegraphics[height=2.000000cm]{classKey}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classKey_adb0414884bc46cae76de0636ee0eded5}{Key}} (wx\+Window \texorpdfstring{$\ast$}{*}parent, wx\+Window\+ID event)
+\Hypertarget{classKey_af70879e8860604756e1388faab57d74c}\label{classKey_af70879e8860604756e1388faab57d74c} 
+{\bfseries Key} (wx\+Window \texorpdfstring{$\ast$}{*}parent)
 \item 
-void \mbox{\hyperlink{classKey_a031f67093df2e52f3fbd2e9636f2b7c5}{set\+Path\+To\+Sound}} (std\+::string new\+Path\+To\+Sound)
+\Hypertarget{classKey_a492ffdd6f3dc544ed01719a5eae073e6}\label{classKey_a492ffdd6f3dc544ed01719a5eae073e6} 
+void {\bfseries uninit\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Frees the sound and filter node. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_a9011eaf04f36164006d5244c5a2d5014}\label{classKey_a9011eaf04f36164006d5244c5a2d5014} 
+void {\bfseries setup\+Engine} ()
 \item 
-std\+::string \mbox{\hyperlink{classKey_a10b93ca6114e38a3fbe37e45a8449336}{get\+Path\+To\+Sound}} ()
+ma\+\_\+result \mbox{\hyperlink{classKey_afa0bb67611714f097862f5ef77750eed}{setup\+Sound}} (ma\+\_\+engine \texorpdfstring{$\ast$}{*}engine, std\+::string file\+Path)
+\item 
+ma\+\_\+result \mbox{\hyperlink{classKey_a817a5ff74578a0f893af42994077d3f4}{setup\+Group}} (ma\+\_\+engine \texorpdfstring{$\ast$}{*}engine)
+\item 
+\Hypertarget{classKey_abf3f7b38ceb1d47d476e412bc92ccebc}\label{classKey_abf3f7b38ceb1d47d476e412bc92ccebc} 
+void {\bfseries play\+Sound} ()
+\begin{DoxyCompactList}\small\item\em Plays the sound. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_a3247bc0d3d9fbb91c5a3a54b7a3ff18e}\label{classKey_a3247bc0d3d9fbb91c5a3a54b7a3ff18e} 
+void {\bfseries begin\+Animate\+Key} ()
+\begin{DoxyCompactList}\small\item\em Starts the animation. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_a0aad418e9b69b5bde7e04c1c5006ba07}\label{classKey_a0aad418e9b69b5bde7e04c1c5006ba07} 
+void {\bfseries end\+Animatekey} (wx\+Timer\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Ends the animation. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_a2f81ad7a3d21a783f24e901c751a693a}\label{classKey_a2f81ad7a3d21a783f24e901c751a693a} 
+void {\bfseries setup\+High\+Pass\+Filter} ()
+\begin{DoxyCompactList}\small\item\em Creates the filter. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_ae2096b65b010b848886af61cc489c9b0}\label{classKey_ae2096b65b010b848886af61cc489c9b0} 
+void {\bfseries set\+New\+Filter\+Freq} ()
+\begin{DoxyCompactList}\small\item\em Sets new cutoff frequency. \end{DoxyCompactList}\item 
+\Hypertarget{classKey_ae5a0deca49d112b8ca322899c104af9e}\label{classKey_ae5a0deca49d112b8ca322899c104af9e} 
+void {\bfseries set\+Short\+Cut} (char shortcut)
+\item 
+\Hypertarget{classKey_ace3a776e5f4682bacabb5d1f2e00fd2e}\label{classKey_ace3a776e5f4682bacabb5d1f2e00fd2e} 
+void {\bfseries set\+Sound\+Path} (std\+::string sound\+Path)
+\item 
+\Hypertarget{classKey_a340e6fcfa6ac48f74a3d511d1b446b83}\label{classKey_a340e6fcfa6ac48f74a3d511d1b446b83} 
+void {\bfseries set\+Volume} (int val)
+\item 
+\Hypertarget{classKey_a80d86bb0dcf5980f20f58c4650e05cac}\label{classKey_a80d86bb0dcf5980f20f58c4650e05cac} 
+void {\bfseries set\+Pitch\+Shift} (int val)
+\item 
+\Hypertarget{classKey_a185ef1d577356242a885b43b37fa1b3d}\label{classKey_a185ef1d577356242a885b43b37fa1b3d} 
+void {\bfseries set\+Pan} (int val)
+\item 
+\Hypertarget{classKey_a9dfeb60149ecf29bae5b600409628934}\label{classKey_a9dfeb60149ecf29bae5b600409628934} 
+void {\bfseries set\+Cutoff} (int val)
+\item 
+\Hypertarget{classKey_a7f697853012f6821641c15b7435f021a}\label{classKey_a7f697853012f6821641c15b7435f021a} 
+ma\+\_\+sound\+\_\+group \texorpdfstring{$\ast$}{*} {\bfseries get\+Sound\+Group\+Ptr} ()
+\item 
+\Hypertarget{classKey_ae4734ab8f2baf51ebdd35fbac3b5ac58}\label{classKey_ae4734ab8f2baf51ebdd35fbac3b5ac58} 
+char {\bfseries get\+Short\+Cut} ()
+\item 
+\Hypertarget{classKey_a90d7cd0dad0b0533a870feedb03d7f77}\label{classKey_a90d7cd0dad0b0533a870feedb03d7f77} 
+std\+::string {\bfseries get\+Sound\+Path} ()
+\item 
+\Hypertarget{classKey_a242389b44cfbfcef5ce60c3327fc4d02}\label{classKey_a242389b44cfbfcef5ce60c3327fc4d02} 
+int {\bfseries get\+Volume} () const
+\item 
+\Hypertarget{classKey_a410b010ddf8e514f2050958a64f6d85e}\label{classKey_a410b010ddf8e514f2050958a64f6d85e} 
+int {\bfseries get\+Pitch\+Shift} () const
+\item 
+\Hypertarget{classKey_a716ea71188e458920847dede9ec038a5}\label{classKey_a716ea71188e458920847dede9ec038a5} 
+int {\bfseries get\+Pan} () const
+\item 
+\Hypertarget{classKey_a57d371306dd33d84bcada907b53543ec}\label{classKey_a57d371306dd33d84bcada907b53543ec} 
+int {\bfseries get\+Cutoff} () const
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class that provides the logic behind the key buttons. This class is derived from the \doxylink{classwxButton}{wx\+Button} class. 
-
-\label{doc-constructors}
-\Hypertarget{classKey_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classKey_adb0414884bc46cae76de0636ee0eded5}\index{Key@{Key}!Key@{Key}}
-\index{Key@{Key}!Key@{Key}}
-\doxysubsubsection{\texorpdfstring{Key()}{Key()}}
-{\footnotesize\ttfamily \label{classKey_adb0414884bc46cae76de0636ee0eded5} 
-Key\+::\+Key (\begin{DoxyParamCaption}\item[{wx\+Window \texorpdfstring{$\ast$}{*}}]{parent}{, }\item[{wx\+Window\+ID}]{event}{}\end{DoxyParamCaption})}
-
-
+Handles sound operations and manages \doxylink{classKey}{Key} UI. 
 
 \label{doc-func-members}
 \Hypertarget{classKey_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classKey_a10b93ca6114e38a3fbe37e45a8449336}\index{Key@{Key}!getPathToSound@{getPathToSound}}
-\index{getPathToSound@{getPathToSound}!Key@{Key}}
-\doxysubsubsection{\texorpdfstring{getPathToSound()}{getPathToSound()}}
-{\footnotesize\ttfamily \label{classKey_a10b93ca6114e38a3fbe37e45a8449336} 
-std\+::string Key\+::get\+Path\+To\+Sound (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+\Hypertarget{classKey_a817a5ff74578a0f893af42994077d3f4}\index{Key@{Key}!setupGroup@{setupGroup}}
+\index{setupGroup@{setupGroup}!Key@{Key}}
+\doxysubsubsection{\texorpdfstring{setupGroup()}{setupGroup()}}
+{\footnotesize\ttfamily \label{classKey_a817a5ff74578a0f893af42994077d3f4} 
+ma\+\_\+result Key\+::setup\+Group (\begin{DoxyParamCaption}\item[{ma\+\_\+engine \texorpdfstring{$\ast$}{*}}]{engine}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classKey_a10b93ca6114e38a3fbe37e45a8449336_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classKey_a031f67093df2e52f3fbd2e9636f2b7c5}\index{Key@{Key}!setPathToSound@{setPathToSound}}
-\index{setPathToSound@{setPathToSound}!Key@{Key}}
-\doxysubsubsection{\texorpdfstring{setPathToSound()}{setPathToSound()}}
-{\footnotesize\ttfamily \label{classKey_a031f67093df2e52f3fbd2e9636f2b7c5} 
-void Key\+::set\+Path\+To\+Sound (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Path\+To\+Sound}{}\end{DoxyParamCaption})}
+Creates the sound group object. 
+\begin{DoxyParams}{Parameters}
+{\em engine} & The global sound engine. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKey_afa0bb67611714f097862f5ef77750eed}\index{Key@{Key}!setupSound@{setupSound}}
+\index{setupSound@{setupSound}!Key@{Key}}
+\doxysubsubsection{\texorpdfstring{setupSound()}{setupSound()}}
+{\footnotesize\ttfamily \label{classKey_afa0bb67611714f097862f5ef77750eed} 
+ma\+\_\+result Key\+::setup\+Sound (\begin{DoxyParamCaption}\item[{ma\+\_\+engine \texorpdfstring{$\ast$}{*}}]{engine}{, }\item[{std\+::string}]{file\+Path}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classKey_a031f67093df2e52f3fbd2e9636f2b7c5_icgraph}
-\end{center}
-\end{figure}
+Loads the sound file and creates the sound object. 
+\begin{DoxyParams}{Parameters}
+{\em engine} & The global sound engine. \\
+\hline
+{\em file\+Path} & Path to the sound file. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/mark/\+Programming/\+LP\+\_\+hazi/\+Virtual-\/\+Sampler/source/include/\mbox{\hyperlink{key_8hpp}{key.\+hpp}}\item 
-/home/mark/\+Programming/\+LP\+\_\+hazi/\+Virtual-\/\+Sampler/source/\mbox{\hyperlink{key_8cpp}{key.\+cpp}}\end{DoxyCompactItemize}
+source/include/Key.\+hpp\item 
+source/key.\+cpp\end{DoxyCompactItemize}

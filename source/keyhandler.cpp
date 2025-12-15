@@ -50,6 +50,9 @@ KeyFieldHandler::~KeyFieldHandler()
   ma_engine_uninit(&engine);
 }
 
+/////////////////////////////////////////////////
+/// Creates sound engine.
+/////////////////////////////////////////////////
 ma_result KeyFieldHandler::createEngine()
 {
   engineConfig = ma_engine_config_init();
@@ -60,7 +63,9 @@ ma_result KeyFieldHandler::createEngine()
   return ma_engine_init(&engineConfig, &engine);
 }
 
-//Create a 4x4 panel of Keys
+/////////////////////////////////////////////////
+/// Creates the key panel.
+/////////////////////////////////////////////////
 void KeyFieldHandler::createKeyField()
 {
   for(int i = 0; i < 4; ++i)
@@ -99,7 +104,10 @@ wxPanel* KeyFieldHandler::getKeyPanel()
     return keyPanel;
 }
 
-//Method for setting up the button when it is pressed
+/////////////////////////////////////////////////
+/// Starts the setup process, when an uninitialized Key is pressed.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void KeyFieldHandler::setupKeyEvent(wxCommandEvent& event)
 {
   auto button = dynamic_cast<Key*>(event.GetEventObject());
@@ -109,7 +117,10 @@ void KeyFieldHandler::setupKeyEvent(wxCommandEvent& event)
   }
 }
 
-//Set up a new key
+/////////////////////////////////////////////////
+/// Initializes a new Key object.
+/// @param button The object to initialize.
+/////////////////////////////////////////////////
 void KeyFieldHandler::setupKey(Key* button)
 {      
   //Create and show file browser window
@@ -186,6 +197,10 @@ void KeyFieldHandler::setupKey(Key* button)
   refreshControls(button);
 }
 
+/////////////////////////////////////////////////
+/// Changes Key button event to a valid event.
+/// @param button The valid Key.
+/////////////////////////////////////////////////
 void KeyFieldHandler::setKeyBind(Key* button)
 {
   //Change bindings if the Key is valid
@@ -193,20 +208,29 @@ void KeyFieldHandler::setKeyBind(Key* button)
   button->Bind(wxEVT_BUTTON, &KeyFieldHandler::updateSliderPanel, this);
 }
 
-//For rebinding Keys
+/////////////////////////////////////////////////
+/// Restarts the setup process.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void KeyFieldHandler::resetKey(wxCommandEvent& event)
 {
   setupKey(sliderPanel->getCurrentKeyPtr());
 }
 
-//Helper function, so both events can refresh
+/////////////////////////////////////////////////
+/// Helper function for updateSliderPanel()
+/// @param button The selected Key.
+/////////////////////////////////////////////////
 void KeyFieldHandler::refreshControls(Key* button)
 {
   sliderPanel->SetCurrentKey(button);
   sliderPanel->UpdateControlsFromKey();
 }
 
-//Update the slider panel when a configured Key is clicked
+/////////////////////////////////////////////////
+/// Updates slider panel values with the selected Key values.
+/// @param button The selected Key.
+/////////////////////////////////////////////////
 void KeyFieldHandler::updateSliderPanel(wxCommandEvent& event)
 {
     auto button = dynamic_cast<Key*>(event.GetEventObject());
@@ -216,7 +240,10 @@ void KeyFieldHandler::updateSliderPanel(wxCommandEvent& event)
     }
 }
 
-//Play the corresponding sound after the Key is pressed
+/////////////////////////////////////////////////
+/// Plays the selected Key's sound.
+/// @param key The selected Key.
+/////////////////////////////////////////////////
 void KeyFieldHandler::playSound(Key* key)
 {
   //Start animation
@@ -226,6 +253,10 @@ void KeyFieldHandler::playSound(Key* key)
   key->playSound();
 }
 
+/////////////////////////////////////////////////
+/// Listens to keyboard events.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void KeyFieldHandler::listenToKbEvents(wxKeyEvent& event)
 {
   //Get the code of the pressed key

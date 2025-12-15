@@ -6,6 +6,7 @@ const int HEIGHT = 300;
 
 IMPLEMENT_APP(MainApp)
 
+
 bool MainApp::OnInit()
 {
   //Initialize the app

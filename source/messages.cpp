@@ -1,26 +1,35 @@
 #include <MessageHandler.hpp>
 #include <wx/gtk/msgdlg.h>
 
-//Default message
+/////////////////////////////////////////////////
+/// Shows deafult message.
+/////////////////////////////////////////////////
 Messages::Messages()
 {
   dial = new wxMessageDialog(NULL, wxT("This is a default message."), wxT("Message")); 
 }
 
-//Message for sound errors
+/////////////////////////////////////////////////
+/// Shows message for sound errors.
+/////////////////////////////////////////////////
 int Messages::ShowEngineFailureMessage()
 {
   dial = new wxMessageDialog(NULL, wxT("Sound engine failure!"), wxT("Error"), wxOK_DEFAULT);
   return dial->ShowModal();
 }
 
-//Messages for I/O errors
+/////////////////////////////////////////////////
+/// Shows invalid path message.
+/////////////////////////////////////////////////
 int Messages::ShowInvalidPathMessage()
 {
   dial = new wxMessageDialog(NULL, wxT("Invalid path"), wxT("Error")); //TODO: write normal error message
   return dial->ShowModal();
 }
 
+/////////////////////////////////////////////////
+/// Shows save error message.
+/////////////////////////////////////////////////
 int Messages::ShowSaveErrorMessage() 
 {
    dial = 
@@ -28,7 +37,9 @@ int Messages::ShowSaveErrorMessage()
    return dial->ShowModal();
 }
 
-//Message for blocked shortcut
+/////////////////////////////////////////////////
+/// Shows messages for blocked shortcut.
+/////////////////////////////////////////////////
 int Messages::ShowBlockedShortcutMessage()
 {
      dial = 
@@ -36,14 +47,18 @@ int Messages::ShowBlockedShortcutMessage()
    return dial->ShowModal();
 }
 
-//Quit confirm message
+/////////////////////////////////////////////////
+/// Shows quit confirm message.
+/////////////////////////////////////////////////
 int Messages::ShowQuitMessage() 
 {
   dial = new wxMessageDialog(NULL, wxT("Are you sure to quit?"), wxT("You are about to quit..."), wxYES_NO | wxNO_DEFAULT | wxICON_QUESTION);
   return dial->ShowModal();
 }
 
-//About message
+/////////////////////////////////////////////////
+/// Shows about message.
+/////////////////////////////////////////////////
 int Messages::ShowAboutMessage() 
 {
   dial = new wxMessageDialog(NULL, wxT("A simple sampler program written in C++"), wxT("About"), wxOK_DEFAULT | wxICON_INFORMATION);

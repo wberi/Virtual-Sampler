@@ -52,7 +52,10 @@ SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_AN
     this->Layout();
 }
 
-//Set the currently displayed Key
+/////////////////////////////////////////////////
+/// Sets the currently displayed key.
+/// @param key The key to be selected.
+/////////////////////////////////////////////////
 void SliderFieldHandler::SetCurrentKey(Key* key)
 {
     if(key)
@@ -62,7 +65,9 @@ void SliderFieldHandler::SetCurrentKey(Key* key)
     }
 }
 
-//Update the visuals from the current key pointer
+/////////////////////////////////////////////////
+/// Update the visuals from the current key pointer.
+/////////////////////////////////////////////////
 void SliderFieldHandler::UpdateControlsFromKey()
 {
     if(!current_key_ptr) 
@@ -80,7 +85,10 @@ void SliderFieldHandler::UpdateControlsFromKey()
     selectedName->SetLabel("Selected " + current_key_ptr->GetLabelText());
 }
 
-//Set Key volume and update group pointer
+/////////////////////////////////////////////////
+/// Sets Key volume and updates group pointer.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void SliderFieldHandler::setVolume(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr)
@@ -92,7 +100,10 @@ void SliderFieldHandler::setVolume(wxCommandEvent& event)
     ma_sound_group_set_volume(current_group_ptr, current_key_ptr->getVolume() / 100.0);
 }
 
-//Set Key pitch and update group pointer
+/////////////////////////////////////////////////
+/// Set Key pitch and update group pointer.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void SliderFieldHandler::setPitch(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
@@ -105,7 +116,10 @@ void SliderFieldHandler::setPitch(wxCommandEvent& event)
     ma_sound_group_set_pitch(current_group_ptr, pitch_factor);
 }
 
-//Set Key panning and update group pointer
+/////////////////////////////////////////////////
+/// Set Key panning and update group pointer.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
 void SliderFieldHandler::setPan(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
@@ -117,7 +131,11 @@ void SliderFieldHandler::setPan(wxCommandEvent& event)
     ma_sound_group_set_pan(current_group_ptr, current_key_ptr->getPan());
 }
 
-//Set Key cutoff and update group pointer
+/////////////////////////////////////////////////
+/// Sets Key cutoff and updates group pointer.
+/// @param event The event that activated the function.
+/////////////////////////////////////////////////
+
 void SliderFieldHandler::setCutoff(wxCommandEvent& event)
 {
     if(!current_group_ptr || !current_key_ptr) 
@@ -129,7 +147,16 @@ void SliderFieldHandler::setCutoff(wxCommandEvent& event)
     current_key_ptr->setNewFilterFreq();
 }
 
-//Add new slider to the panel
+/////////////////////////////////////////////////
+/// Adds new slider to the panel.
+/// @param label_text The name of the slider.
+/// @param tooltip_text The tooltip of the slider.
+/// @param slider_ptr Reference to the slider.
+/// @param id The ID of the slider.
+/// @param min_val The minimal value of the slider.
+/// @param max_val The maximal value of the slider.
+/// @param initial_val The starting value of the slider.
+/////////////////////////////////////////////////
 void SliderFieldHandler::addSliderRow(wxString label_text, wxString tooltip_text,
     wxSlider*& slider_ptr, int id, int min_val, int max_val, int initial_val)
 {

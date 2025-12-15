@@ -11,6 +11,9 @@
 
 //Refactoring of this file from AppBase.hpp was done with AI assistance!
 
+/////////////////////////////////////////////////
+/// Stores and handles all operation related to sliders.
+/////////////////////////////////////////////////
 class SliderFieldHandler: public wxPanel
 {
     //Parent object

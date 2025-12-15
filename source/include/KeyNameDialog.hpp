@@ -6,6 +6,9 @@
  #include <wx/wx.h>
 #endif 
 
+/////////////////////////////////////////////////
+/// A custom window for selecting a Key's name and shortcut.
+/////////////////////////////////////////////////
 class KeyNameDialog: public wxDialog
 {
 	public:

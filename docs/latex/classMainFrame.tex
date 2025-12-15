@@ -1,249 +1,26 @@
 \doxysection{Main\+Frame Class Reference}
 \hypertarget{classMainFrame}{}\label{classMainFrame}\index{MainFrame@{MainFrame}}
-
-
-{\ttfamily \#include $<$base.\+hpp$>$}
-
-
-
-Inheritance diagram for Main\+Frame\+:\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Main\+Frame\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=191pt]{classMainFrame__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Main\+Frame\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame__coll__graph}
+\includegraphics[height=2.000000cm]{classMainFrame}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6}{Main\+Frame}} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size)
-\item 
-\mbox{\hyperlink{classMainFrame_a0cfd88ece4836e0ea5430bd55370bf11}{\texorpdfstring{$\sim$}{\string~}\+Main\+Frame}} ()
-\item 
-void \mbox{\hyperlink{classMainFrame_ab3f75415dfd05f8913c150ec76e677a8}{init\+Menu\+Bar}} ()
-\item 
-void \mbox{\hyperlink{classMainFrame_a8be123bd266f4ba6dcf645add20bc978}{create\+Button\+Grid}} ()
-\item 
-void \mbox{\hyperlink{classMainFrame_a5c89a65be5af96dc28f5c2bb0335103a}{press\+Play\+Button}} (wx\+Command\+Event \&event)
-\item 
-void \mbox{\hyperlink{classMainFrame_a59bb4b1392bb6a41d28b3f5915f20348}{save\+Profile}} (wx\+Command\+Event \&event)
-\item 
-void \mbox{\hyperlink{classMainFrame_a3cf5c015031c8088255ea20c926ce380}{load\+Profile}} (wx\+Command\+Event \&event)
-\item 
-void \mbox{\hyperlink{classMainFrame_a547eea4cf3da431012cfb37a530ac9d8}{show\+About}} (wx\+Command\+Event \&event)
-\item 
-void \mbox{\hyperlink{classMainFrame_af6bd2483890cb927870e753b328dcbc1}{on\+Exit}} (wx\+Command\+Event \&event)
+\Hypertarget{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6}\label{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6} 
+{\bfseries Main\+Frame} (const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-ma\+\_\+engine \mbox{\hyperlink{classMainFrame_ac32857f9ef854fdbae4bb14161f9920d}{engine}}
-\item 
-wx\+Panel \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a6afbdc196dfcf8537a53b2229ccfaa42}{button\+Panel}}
-\item 
-wx\+Panel \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a0015a4384d42010f657b3aef55ba8a8b}{slider\+Panel}}
-\item 
-wx\+Box\+Sizer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a6517c364472c240ad4a90e2939785a7a}{window\+Sizer}}
-\item 
-wx\+Flex\+Grid\+Sizer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a55e29474cb2b3d5ce424c42cae74362d}{button\+Grid\+Sizer}}
-\item 
-wx\+Menu\+Bar \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a327810c88f84a459a5a9f65ee9769b3a}{main\+Menu}}
-\item 
-wx\+Menu \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_aca4639130e49935410b0357d4a6d19fe}{profile\+Menu}}
-\item 
-wx\+Menu \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_a04ccf854a3c2538dd6d26be415f40879}{record\+Menu}}
-\item 
-wx\+Menu \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMainFrame_ad7ad20ee72f4637824eff73f8d783683}{about\+Menu}}
+\Hypertarget{classMainFrame_a51da26625eaa44e7b6f2dfa9457406f7}\label{classMainFrame_a51da26625eaa44e7b6f2dfa9457406f7} 
+const double {\bfseries margin} = 10
 \end{DoxyCompactItemize}
-
-
-\doxysubsection{Detailed Description}
-This class is responsible for showing and handling the GUI.
-
-This class is derived from the \doxylink{classwxFrame}{wx\+Frame} class. 
-
-\label{doc-constructors}
-\Hypertarget{classMainFrame_doc-constructors}
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6}\index{MainFrame@{MainFrame}!MainFrame@{MainFrame}}
-\index{MainFrame@{MainFrame}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{MainFrame()}{MainFrame()}}
-{\footnotesize\ttfamily \label{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6} 
-Main\+Frame\+::\+Main\+Frame (\begin{DoxyParamCaption}\item[{const wx\+String \&}]{title}{, }\item[{const wx\+Point \&}]{pos}{, }\item[{const wx\+Size \&}]{size}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=212pt]{classMainFrame_ac3cd882c222585f82e42f1b305c6ffb6_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classMainFrame_a0cfd88ece4836e0ea5430bd55370bf11}\index{MainFrame@{MainFrame}!````~MainFrame@{\texorpdfstring{$\sim$}{\string~}MainFrame}}
-\index{````~MainFrame@{\texorpdfstring{$\sim$}{\string~}MainFrame}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainFrame()}{\string~MainFrame()}}
-{\footnotesize\ttfamily \label{classMainFrame_a0cfd88ece4836e0ea5430bd55370bf11} 
-Main\+Frame\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-\label{doc-func-members}
-\Hypertarget{classMainFrame_doc-func-members}
-\doxysubsection{Member Function Documentation}
-\Hypertarget{classMainFrame_a8be123bd266f4ba6dcf645add20bc978}\index{MainFrame@{MainFrame}!createButtonGrid@{createButtonGrid}}
-\index{createButtonGrid@{createButtonGrid}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{createButtonGrid()}{createButtonGrid()}}
-{\footnotesize\ttfamily \label{classMainFrame_a8be123bd266f4ba6dcf645add20bc978} 
-void Main\+Frame\+::create\+Button\+Grid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame_a8be123bd266f4ba6dcf645add20bc978_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classMainFrame_ab3f75415dfd05f8913c150ec76e677a8}\index{MainFrame@{MainFrame}!initMenuBar@{initMenuBar}}
-\index{initMenuBar@{initMenuBar}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{initMenuBar()}{initMenuBar()}}
-{\footnotesize\ttfamily \label{classMainFrame_ab3f75415dfd05f8913c150ec76e677a8} 
-void Main\+Frame\+::init\+Menu\+Bar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame_ab3f75415dfd05f8913c150ec76e677a8_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classMainFrame_a3cf5c015031c8088255ea20c926ce380}\index{MainFrame@{MainFrame}!loadProfile@{loadProfile}}
-\index{loadProfile@{loadProfile}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{loadProfile()}{loadProfile()}}
-{\footnotesize\ttfamily \label{classMainFrame_a3cf5c015031c8088255ea20c926ce380} 
-void Main\+Frame\+::load\+Profile (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
-
-\Hypertarget{classMainFrame_af6bd2483890cb927870e753b328dcbc1}\index{MainFrame@{MainFrame}!onExit@{onExit}}
-\index{onExit@{onExit}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
-{\footnotesize\ttfamily \label{classMainFrame_af6bd2483890cb927870e753b328dcbc1} 
-void Main\+Frame\+::on\+Exit (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{classMainFrame_af6bd2483890cb927870e753b328dcbc1_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classMainFrame_a5c89a65be5af96dc28f5c2bb0335103a}\index{MainFrame@{MainFrame}!pressPlayButton@{pressPlayButton}}
-\index{pressPlayButton@{pressPlayButton}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{pressPlayButton()}{pressPlayButton()}}
-{\footnotesize\ttfamily \label{classMainFrame_a5c89a65be5af96dc28f5c2bb0335103a} 
-void Main\+Frame\+::press\+Play\+Button (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame_a5c89a65be5af96dc28f5c2bb0335103a_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classMainFrame_a59bb4b1392bb6a41d28b3f5915f20348}\index{MainFrame@{MainFrame}!saveProfile@{saveProfile}}
-\index{saveProfile@{saveProfile}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{saveProfile()}{saveProfile()}}
-{\footnotesize\ttfamily \label{classMainFrame_a59bb4b1392bb6a41d28b3f5915f20348} 
-void Main\+Frame\+::save\+Profile (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
-
-\Hypertarget{classMainFrame_a547eea4cf3da431012cfb37a530ac9d8}\index{MainFrame@{MainFrame}!showAbout@{showAbout}}
-\index{showAbout@{showAbout}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{showAbout()}{showAbout()}}
-{\footnotesize\ttfamily \label{classMainFrame_a547eea4cf3da431012cfb37a530ac9d8} 
-void Main\+Frame\+::show\+About (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMainFrame_a547eea4cf3da431012cfb37a530ac9d8_cgraph}
-\end{center}
-\end{figure}
-
-
-\label{doc-variable-members}
-\Hypertarget{classMainFrame_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classMainFrame_ad7ad20ee72f4637824eff73f8d783683}\index{MainFrame@{MainFrame}!aboutMenu@{aboutMenu}}
-\index{aboutMenu@{aboutMenu}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{aboutMenu}{aboutMenu}}
-{\footnotesize\ttfamily \label{classMainFrame_ad7ad20ee72f4637824eff73f8d783683} 
-wx\+Menu\texorpdfstring{$\ast$}{*} Main\+Frame\+::about\+Menu}
-
-\Hypertarget{classMainFrame_a55e29474cb2b3d5ce424c42cae74362d}\index{MainFrame@{MainFrame}!buttonGridSizer@{buttonGridSizer}}
-\index{buttonGridSizer@{buttonGridSizer}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{buttonGridSizer}{buttonGridSizer}}
-{\footnotesize\ttfamily \label{classMainFrame_a55e29474cb2b3d5ce424c42cae74362d} 
-wx\+Flex\+Grid\+Sizer\texorpdfstring{$\ast$}{*} Main\+Frame\+::button\+Grid\+Sizer}
-
-\Hypertarget{classMainFrame_a6afbdc196dfcf8537a53b2229ccfaa42}\index{MainFrame@{MainFrame}!buttonPanel@{buttonPanel}}
-\index{buttonPanel@{buttonPanel}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{buttonPanel}{buttonPanel}}
-{\footnotesize\ttfamily \label{classMainFrame_a6afbdc196dfcf8537a53b2229ccfaa42} 
-wx\+Panel\texorpdfstring{$\ast$}{*} Main\+Frame\+::button\+Panel}
-
-\Hypertarget{classMainFrame_ac32857f9ef854fdbae4bb14161f9920d}\index{MainFrame@{MainFrame}!engine@{engine}}
-\index{engine@{engine}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{engine}{engine}}
-{\footnotesize\ttfamily \label{classMainFrame_ac32857f9ef854fdbae4bb14161f9920d} 
-ma\+\_\+engine Main\+Frame\+::engine}
-
-\Hypertarget{classMainFrame_a327810c88f84a459a5a9f65ee9769b3a}\index{MainFrame@{MainFrame}!mainMenu@{mainMenu}}
-\index{mainMenu@{mainMenu}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{mainMenu}{mainMenu}}
-{\footnotesize\ttfamily \label{classMainFrame_a327810c88f84a459a5a9f65ee9769b3a} 
-wx\+Menu\+Bar\texorpdfstring{$\ast$}{*} Main\+Frame\+::main\+Menu}
-
-\Hypertarget{classMainFrame_aca4639130e49935410b0357d4a6d19fe}\index{MainFrame@{MainFrame}!profileMenu@{profileMenu}}
-\index{profileMenu@{profileMenu}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{profileMenu}{profileMenu}}
-{\footnotesize\ttfamily \label{classMainFrame_aca4639130e49935410b0357d4a6d19fe} 
-wx\+Menu\texorpdfstring{$\ast$}{*} Main\+Frame\+::profile\+Menu}
-
-\Hypertarget{classMainFrame_a04ccf854a3c2538dd6d26be415f40879}\index{MainFrame@{MainFrame}!recordMenu@{recordMenu}}
-\index{recordMenu@{recordMenu}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{recordMenu}{recordMenu}}
-{\footnotesize\ttfamily \label{classMainFrame_a04ccf854a3c2538dd6d26be415f40879} 
-wx\+Menu\texorpdfstring{$\ast$}{*} Main\+Frame\+::record\+Menu}
-
-\Hypertarget{classMainFrame_a0015a4384d42010f657b3aef55ba8a8b}\index{MainFrame@{MainFrame}!sliderPanel@{sliderPanel}}
-\index{sliderPanel@{sliderPanel}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{sliderPanel}{sliderPanel}}
-{\footnotesize\ttfamily \label{classMainFrame_a0015a4384d42010f657b3aef55ba8a8b} 
-wx\+Panel\texorpdfstring{$\ast$}{*} Main\+Frame\+::slider\+Panel}
-
-\Hypertarget{classMainFrame_a6517c364472c240ad4a90e2939785a7a}\index{MainFrame@{MainFrame}!windowSizer@{windowSizer}}
-\index{windowSizer@{windowSizer}!MainFrame@{MainFrame}}
-\doxysubsubsection{\texorpdfstring{windowSizer}{windowSizer}}
-{\footnotesize\ttfamily \label{classMainFrame_a6517c364472c240ad4a90e2939785a7a} 
-wx\+Box\+Sizer\texorpdfstring{$\ast$}{*} Main\+Frame\+::window\+Sizer}
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/mark/\+Programming/\+LP\+\_\+hazi/\+Virtual-\/\+Sampler/source/include/\mbox{\hyperlink{base_8hpp}{base.\+hpp}}\item 
-/home/mark/\+Programming/\+LP\+\_\+hazi/\+Virtual-\/\+Sampler/source/\mbox{\hyperlink{base_8cpp}{base.\+cpp}}\end{DoxyCompactItemize}
+source/include/App\+Base.\+hpp\item 
+source/base.\+cpp\end{DoxyCompactItemize}

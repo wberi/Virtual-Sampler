@@ -8,7 +8,11 @@
 
 //This file was written using AI assistance!
 
-//Save key field to JSON file
+/////////////////////////////////////////////////
+/// Save the profile into a JSON file.
+/// @param parent The parent object for the file dialog.
+/// @param keys The list of all the keys.
+/////////////////////////////////////////////////
 void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
 {
     //Create and show file browser
@@ -57,7 +61,11 @@ void FileManager::SaveProfile(wxWindow* parent, const std::vector<Key*>& keys)
     }
 }
 
-//Load profile back from JSON file
+/////////////////////////////////////////////////
+/// Load profile back from JSON file.
+/// @param parent The parent object for the file dialog.
+/// @param kField Referenco to the field, where the keys are stored.
+/////////////////////////////////////////////////
 void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
 {
     //Get all the references

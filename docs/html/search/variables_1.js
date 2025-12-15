@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['buttongridsizer_0',['buttonGridSizer',['../classMainFrame.html#a55e29474cb2b3d5ce424c42cae74362d',1,'MainFrame']]],
-  ['buttonpanel_1',['buttonPanel',['../classMainFrame.html#a6afbdc196dfcf8537a53b2229ccfaa42',1,'MainFrame']]]
+  ['byte_0',['byte',['../classdetail_1_1parse__error.html#a5bce7d135aa3a38d1d3f4ed7bf8615e1',1,'detail::parse_error']]]
 ];

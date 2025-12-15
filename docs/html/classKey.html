@@ -26,9 +26,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Virtual Sampler<span id="projectnumber">&#160;0.0</span>
+   <div id="projectname">Virtual Sampler
    </div>
-   <div id="projectbrief">A simple virtual sampler program.</div>
   </td>
  </tr>
  </tbody>
@@ -93,116 +92,127 @@ $(function(){initNavTree('classKey.html','','classKey-members'); });
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="key_8hpp_source.html">key.hpp</a>&gt;</code></p>
+<p>Handles sound operations and manages <a class="el" href="classKey.html" title="Handles sound operations and manages Key UI.">Key</a> UI.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Key_8hpp_source.html">Key.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Key:</div>
 <div class="dyncontent">
-<div class="center"><img src="classKey__inherit__graph.png" border="0" usemap="#aKey_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
-<map name="aKey_inherit__map" id="aKey_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,126,146,243"/>
-<area shape="rect" href="classwxButton.html" title=" " alt="" coords="40,5,112,78"/>
-<area shape="poly" title=" " alt="" coords="78,93,78,126,73,126,73,93"/>
-</map>
-</div>
-<div class="dynheader">
-Collaboration diagram for Key:</div>
-<div class="dyncontent">
-<div class="center"><img src="classKey__coll__graph.png" border="0" usemap="#aKey_coll__map" loading="lazy" alt="Collaboration graph"/></div>
-<map name="aKey_coll__map" id="aKey_coll__map">
-<area shape="rect" title=" " alt="" coords="5,126,146,243"/>
-<area shape="rect" href="classwxButton.html" title=" " alt="" coords="40,5,112,78"/>
-<area shape="poly" title=" " alt="" coords="78,93,78,126,73,126,73,93"/>
-</map>
-</div>
+ <div class="center">
+  <img src="classKey.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb0414884bc46cae76de0636ee0eded5" id="r_adb0414884bc46cae76de0636ee0eded5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb0414884bc46cae76de0636ee0eded5">Key</a> (wxWindow *parent, wxWindowID event)</td></tr>
-<tr class="memitem:a031f67093df2e52f3fbd2e9636f2b7c5" id="r_a031f67093df2e52f3fbd2e9636f2b7c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a031f67093df2e52f3fbd2e9636f2b7c5">setPathToSound</a> (std::string newPathToSound)</td></tr>
-<tr class="memitem:a10b93ca6114e38a3fbe37e45a8449336" id="r_a10b93ca6114e38a3fbe37e45a8449336"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b93ca6114e38a3fbe37e45a8449336">getPathToSound</a> ()</td></tr>
+<tr class="memitem:af70879e8860604756e1388faab57d74c" id="r_af70879e8860604756e1388faab57d74c"><td class="memItemLeft" align="right" valign="top"><a id="af70879e8860604756e1388faab57d74c" name="af70879e8860604756e1388faab57d74c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b> (wxWindow *parent)</td></tr>
+<tr class="memitem:a492ffdd6f3dc544ed01719a5eae073e6" id="r_a492ffdd6f3dc544ed01719a5eae073e6"><td class="memItemLeft" align="right" valign="top"><a id="a492ffdd6f3dc544ed01719a5eae073e6" name="a492ffdd6f3dc544ed01719a5eae073e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uninitSound</b> ()</td></tr>
+<tr class="memdesc:a492ffdd6f3dc544ed01719a5eae073e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the sound and filter node. <br /></td></tr>
+<tr class="memitem:a9011eaf04f36164006d5244c5a2d5014" id="r_a9011eaf04f36164006d5244c5a2d5014"><td class="memItemLeft" align="right" valign="top"><a id="a9011eaf04f36164006d5244c5a2d5014" name="a9011eaf04f36164006d5244c5a2d5014"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupEngine</b> ()</td></tr>
+<tr class="memitem:afa0bb67611714f097862f5ef77750eed" id="r_afa0bb67611714f097862f5ef77750eed"><td class="memItemLeft" align="right" valign="top">ma_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa0bb67611714f097862f5ef77750eed">setupSound</a> (ma_engine *engine, std::string filePath)</td></tr>
+<tr class="memitem:a817a5ff74578a0f893af42994077d3f4" id="r_a817a5ff74578a0f893af42994077d3f4"><td class="memItemLeft" align="right" valign="top">ma_result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a817a5ff74578a0f893af42994077d3f4">setupGroup</a> (ma_engine *engine)</td></tr>
+<tr class="memitem:abf3f7b38ceb1d47d476e412bc92ccebc" id="r_abf3f7b38ceb1d47d476e412bc92ccebc"><td class="memItemLeft" align="right" valign="top"><a id="abf3f7b38ceb1d47d476e412bc92ccebc" name="abf3f7b38ceb1d47d476e412bc92ccebc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>playSound</b> ()</td></tr>
+<tr class="memdesc:abf3f7b38ceb1d47d476e412bc92ccebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound. <br /></td></tr>
+<tr class="memitem:a3247bc0d3d9fbb91c5a3a54b7a3ff18e" id="r_a3247bc0d3d9fbb91c5a3a54b7a3ff18e"><td class="memItemLeft" align="right" valign="top"><a id="a3247bc0d3d9fbb91c5a3a54b7a3ff18e" name="a3247bc0d3d9fbb91c5a3a54b7a3ff18e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>beginAnimateKey</b> ()</td></tr>
+<tr class="memdesc:a3247bc0d3d9fbb91c5a3a54b7a3ff18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the animation. <br /></td></tr>
+<tr class="memitem:a0aad418e9b69b5bde7e04c1c5006ba07" id="r_a0aad418e9b69b5bde7e04c1c5006ba07"><td class="memItemLeft" align="right" valign="top"><a id="a0aad418e9b69b5bde7e04c1c5006ba07" name="a0aad418e9b69b5bde7e04c1c5006ba07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endAnimatekey</b> (wxTimerEvent &amp;event)</td></tr>
+<tr class="memdesc:a0aad418e9b69b5bde7e04c1c5006ba07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the animation. <br /></td></tr>
+<tr class="memitem:a2f81ad7a3d21a783f24e901c751a693a" id="r_a2f81ad7a3d21a783f24e901c751a693a"><td class="memItemLeft" align="right" valign="top"><a id="a2f81ad7a3d21a783f24e901c751a693a" name="a2f81ad7a3d21a783f24e901c751a693a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupHighPassFilter</b> ()</td></tr>
+<tr class="memdesc:a2f81ad7a3d21a783f24e901c751a693a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the filter. <br /></td></tr>
+<tr class="memitem:ae2096b65b010b848886af61cc489c9b0" id="r_ae2096b65b010b848886af61cc489c9b0"><td class="memItemLeft" align="right" valign="top"><a id="ae2096b65b010b848886af61cc489c9b0" name="ae2096b65b010b848886af61cc489c9b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNewFilterFreq</b> ()</td></tr>
+<tr class="memdesc:ae2096b65b010b848886af61cc489c9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets new cutoff frequency. <br /></td></tr>
+<tr class="memitem:ae5a0deca49d112b8ca322899c104af9e" id="r_ae5a0deca49d112b8ca322899c104af9e"><td class="memItemLeft" align="right" valign="top"><a id="ae5a0deca49d112b8ca322899c104af9e" name="ae5a0deca49d112b8ca322899c104af9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setShortCut</b> (char shortcut)</td></tr>
+<tr class="memitem:ace3a776e5f4682bacabb5d1f2e00fd2e" id="r_ace3a776e5f4682bacabb5d1f2e00fd2e"><td class="memItemLeft" align="right" valign="top"><a id="ace3a776e5f4682bacabb5d1f2e00fd2e" name="ace3a776e5f4682bacabb5d1f2e00fd2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSoundPath</b> (std::string soundPath)</td></tr>
+<tr class="memitem:a340e6fcfa6ac48f74a3d511d1b446b83" id="r_a340e6fcfa6ac48f74a3d511d1b446b83"><td class="memItemLeft" align="right" valign="top"><a id="a340e6fcfa6ac48f74a3d511d1b446b83" name="a340e6fcfa6ac48f74a3d511d1b446b83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVolume</b> (int val)</td></tr>
+<tr class="memitem:a80d86bb0dcf5980f20f58c4650e05cac" id="r_a80d86bb0dcf5980f20f58c4650e05cac"><td class="memItemLeft" align="right" valign="top"><a id="a80d86bb0dcf5980f20f58c4650e05cac" name="a80d86bb0dcf5980f20f58c4650e05cac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPitchShift</b> (int val)</td></tr>
+<tr class="memitem:a185ef1d577356242a885b43b37fa1b3d" id="r_a185ef1d577356242a885b43b37fa1b3d"><td class="memItemLeft" align="right" valign="top"><a id="a185ef1d577356242a885b43b37fa1b3d" name="a185ef1d577356242a885b43b37fa1b3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPan</b> (int val)</td></tr>
+<tr class="memitem:a9dfeb60149ecf29bae5b600409628934" id="r_a9dfeb60149ecf29bae5b600409628934"><td class="memItemLeft" align="right" valign="top"><a id="a9dfeb60149ecf29bae5b600409628934" name="a9dfeb60149ecf29bae5b600409628934"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCutoff</b> (int val)</td></tr>
+<tr class="memitem:a7f697853012f6821641c15b7435f021a" id="r_a7f697853012f6821641c15b7435f021a"><td class="memItemLeft" align="right" valign="top"><a id="a7f697853012f6821641c15b7435f021a" name="a7f697853012f6821641c15b7435f021a"></a>
+ma_sound_group *&#160;</td><td class="memItemRight" valign="bottom"><b>getSoundGroupPtr</b> ()</td></tr>
+<tr class="memitem:ae4734ab8f2baf51ebdd35fbac3b5ac58" id="r_ae4734ab8f2baf51ebdd35fbac3b5ac58"><td class="memItemLeft" align="right" valign="top"><a id="ae4734ab8f2baf51ebdd35fbac3b5ac58" name="ae4734ab8f2baf51ebdd35fbac3b5ac58"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>getShortCut</b> ()</td></tr>
+<tr class="memitem:a90d7cd0dad0b0533a870feedb03d7f77" id="r_a90d7cd0dad0b0533a870feedb03d7f77"><td class="memItemLeft" align="right" valign="top"><a id="a90d7cd0dad0b0533a870feedb03d7f77" name="a90d7cd0dad0b0533a870feedb03d7f77"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getSoundPath</b> ()</td></tr>
+<tr class="memitem:a242389b44cfbfcef5ce60c3327fc4d02" id="r_a242389b44cfbfcef5ce60c3327fc4d02"><td class="memItemLeft" align="right" valign="top"><a id="a242389b44cfbfcef5ce60c3327fc4d02" name="a242389b44cfbfcef5ce60c3327fc4d02"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getVolume</b> () const</td></tr>
+<tr class="memitem:a410b010ddf8e514f2050958a64f6d85e" id="r_a410b010ddf8e514f2050958a64f6d85e"><td class="memItemLeft" align="right" valign="top"><a id="a410b010ddf8e514f2050958a64f6d85e" name="a410b010ddf8e514f2050958a64f6d85e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPitchShift</b> () const</td></tr>
+<tr class="memitem:a716ea71188e458920847dede9ec038a5" id="r_a716ea71188e458920847dede9ec038a5"><td class="memItemLeft" align="right" valign="top"><a id="a716ea71188e458920847dede9ec038a5" name="a716ea71188e458920847dede9ec038a5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPan</b> () const</td></tr>
+<tr class="memitem:a57d371306dd33d84bcada907b53543ec" id="r_a57d371306dd33d84bcada907b53543ec"><td class="memItemLeft" align="right" valign="top"><a id="a57d371306dd33d84bcada907b53543ec" name="a57d371306dd33d84bcada907b53543ec"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getCutoff</b> () const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that provides the logic behind the key buttons. This class is derived from the <a class="el" href="classwxButton.html">wxButton</a> class. </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adb0414884bc46cae76de0636ee0eded5" name="adb0414884bc46cae76de0636ee0eded5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0414884bc46cae76de0636ee0eded5">&#9670;&#160;</a></span>Key()</h2>
+<div class="textblock"><p>Handles sound operations and manages <a class="el" href="classKey.html" title="Handles sound operations and manages Key UI.">Key</a> UI. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a817a5ff74578a0f893af42994077d3f4" name="a817a5ff74578a0f893af42994077d3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817a5ff74578a0f893af42994077d3f4">&#9670;&#160;</a></span>setupGroup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Key::Key </td>
+          <td class="memname">ma_result Key::setupGroup </td>
           <td>(</td>
-          <td class="paramtype">wxWindow *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>, </td>
+          <td class="paramtype">ma_engine *</td>          <td class="paramname"><span class="paramname"><em>engine</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates the sound group object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>The global sound engine. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa0bb67611714f097862f5ef77750eed" name="afa0bb67611714f097862f5ef77750eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0bb67611714f097862f5ef77750eed">&#9670;&#160;</a></span>setupSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ma_result Key::setupSound </td>
+          <td>(</td>
+          <td class="paramtype">ma_engine *</td>          <td class="paramname"><span class="paramname"><em>engine</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">wxWindowID</td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a10b93ca6114e38a3fbe37e45a8449336" name="a10b93ca6114e38a3fbe37e45a8449336"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10b93ca6114e38a3fbe37e45a8449336">&#9670;&#160;</a></span>getPathToSound()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Key::getPathToSound </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classKey_a10b93ca6114e38a3fbe37e45a8449336_icgraph.png" border="0" usemap="#aclassKey_a10b93ca6114e38a3fbe37e45a8449336_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassKey_a10b93ca6114e38a3fbe37e45a8449336_icgraph" id="aclassKey_a10b93ca6114e38a3fbe37e45a8449336_icgraph">
-<area shape="rect" title=" " alt="" coords="262,5,418,33"/>
-<area shape="rect" href="classMainFrame.html#a5c89a65be5af96dc28f5c2bb0335103a" title=" " alt="" coords="5,5,214,33"/>
-<area shape="poly" title=" " alt="" coords="246,22,214,22,214,16,246,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a031f67093df2e52f3fbd2e9636f2b7c5" name="a031f67093df2e52f3fbd2e9636f2b7c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a031f67093df2e52f3fbd2e9636f2b7c5">&#9670;&#160;</a></span>setPathToSound()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Key::setPathToSound </td>
-          <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>newPathToSound</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classKey_a031f67093df2e52f3fbd2e9636f2b7c5_icgraph.png" border="0" usemap="#aclassKey_a031f67093df2e52f3fbd2e9636f2b7c5_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassKey_a031f67093df2e52f3fbd2e9636f2b7c5_icgraph" id="aclassKey_a031f67093df2e52f3fbd2e9636f2b7c5_icgraph">
-<area shape="rect" title=" " alt="" coords="262,5,417,33"/>
-<area shape="rect" href="classMainFrame.html#a5c89a65be5af96dc28f5c2bb0335103a" title=" " alt="" coords="5,5,214,33"/>
-<area shape="poly" title=" " alt="" coords="246,22,214,22,214,16,246,16"/>
-</map>
-</div>
+<p>Loads the sound file and creates the sound object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>The global sound engine. </td></tr>
+    <tr><td class="paramname">filePath</td><td>Path to the sound file. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include/<a class="el" href="key_8hpp_source.html">key.hpp</a></li>
-<li>/home/mark/Programming/LP_hazi/Virtual-Sampler/source/<a class="el" href="key_8cpp.html">key.cpp</a></li>
+<li>source/include/<a class="el" href="Key_8hpp_source.html">Key.hpp</a></li>
+<li>source/<b>key.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

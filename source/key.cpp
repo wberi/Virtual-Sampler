@@ -26,7 +26,7 @@ Key::Key(wxWindow* parent)
     setCutoff(DEFAULT_CUTOFF);
     sound.sound_path = "";
 
-    //Set default ani,ation values
+    //Set default animation values
     this->SetForegroundColour(DEFAULT_COLOR); //set default color
     animationTimer = new wxTimer(); //create timer
     animationTimer->Bind(wxEVT_TIMER, &Key::endAnimatekey, this);
@@ -39,14 +39,20 @@ Key::~Key()
   ma_sound_group_uninit(sound.soundGroupPtr);
 }
 
-//Separate function for sound init (because of reset)
+/////////////////////////////////////////////////
+/// Frees the sound and filter node.
+/////////////////////////////////////////////////
 void Key::uninitSound()
 {
   ma_sound_uninit(sound.sound);
   ma_hpf_node_uninit(sound.hpfNode, NULL);
 }
 
-//Sound init
+/////////////////////////////////////////////////
+/// Loads the sound file and creates the sound object.
+/// @param engine The global sound engine.
+/// @param filePath Path to the sound file.
+/////////////////////////////////////////////////
 ma_result Key::setupSound(ma_engine* engine, std::string filePath)
 {
     this->sound.sound_path = filePath;
@@ -68,7 +74,10 @@ ma_result Key::setupSound(ma_engine* engine, std::string filePath)
     return MA_SUCCESS;
 }
 
-//Sound group init
+/////////////////////////////////////////////////
+/// Creates the sound group object.
+/// @param engine The global sound engine.
+/////////////////////////////////////////////////
 ma_result Key::setupGroup(ma_engine* engine)
 { 
   this->engine=engine;
@@ -77,7 +86,9 @@ ma_result Key::setupGroup(ma_engine* engine)
   return ma_sound_group_init(engine, MA_SOUND_FLAG_NO_SPATIALIZATION, NULL, sound.soundGroupPtr);
 }
 
-//Function to connect the filter node to the right nodes in the graph
+/////////////////////////////////////////////////
+/// Connects the filter, sound and group nodes.
+/////////////////////////////////////////////////
 void Key::connectHpfNode()
 {
   //Connect filter to the sound group node
@@ -91,7 +102,9 @@ void Key::connectHpfNode()
         ma_node_graph_get_endpoint(ma_engine_get_node_graph(engine)), 0);
 }
 
-//Filter init
+/////////////////////////////////////////////////
+/// Creates the filter.
+/////////////////////////////////////////////////
 void Key::setupHighPassFilter()
 {
   //Node configuration
@@ -124,7 +137,9 @@ void Key::setupHighPassFilter()
     }
 }
 
-//Refresh filter with new cutoff freq
+/////////////////////////////////////////////////
+/// Sets new cutoff frequency. 
+/////////////////////////////////////////////////
 void Key::setNewFilterFreq()
 {
   hpfConfig.cutoffFrequency = cutoff;
@@ -137,7 +152,9 @@ void Key::setNewFilterFreq()
 
 }
 
-//Plays the sound on button press
+/////////////////////////////////////////////////
+/// Plays the sound.
+/////////////////////////////////////////////////
 void Key::playSound()
 {
   if(ma_sound_is_playing(sound.sound))
@@ -152,14 +169,18 @@ void Key::playSound()
   }
 }
 
-//Start the animation
+/////////////////////////////////////////////////
+/// Starts the animation.
+/////////////////////////////////////////////////
 void Key::beginAnimateKey()
 {
   this->SetForegroundColour(ACTIVE_COLOR);
   animationTimer->Start(100, wxTIMER_ONE_SHOT);
 }
 
-//Finish the animation
+/////////////////////////////////////////////////
+/// Ends the animation.
+/////////////////////////////////////////////////
 void Key::endAnimatekey(wxTimerEvent& event)
 {
   this->SetForegroundColour(DEFAULT_COLOR);

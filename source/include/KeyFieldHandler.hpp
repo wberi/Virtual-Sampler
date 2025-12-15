@@ -14,6 +14,10 @@
 #include "Key.hpp"
 #include "SliderFieldHandler.hpp" 
 
+
+/////////////////////////////////////////////////
+/// Stores and handles all Key related operations.
+/////////////////////////////////////////////////
 class KeyFieldHandler
 {
   //GUI

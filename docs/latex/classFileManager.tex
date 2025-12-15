@@ -1,0 +1,58 @@
+\doxysection{File\+Manager Class Reference}
+\hypertarget{classFileManager}{}\label{classFileManager}\index{FileManager@{FileManager}}
+
+
+Handles saving and loading profiles.  
+
+
+
+
+{\ttfamily \#include $<$File\+Manager.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classFileManager_a4f9faa8ab62025b8311dfe189bd85798}{Save\+Profile}} (wx\+Window \texorpdfstring{$\ast$}{*}parent, const std\+::vector$<$ \mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*} $>$ \&keys)
+\item 
+static void \mbox{\hyperlink{classFileManager_a75edae3b3d376097bf4470c216bfdd8e}{Load\+Profile}} (wx\+Window \texorpdfstring{$\ast$}{*}parent, \mbox{\hyperlink{classKeyFieldHandler}{Key\+Field\+Handler}} \texorpdfstring{$\ast$}{*}k\+Field)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles saving and loading profiles. 
+
+\label{doc-func-members}
+\Hypertarget{classFileManager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFileManager_a75edae3b3d376097bf4470c216bfdd8e}\index{FileManager@{FileManager}!LoadProfile@{LoadProfile}}
+\index{LoadProfile@{LoadProfile}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{LoadProfile()}{LoadProfile()}}
+{\footnotesize\ttfamily \label{classFileManager_a75edae3b3d376097bf4470c216bfdd8e} 
+void File\+Manager\+::\+Load\+Profile (\begin{DoxyParamCaption}\item[{wx\+Window \texorpdfstring{$\ast$}{*}}]{parent}{, }\item[{\mbox{\hyperlink{classKeyFieldHandler}{Key\+Field\+Handler}} \texorpdfstring{$\ast$}{*}}]{k\+Field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load profile back from JSON file. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent object for the file dialog. \\
+\hline
+{\em k\+Field} & Referenco to the field, where the keys are stored. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classFileManager_a4f9faa8ab62025b8311dfe189bd85798}\index{FileManager@{FileManager}!SaveProfile@{SaveProfile}}
+\index{SaveProfile@{SaveProfile}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{SaveProfile()}{SaveProfile()}}
+{\footnotesize\ttfamily \label{classFileManager_a4f9faa8ab62025b8311dfe189bd85798} 
+void File\+Manager\+::\+Save\+Profile (\begin{DoxyParamCaption}\item[{wx\+Window \texorpdfstring{$\ast$}{*}}]{parent}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*} $>$ \&}]{keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Save the profile into a JSON file. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent object for the file dialog. \\
+\hline
+{\em keys} & The list of all the keys. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/include/File\+Manager.\+hpp\item 
+source/filemanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\doxysection{Slider\+Field\+Handler Class Reference}
+\hypertarget{classSliderFieldHandler}{}\label{classSliderFieldHandler}\index{SliderFieldHandler@{SliderFieldHandler}}
+
+
+Stores and handles all operation related to sliders.  
+
+
+
+
+{\ttfamily \#include $<$Slider\+Field\+Handler.\+hpp$>$}
+
+Inheritance diagram for Slider\+Field\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSliderFieldHandler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSliderFieldHandler_a7ba4af90991768d7d1a27175bf28f31b}\label{classSliderFieldHandler_a7ba4af90991768d7d1a27175bf28f31b} 
+{\bfseries Slider\+Field\+Handler} (wx\+Frame \texorpdfstring{$\ast$}{*}parent)
+\item 
+void \mbox{\hyperlink{classSliderFieldHandler_a0151a87b13ea2c8b5b82ac1a6a66f13c}{Set\+Current\+Key}} (\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}key)
+\item 
+\Hypertarget{classSliderFieldHandler_aa3577b97994243d8affcf784dd575317}\label{classSliderFieldHandler_aa3577b97994243d8affcf784dd575317} 
+void {\bfseries Update\+Controls\+From\+Key} ()
+\begin{DoxyCompactList}\small\item\em Update the visuals from the current key pointer. \end{DoxyCompactList}\item 
+\Hypertarget{classSliderFieldHandler_a821a4dfb7e7cd24dd01f6d6cc9705461}\label{classSliderFieldHandler_a821a4dfb7e7cd24dd01f6d6cc9705461} 
+void {\bfseries Save\+Controls\+To\+Key} ()
+\item 
+void \mbox{\hyperlink{classSliderFieldHandler_afdb63f2df3567c32ce1643f29f091087}{set\+Volume}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classSliderFieldHandler_ab7d1835d03756edf72c418af006bb890}{set\+Pitch}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classSliderFieldHandler_ab41bd51fa4b467137249e63112b3f968}{set\+Pan}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classSliderFieldHandler_a7e3f68f7d80dd5b77d5afeb0eabcff7c}{set\+Cutoff}} (wx\+Command\+Event \&event)
+\item 
+\Hypertarget{classSliderFieldHandler_aa7871a194aaf97e3f55e19b04f2de6bd}\label{classSliderFieldHandler_aa7871a194aaf97e3f55e19b04f2de6bd} 
+wx\+Button \texorpdfstring{$\ast$}{*} {\bfseries get\+Reset\+Button} ()
+\item 
+\Hypertarget{classSliderFieldHandler_a1fe5a28bf34533bf3137165487fb068e}\label{classSliderFieldHandler_a1fe5a28bf34533bf3137165487fb068e} 
+\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Current\+Key\+Ptr} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores and handles all operation related to sliders. 
+
+\label{doc-func-members}
+\Hypertarget{classSliderFieldHandler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSliderFieldHandler_a0151a87b13ea2c8b5b82ac1a6a66f13c}\index{SliderFieldHandler@{SliderFieldHandler}!SetCurrentKey@{SetCurrentKey}}
+\index{SetCurrentKey@{SetCurrentKey}!SliderFieldHandler@{SliderFieldHandler}}
+\doxysubsubsection{\texorpdfstring{SetCurrentKey()}{SetCurrentKey()}}
+{\footnotesize\ttfamily \label{classSliderFieldHandler_a0151a87b13ea2c8b5b82ac1a6a66f13c} 
+void Slider\+Field\+Handler\+::\+Set\+Current\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}}]{key}{}\end{DoxyParamCaption})}
+
+Sets the currently displayed key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to be selected. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSliderFieldHandler_a7e3f68f7d80dd5b77d5afeb0eabcff7c}\index{SliderFieldHandler@{SliderFieldHandler}!setCutoff@{setCutoff}}
+\index{setCutoff@{setCutoff}!SliderFieldHandler@{SliderFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setCutoff()}{setCutoff()}}
+{\footnotesize\ttfamily \label{classSliderFieldHandler_a7e3f68f7d80dd5b77d5afeb0eabcff7c} 
+void Slider\+Field\+Handler\+::set\+Cutoff (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Sets \doxylink{classKey}{Key} cutoff and updates group pointer. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSliderFieldHandler_ab41bd51fa4b467137249e63112b3f968}\index{SliderFieldHandler@{SliderFieldHandler}!setPan@{setPan}}
+\index{setPan@{setPan}!SliderFieldHandler@{SliderFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setPan()}{setPan()}}
+{\footnotesize\ttfamily \label{classSliderFieldHandler_ab41bd51fa4b467137249e63112b3f968} 
+void Slider\+Field\+Handler\+::set\+Pan (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Set \doxylink{classKey}{Key} panning and update group pointer. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSliderFieldHandler_ab7d1835d03756edf72c418af006bb890}\index{SliderFieldHandler@{SliderFieldHandler}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!SliderFieldHandler@{SliderFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}}
+{\footnotesize\ttfamily \label{classSliderFieldHandler_ab7d1835d03756edf72c418af006bb890} 
+void Slider\+Field\+Handler\+::set\+Pitch (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Set \doxylink{classKey}{Key} pitch and update group pointer. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSliderFieldHandler_afdb63f2df3567c32ce1643f29f091087}\index{SliderFieldHandler@{SliderFieldHandler}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!SliderFieldHandler@{SliderFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily \label{classSliderFieldHandler_afdb63f2df3567c32ce1643f29f091087} 
+void Slider\+Field\+Handler\+::set\+Volume (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Sets \doxylink{classKey}{Key} volume and updates group pointer. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/include/Slider\+Field\+Handler.\+hpp\item 
+source/sliderhandler.\+cpp\end{DoxyCompactItemize}

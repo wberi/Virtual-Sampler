@@ -1,0 +1,153 @@
+\doxysection{Key\+Field\+Handler Class Reference}
+\hypertarget{classKeyFieldHandler}{}\label{classKeyFieldHandler}\index{KeyFieldHandler@{KeyFieldHandler}}
+
+
+Stores and handles all \doxylink{classKey}{Key} related operations.  
+
+
+
+
+{\ttfamily \#include $<$Key\+Field\+Handler.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classKeyFieldHandler_a8ee31f937422160e4ed806f7b55d0f0b}\label{classKeyFieldHandler_a8ee31f937422160e4ed806f7b55d0f0b} 
+{\bfseries Key\+Field\+Handler} (wx\+Frame \texorpdfstring{$\ast$}{*}parent, \mbox{\hyperlink{classMessages}{Messages}} \texorpdfstring{$\ast$}{*}messages, \mbox{\hyperlink{classSliderFieldHandler}{Slider\+Field\+Handler}} \texorpdfstring{$\ast$}{*}slider\+Panel)
+\item 
+\Hypertarget{classKeyFieldHandler_aae388da1535424ae9d65987f6b36c4b7}\label{classKeyFieldHandler_aae388da1535424ae9d65987f6b36c4b7} 
+ma\+\_\+result {\bfseries create\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Creates sound engine. \end{DoxyCompactList}\item 
+\Hypertarget{classKeyFieldHandler_a6ba586ee13f7caa4624e9ef304694cd5}\label{classKeyFieldHandler_a6ba586ee13f7caa4624e9ef304694cd5} 
+void {\bfseries create\+Key\+Field} ()
+\begin{DoxyCompactList}\small\item\em Creates the key panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyFieldHandler_a9c7653bbba699903e574d4768e133c09}{setup\+Key\+Event}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_a57f0f641d1134c711e20097e71f997de}{setup\+Key}} (\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}button)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_a592caa4d6fdf0985d9df7d0d7d93eff6}{set\+Key\+Bind}} (\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}button)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_a7708dc3f412ccff398fe75fcbb535268}{reset\+Key}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_a91a447d97331d6fcd76cc0e20623e683}{refresh\+Controls}} (\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}button)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_afe62b80fbaa3f99b145e46e9c38cdfcc}{update\+Slider\+Panel}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_af78747849294524c9cd63de893aed845}{play\+Sound}} (\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}key)
+\item 
+void \mbox{\hyperlink{classKeyFieldHandler_ab3bb74aba37654d764dd8747f5d7122c}{listen\+To\+Kb\+Events}} (wx\+Key\+Event \&event)
+\item 
+\Hypertarget{classKeyFieldHandler_ab4e815a4b68c5eb7ce40805f06a74bc9}\label{classKeyFieldHandler_ab4e815a4b68c5eb7ce40805f06a74bc9} 
+wx\+Panel \texorpdfstring{$\ast$}{*} {\bfseries get\+Key\+Panel} ()
+\item 
+\Hypertarget{classKeyFieldHandler_aa6bac12d42931b070d21a15aea799918}\label{classKeyFieldHandler_aa6bac12d42931b070d21a15aea799918} 
+std\+::vector$<$ \mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*} $>$ \& {\bfseries get\+Keys} ()
+\item 
+\Hypertarget{classKeyFieldHandler_afb80f5f7efbe3aaacfae40fc0a447197}\label{classKeyFieldHandler_afb80f5f7efbe3aaacfae40fc0a447197} 
+ma\+\_\+engine \texorpdfstring{$\ast$}{*} {\bfseries get\+Engine} ()
+\item 
+\Hypertarget{classKeyFieldHandler_a9995fa509c87a7d402a270b92913cb1a}\label{classKeyFieldHandler_a9995fa509c87a7d402a270b92913cb1a} 
+std\+::map$<$ char, \mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*} $>$ \& {\bfseries get\+Key\+Map} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores and handles all \doxylink{classKey}{Key} related operations. 
+
+\label{doc-func-members}
+\Hypertarget{classKeyFieldHandler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classKeyFieldHandler_ab3bb74aba37654d764dd8747f5d7122c}\index{KeyFieldHandler@{KeyFieldHandler}!listenToKbEvents@{listenToKbEvents}}
+\index{listenToKbEvents@{listenToKbEvents}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{listenToKbEvents()}{listenToKbEvents()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_ab3bb74aba37654d764dd8747f5d7122c} 
+void Key\+Field\+Handler\+::listen\+To\+Kb\+Events (\begin{DoxyParamCaption}\item[{wx\+Key\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Listens to keyboard events. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_af78747849294524c9cd63de893aed845}\index{KeyFieldHandler@{KeyFieldHandler}!playSound@{playSound}}
+\index{playSound@{playSound}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_af78747849294524c9cd63de893aed845} 
+void Key\+Field\+Handler\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}}]{key}{}\end{DoxyParamCaption})}
+
+Plays the selected \doxylink{classKey}{Key}\textquotesingle{}s sound. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The selected \doxylink{classKey}{Key}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_a91a447d97331d6fcd76cc0e20623e683}\index{KeyFieldHandler@{KeyFieldHandler}!refreshControls@{refreshControls}}
+\index{refreshControls@{refreshControls}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{refreshControls()}{refreshControls()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_a91a447d97331d6fcd76cc0e20623e683} 
+void Key\+Field\+Handler\+::refresh\+Controls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}}]{button}{}\end{DoxyParamCaption})}
+
+Helper function for \doxylink{classKeyFieldHandler_afe62b80fbaa3f99b145e46e9c38cdfcc}{update\+Slider\+Panel()} 
+\begin{DoxyParams}{Parameters}
+{\em button} & The selected \doxylink{classKey}{Key}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_a7708dc3f412ccff398fe75fcbb535268}\index{KeyFieldHandler@{KeyFieldHandler}!resetKey@{resetKey}}
+\index{resetKey@{resetKey}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{resetKey()}{resetKey()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_a7708dc3f412ccff398fe75fcbb535268} 
+void Key\+Field\+Handler\+::reset\+Key (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Restarts the setup process. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_a592caa4d6fdf0985d9df7d0d7d93eff6}\index{KeyFieldHandler@{KeyFieldHandler}!setKeyBind@{setKeyBind}}
+\index{setKeyBind@{setKeyBind}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setKeyBind()}{setKeyBind()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_a592caa4d6fdf0985d9df7d0d7d93eff6} 
+void Key\+Field\+Handler\+::set\+Key\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}}]{button}{}\end{DoxyParamCaption})}
+
+Changes \doxylink{classKey}{Key} button event to a valid event. 
+\begin{DoxyParams}{Parameters}
+{\em button} & The valid \doxylink{classKey}{Key}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_a57f0f641d1134c711e20097e71f997de}\index{KeyFieldHandler@{KeyFieldHandler}!setupKey@{setupKey}}
+\index{setupKey@{setupKey}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setupKey()}{setupKey()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_a57f0f641d1134c711e20097e71f997de} 
+void Key\+Field\+Handler\+::setup\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKey}{Key}} \texorpdfstring{$\ast$}{*}}]{button}{}\end{DoxyParamCaption})}
+
+Initializes a new \doxylink{classKey}{Key} object. 
+\begin{DoxyParams}{Parameters}
+{\em button} & The object to initialize. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_a9c7653bbba699903e574d4768e133c09}\index{KeyFieldHandler@{KeyFieldHandler}!setupKeyEvent@{setupKeyEvent}}
+\index{setupKeyEvent@{setupKeyEvent}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{setupKeyEvent()}{setupKeyEvent()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_a9c7653bbba699903e574d4768e133c09} 
+void Key\+Field\+Handler\+::setup\+Key\+Event (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Starts the setup process, when an uninitialized \doxylink{classKey}{Key} is pressed. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyFieldHandler_afe62b80fbaa3f99b145e46e9c38cdfcc}\index{KeyFieldHandler@{KeyFieldHandler}!updateSliderPanel@{updateSliderPanel}}
+\index{updateSliderPanel@{updateSliderPanel}!KeyFieldHandler@{KeyFieldHandler}}
+\doxysubsubsection{\texorpdfstring{updateSliderPanel()}{updateSliderPanel()}}
+{\footnotesize\ttfamily \label{classKeyFieldHandler_afe62b80fbaa3f99b145e46e9c38cdfcc} 
+void Key\+Field\+Handler\+::update\+Slider\+Panel (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Updates slider panel values with the selected \doxylink{classKey}{Key} values. 
+\begin{DoxyParams}{Parameters}
+{\em button} & The selected \doxylink{classKey}{Key}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/include/Key\+Field\+Handler.\+hpp\item 
+source/keyhandler.\+cpp\end{DoxyCompactItemize}

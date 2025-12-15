@@ -1,0 +1,44 @@
+\doxysection{Key\+Name\+Dialog.\+hpp}
+\hypertarget{KeyNameDialog_8hpp_source}{}\label{KeyNameDialog_8hpp_source}\index{source/include/KeyNameDialog.hpp@{source/include/KeyNameDialog.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KEYNAMEDIALOG\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KEYNAMEDIALOG\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ WC\_PRECOMP\ \ \ }}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#include\ <wx/wx.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif\ }}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }KeyNameDialog:\ \textcolor{keyword}{public}\ wxDialog}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ KeyNameDialog\ (wxWindow*\ parent,\ wxWindowID\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ wxString\&\ title,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ wxPoint\&\ pos\ =\ wxDefaultPosition,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ wxSize\&\ size\ =\ wxDefaultSize,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ style\ =\ wxDEFAULT\_DIALOG\_STYLE);}
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Widgets}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ wxComboBox*\ keyOptions;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ wxTextCtrl*\ nameField;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ wxString\ GetShortcut();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ wxString\ GetName();}
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//All\ possible\ shortcut\ choices}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ wxString\ keyChoices[36]\ =\ \{\textcolor{stringliteral}{"{}0"{}},\ \textcolor{stringliteral}{"{}1"{}},\ \textcolor{stringliteral}{"{}2"{}},\ \textcolor{stringliteral}{"{}3"{}},\ \textcolor{stringliteral}{"{}4"{}},\ \textcolor{stringliteral}{"{}5"{}},\ \textcolor{stringliteral}{"{}6"{}},\ \textcolor{stringliteral}{"{}7"{}},\ \textcolor{stringliteral}{"{}8"{}},\ \textcolor{stringliteral}{"{}9"{}},\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}B"{}},\ \textcolor{stringliteral}{"{}C"{}},\ \textcolor{stringliteral}{"{}D"{}},\ \textcolor{stringliteral}{"{}E"{}},\ \textcolor{stringliteral}{"{}F"{}},\ \textcolor{stringliteral}{"{}G"{}},\ \textcolor{stringliteral}{"{}H"{}},\ \textcolor{stringliteral}{"{}I"{}},\ \textcolor{stringliteral}{"{}J"{}},\ \textcolor{stringliteral}{"{}K"{}},\ \textcolor{stringliteral}{"{}L"{}},\ \textcolor{stringliteral}{"{}M"{}},\ \textcolor{stringliteral}{"{}N"{}},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}O"{}},\ \textcolor{stringliteral}{"{}P"{}},\ \textcolor{stringliteral}{"{}Q"{}},\ \textcolor{stringliteral}{"{}R"{}},\ \textcolor{stringliteral}{"{}S"{}},\ \textcolor{stringliteral}{"{}T"{}},\ \textcolor{stringliteral}{"{}U"{}},\ \textcolor{stringliteral}{"{}V"{}},\ \textcolor{stringliteral}{"{}W"{}},\ \textcolor{stringliteral}{"{}X"{}},\ \textcolor{stringliteral}{"{}Y"{}},\ \textcolor{stringliteral}{"{}Z"{}}\};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Handle\ user\ pressing\ OK}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ OnOk(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//Event\ table\ }}
+\DoxyCodeLine{00039\ \ \ \ \ DECLARE\_EVENT\_TABLE();}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
