@@ -34,7 +34,7 @@ SliderFieldHandler::SliderFieldHandler(wxFrame* parent): wxPanel(parent, wxID_AN
     panSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setPan, this);
 
     //Cutoff slider
-    addSliderRow("Filter Cutoff (Hz)","The frequency level, required for the sound to get cut off.", cutoffSlider, -1, 0, 5000, 0); 
+    addSliderRow("Filter Cutoff (Hz)","The frequency level, required for the sound to get cut off.", cutoffSlider, -1, 1, 500, 0); 
     cutoffSlider->Bind(wxEVT_SLIDER, &SliderFieldHandler::setCutoff, this);
 
     //Make second column flexible

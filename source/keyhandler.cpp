@@ -113,10 +113,36 @@ void KeyFieldHandler::setupKey(Key* button)
     "Sound files (*.wav, *.mp3)|*.wav", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
   if(fileBrowser.ShowModal() == wxID_CANCEL)
   {
-    //return if users cancels
+    //return if user cancels
     return;
   }
   
+  //Create and show setup dialog
+  KeyNameDialog setupDialog(parent, -1, _("Select button shortcut"),
+  wxPoint(0, 0), wxSize(200, 100));
+  if(setupDialog.ShowModal() == wxID_CANCEL) 
+  {
+    return;
+  }
+
+  //reset key if we can
+  if(button != nullptr)
+  {
+    //Uninit sound 
+    button->uninitSound();
+  
+    //Delete bind (if it exists)
+    char k;
+    for(auto& key : keyMap)
+    {
+      if(key.second == button)
+      {
+        k = key.first;
+      }
+    }
+    keyMap.erase(k);
+  }
+
   //Get the path to the file
   std::string filePath = fileBrowser.GetPath().ToStdString();  
 
@@ -125,42 +151,35 @@ void KeyFieldHandler::setupKey(Key* button)
     messages->ShowEngineFailureMessage();
     return;
   }
+
+  //Get the chosen character from the combo box
+  wxString text = setupDialog.GetShortcut();
+  char shortcutChar = (char)text[0];
   
-  //Create and show setup dialog
-  KeyNameDialog setupDialog ( parent, -1, _("Select button shortcut"),
-                          wxPoint(0, 0), wxSize(200, 100) );
-  if(setupDialog.ShowModal() != wxID_CANCEL) 
+  if(keyMap.count(shortcutChar))
   {
-    //Get the choosen character from the combo box
-    wxString text = setupDialog.GetShortcut();
-    char shortcutChar = (char)text[0];
-    
-    if(keyMap.count(shortcutChar))
+    //If key had a shortcut, restore it
+    messages->ShowBlockedShortcutMessage();
+    char keyShortcut = button->getShortCut();
+    if(keyShortcut != '-')
     {
-      //If key had a shortcut, restore it
-      messages->ShowBlockedShortcutMessage();
-      char keyShortcut = button->getShortCut();
-      if(keyShortcut != '-')
-      {
-        keyMap.insert({keyShortcut, button});
-      }
-      return;
+      keyMap.insert({keyShortcut, button});
     }
-    
-    //Set the name of the key accordingly
-    button->SetLabel(setupDialog.GetName() + " (" + text + ")"); //the name contains the shortcut
-
-    //Add the shortcut combination to the keyMap structure for easy lookup
-    //Assuming a single character is selected
-    keyMap.insert({shortcutChar, button});
-    button->setShortCut(shortcutChar); //Store shortczt in Key
-
-    //Unbind setupKey and bind the new updateSliderPanel function
-    setKeyBind(button);
-    
-    //Manually trigger the update function to set the sliders for the newly configured key
-    refreshControls(button);
+    return;
   }
+  
+  //Set the name of the key accordingly
+  button->SetLabel(setupDialog.GetName() + " (" + text + ")"); //the name contains the shortcut
+
+  //Add the shortcut combination to the keyMap structure for easy lookup
+  keyMap.insert({shortcutChar, button});
+  button->setShortCut(shortcutChar); //Store shortcut in Key
+
+  //Unbind setupKey and bind the new updateSliderPanel function
+  setKeyBind(button);
+  
+  //Manually trigger the update function to set the sliders for the newly configured key
+  refreshControls(button);
 }
 
 void KeyFieldHandler::setKeyBind(Key* button)
@@ -171,28 +190,6 @@ void KeyFieldHandler::setKeyBind(Key* button)
 
 void KeyFieldHandler::resetKey(wxCommandEvent& event)
 {
-  Key* currentKey = sliderPanel->getCurrentKeyPtr();
-  if(currentKey == nullptr)
-  {
-    //error msg
-    return;
-  }
-
-  //Uninit sound 
-  currentKey->uninitSound();
-
-  //Delete bind (if it exists)
-  char k;
-  for(auto& key : keyMap)
-  {
-    if(key.second == currentKey)
-    {
-      k = key.first;
-    }
-  }
-  keyMap.erase(k);
-  
-  //redo setup
   setupKey(sliderPanel->getCurrentKeyPtr());
 }
 

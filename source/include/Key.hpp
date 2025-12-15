@@ -13,7 +13,7 @@
 typedef struct Sound 
 {
   ma_sound* sound = nullptr;
-  ma_hpf_node hpfNode;
+  ma_hpf_node* hpfNode = nullptr;
   std::string sound_path;
   ma_sound_group* soundGroupPtr = nullptr;
 } Sound;
@@ -27,6 +27,10 @@ class Key: public wxButton
 
   //Sound
   Sound sound;
+
+  //Filter
+  ma_hpf_node_config hpfNodeConfig;
+  ma_hpf_config hpfConfig;
 
   //Shortcut
   char shortcut = '-'; //It it unbound by default

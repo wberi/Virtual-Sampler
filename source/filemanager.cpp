@@ -5,6 +5,7 @@
 #include <fstream>
 #include <map>
 #include <string>
+
 //This file was written using AI assistance!
 
 //Save key field to JSON file
@@ -161,6 +162,8 @@ void FileManager::LoadProfile(wxWindow* parent, KeyFieldHandler* kField)
                 ma_sound_group_set_pitch(key->getSoundGroupPtr(), pitch_factor);
 
                 ma_sound_group_set_pan(key->getSoundGroupPtr(), key->getPan());
+
+                key->setNewFilterFreq();
             }
         }
     }

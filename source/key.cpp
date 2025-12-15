@@ -2,6 +2,7 @@
 #include <Key.hpp>
 #include <cstddef>
 #include <wx/timer.h>
+#include <wx/wxcrtvararg.h>
 
 //Default button dimension values
 const int WIDTH = 150;
@@ -12,7 +13,7 @@ const int DEFAULT_VOLUME = 80; //Real sound volume scale: 0.0 - 1.0
 const int DEFAULT_PITCH = 0; //Real pitch scale: 0.0 - 1.0 
                              //Based on this formula: F = 2^(N/12)
 const int DEFAULT_PAN = 0;
-const int DEFAULT_CUTOFF = 0;
+const int DEFAULT_CUTOFF = 1;
 
 //Constructor
 Key::Key(wxWindow* parent)
@@ -32,7 +33,6 @@ Key::Key(wxWindow* parent)
 
 Key::~Key()
 {
-  //Free sound and sound group
   uninitSound();
   ma_sound_group_uninit(sound.soundGroupPtr);
 }
@@ -40,6 +40,7 @@ Key::~Key()
 void Key::uninitSound()
 {
   ma_sound_uninit(sound.sound);
+  ma_hpf_node_uninit(sound.hpfNode, NULL);
 }
 
 ma_result Key::setupSound(ma_engine* engine, std::string filePath)
@@ -66,45 +67,60 @@ ma_result Key::setupGroup(ma_engine* engine)
 { 
   this->engine=engine;
   sound.soundGroupPtr = new ma_sound_group();
+
   return ma_sound_group_init(engine, MA_SOUND_FLAG_NO_SPATIALIZATION, NULL, sound.soundGroupPtr);
 }
 
 void Key::connectHpfNode()
 {
-  ma_node_attach_output_bus(&sound.hpfNode, 0, sound.soundGroupPtr, 0);
-  ma_node_attach_output_bus(sound.sound, 0, &sound.hpfNode, 0);
+  ma_node_attach_output_bus(sound.hpfNode, 0, sound.soundGroupPtr, 0);
+  ma_node_attach_output_bus(sound.sound, 0, sound.hpfNode, 0);
   ma_node_attach_output_bus(sound.soundGroupPtr, 0, 
         ma_node_graph_get_endpoint(ma_engine_get_node_graph(engine)), 0);
 }
 
 void Key::setupHighPassFilter()
 {
-  ma_hpf_node_config hpfConfig = ma_hpf_node_config_init( 
+  //Node configuration
+  hpfNodeConfig = ma_hpf_node_config_init( 
     ma_engine_get_channels(engine) ,
     ma_engine_get_sample_rate(engine),
     cutoff,
     5);
 
-  ma_result result = ma_hpf_node_init(
-    ma_engine_get_node_graph(engine),
-    &hpfConfig,
-    NULL,
-    &sound.hpfNode);
-
-  if(result != MA_SUCCESS)
-  {
-    //TODO error handling
-  }
-}
-
-void Key::setNewFilterFreq()
-{
-  ma_hpf_config config = ma_hpf_config_init(ma_format_f32,
+  //Configuration for value modification
+  hpfConfig = ma_hpf_config_init(ma_format_f32,
     ma_engine_get_channels(engine) ,
     ma_engine_get_sample_rate(engine),
     cutoff, 
     5);
-  ma_hpf_node_reinit(&config, &sound.hpfNode);
+
+  //Initialize node
+  sound.hpfNode = new ma_hpf_node;
+
+  ma_result result =  ma_hpf_node_init(
+    ma_engine_get_node_graph(engine),
+    &hpfNodeConfig,
+    NULL,
+    sound.hpfNode);
+  
+    if(result != MA_SUCCESS)
+    {
+      delete sound.hpfNode;
+      sound.hpfNode = nullptr;
+    }
+}
+
+void Key::setNewFilterFreq()
+{
+  hpfConfig.cutoffFrequency = cutoff;
+  ma_result result = ma_hpf_node_reinit(&hpfConfig, sound.hpfNode);
+  if(result != MA_SUCCESS)
+  {
+    //TODO error
+    wxPrintf("Failed to reinitialize node!!!");
+  }
+
 }
 
 void Key::playSound()
