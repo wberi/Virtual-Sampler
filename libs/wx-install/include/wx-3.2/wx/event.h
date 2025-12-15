@@ -12,7 +12,6 @@
 #define _WX_EVENT_H_
 
 #include "wx/defs.h"
-#include "wx/cpp.h"
 #include "wx/object.h"
 #include "wx/clntdata.h"
 #include "wx/math.h"

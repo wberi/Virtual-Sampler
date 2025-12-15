@@ -1,0 +1,54 @@
+\doxysection{Menu\+Bar\+Handler.\+hpp}
+\hypertarget{MenuBarHandler_8hpp_source}{}\label{MenuBarHandler_8hpp_source}\index{source/include/MenuBarHandler.hpp@{source/include/MenuBarHandler.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MENUBARHANDLER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MENUBARHANDLER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}MessageHandler.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}KeyFieldHandler.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ WX\_PRECOMP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \#include\ <wx/wx.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }MenuBarHandler:\ \textcolor{keyword}{public}\ wxMenuBar}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//Submenus}}
+\DoxyCodeLine{00017\ \ \ \ \ wxMenu*\ profileMenu;}
+\DoxyCodeLine{00018\ \ \ \ \ wxMenu*\ recordMenu;}
+\DoxyCodeLine{00019\ \ \ \ \ wxMenu*\ aboutMenu;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//Parent\ frame}}
+\DoxyCodeLine{00022\ \ \ \ \ wxFrame*\ parent;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//MessageHandler\ instance}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classMessages}{Messages}}*\ messages;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//KeyFieldHandler\ instance}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classKeyFieldHandler}{KeyFieldHandler}}*\ kField;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00032\ \ \ \ \ MenuBarHandler(wxFrame*\ parent,\ \mbox{\hyperlink{classMessages}{Messages}}*\ messages,\ \mbox{\hyperlink{classKeyFieldHandler}{KeyFieldHandler}}*\ kField);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//Event\ handling}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuBarHandler_a692247dbb34008b134d88a70669924b2}{saveProfile}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuBarHandler_a954854dd0e0c9955f264de1881eaaa50}{loadProfile}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuBarHandler_ade706193b2173d04ff2297f2df960f70}{showAbout}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuBarHandler_a7f5ffd6c8420b18f0f9e46047f6a3fb7}{onExit}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ DECLARE\_EVENT\_TABLE()}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{//Event\ IDs}}
+\DoxyCodeLine{00044\ \textcolor{keyword}{enum}}
+\DoxyCodeLine{00045\ \{}
+\DoxyCodeLine{00046\ \ \ MENU\_SAVE,}
+\DoxyCodeLine{00047\ \ \ MENU\_LOAD,}
+\DoxyCodeLine{00048\ \ \ MENU\_ABOUT,}
+\DoxyCodeLine{00049\ \ \ MENU\_QUIT,}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

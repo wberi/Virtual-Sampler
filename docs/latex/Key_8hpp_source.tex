@@ -1,0 +1,104 @@
+\doxysection{Key.\+hpp}
+\hypertarget{Key_8hpp_source}{}\label{Key_8hpp_source}\index{source/include/Key.hpp@{source/include/Key.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KEY\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KEY\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <wx/event.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ WC\_PRECOMP\ \ \ }}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#include\ <wx/wx.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif\ }}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <miniaudio.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSound}{Sound}}\ }
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ ma\_sound*\ sound\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00019\ \ \ ma\_hpf\_node*\ hpfNode\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00020\ \ \ std::string\ sound\_path;}
+\DoxyCodeLine{00021\ \ \ ma\_sound\_group*\ soundGroupPtr\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00022\ \}\ \mbox{\hyperlink{structSound}{Sound}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }Key:\ \textcolor{keyword}{public}\ wxButton}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \textcolor{comment}{//engine}}
+\DoxyCodeLine{00030\ \ \ ma\_engine*\ engine;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{comment}{//Sound}}
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{structSound}{Sound}}\ sound;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{comment}{//Filter}}
+\DoxyCodeLine{00036\ \ \ ma\_hpf\_node\_config\ hpfNodeConfig;}
+\DoxyCodeLine{00037\ \ \ ma\_hpf\_config\ hpfConfig;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{comment}{//Shortcut}}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{char}\ shortcut\ =\ \textcolor{charliteral}{'-\/'};\ \textcolor{comment}{//It\ it\ unbound\ by\ default}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \textcolor{comment}{//Animation}}
+\DoxyCodeLine{00043\ \ \ wxTimer*\ animationTimer;}
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{const}\ wxColour\ DEFAULT\_COLOR\ =\ *wxWHITE;}
+\DoxyCodeLine{00045\ \ \ \textcolor{keyword}{const}\ wxColour\ ACTIVE\_COLOR\ =\ *wxGREEN;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{comment}{//Store\ slider\ values\ }}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{int}\ volume;}
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{int}\ pitchShift;}
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{int}\ pan;}
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{int}\ cutoff;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{comment}{//Helper\ function}}
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{void}\ connectHpfNode();\ \textcolor{comment}{//Connects\ filter\ node\ to\ the\ output}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00059\ \ \ Key(wxWindow*\ parent);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00062\ \ \ \string~Key();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{comment}{//Uninit\ sound}}
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_a492ffdd6f3dc544ed01719a5eae073e6}{uninitSound}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{comment}{//Init\ engine\ config}}
+\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{void}\ setupEngine();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{comment}{//Setup\ sound\ from\ file\ path}}
+\DoxyCodeLine{00071\ \ \ ma\_result\ \mbox{\hyperlink{classKey_afa0bb67611714f097862f5ef77750eed}{setupSound}}(ma\_engine*\ engine,\ std::string\ filePath);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{comment}{//Setup\ sound\ group}}
+\DoxyCodeLine{00074\ \ \ ma\_result\ \mbox{\hyperlink{classKey_a817a5ff74578a0f893af42994077d3f4}{setupGroup}}(ma\_engine*\ engine);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{comment}{//Play\ sound}}
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_abf3f7b38ceb1d47d476e412bc92ccebc}{playSound}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \textcolor{comment}{//Animation\ methods}}
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_a3247bc0d3d9fbb91c5a3a54b7a3ff18e}{beginAnimateKey}}();}
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_a0aad418e9b69b5bde7e04c1c5006ba07}{endAnimatekey}}(wxTimerEvent\&\ event);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{comment}{//Sets\ the\ base\ values\ of\ the\ filter}}
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_a2f81ad7a3d21a783f24e901c751a693a}{setupHighPassFilter}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{comment}{//Setters}}
+\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKey_ae2096b65b010b848886af61cc489c9b0}{setNewFilterFreq}}();\ \textcolor{comment}{//Refreshes\ the\ filter\ to\ work\ with\ new\ cutoff\ freq}}
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{void}\ setShortCut(\textcolor{keywordtype}{char}\ shortcut);\ \textcolor{comment}{//sets\ shortcut\ character}}
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ setSoundPath(std::string\ soundPath);\ \textcolor{comment}{//sets\ sound\ file\ path}}
+\DoxyCodeLine{00090\ \ \ \textcolor{keywordtype}{void}\ setVolume(\textcolor{keywordtype}{int}\ val)\ \{volume\ =\ val;\}}
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordtype}{void}\ setPitchShift(\textcolor{keywordtype}{int}\ val)\ \{pitchShift\ =\ val;\}}
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{void}\ setPan(\textcolor{keywordtype}{int}\ val)\ \{pan\ =\ val;\}}
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{void}\ setCutoff(\textcolor{keywordtype}{int}\ val)\ \{cutoff\ =\ val;\}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00096\ \ \ ma\_sound\_group*\ getSoundGroupPtr();\ \textcolor{comment}{//returns\ the\ pointer\ to\ the\ Key\ soundgroup\ }}
+\DoxyCodeLine{00097\ \ \ \textcolor{keywordtype}{char}\ getShortCut();\ \textcolor{comment}{//returns\ shortcut\ character}}
+\DoxyCodeLine{00098\ \ \ std::string\ getSoundPath();\ \textcolor{comment}{//returns\ sound\ file\ path}}
+\DoxyCodeLine{00099\ \ \ \textcolor{keywordtype}{int}\ getVolume()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ volume;\}}
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{int}\ getPitchShift()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ pitchShift;\}}
+\DoxyCodeLine{00101\ \ \ \textcolor{keywordtype}{int}\ getPan()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ pan;\}}
+\DoxyCodeLine{00102\ \ \ \textcolor{keywordtype}{int}\ getCutoff()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ cutoff;\}}
+\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

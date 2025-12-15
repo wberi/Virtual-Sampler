@@ -1,0 +1,79 @@
+\doxysection{Key\+Field\+Handler.\+hpp}
+\hypertarget{KeyFieldHandler_8hpp_source}{}\label{KeyFieldHandler_8hpp_source}\index{source/include/KeyFieldHandler.hpp@{source/include/KeyFieldHandler.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ KEYFIELDHANDLER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ KEYFIELDHANDLER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <wx/event.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <wx/gdicmn.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ WX\_PRECOMP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \#include\ <wx/wx.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <miniaudio.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}MessageHandler.hpp"{}}\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Key.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}SliderFieldHandler.hpp"{}}\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }KeyFieldHandler}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \textcolor{comment}{//GUI}}
+\DoxyCodeLine{00024\ \ \ wxFrame*\ parent;}
+\DoxyCodeLine{00025\ \ \ wxPanel*\ keyPanel;}
+\DoxyCodeLine{00026\ \ \ wxFlexGridSizer*\ keyGridSizer;}
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{classMessages}{Messages}}*\ messages;}
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{classSliderFieldHandler}{SliderFieldHandler}}*\ sliderPanel;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{comment}{//Sound\ engine}}
+\DoxyCodeLine{00031\ \ \ ma\_engine\ engine;}
+\DoxyCodeLine{00032\ \ \ ma\_engine\_config\ engineConfig;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{comment}{//Map\ for\ keeping\ track\ of\ button\ shortcuts}}
+\DoxyCodeLine{00035\ \ \ std::map<char,\ Key*>\ keyMap;}
+\DoxyCodeLine{00036\ \ \ std::vector<Key*>\ keyList;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00040\ \ \ \ \ KeyFieldHandler(wxFrame*\ parent,\ \mbox{\hyperlink{classMessages}{Messages}}*\ messages,\ \mbox{\hyperlink{classSliderFieldHandler}{SliderFieldHandler}}*\ sliderPanel);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00043\ \ \ \ \ \string~KeyFieldHandler();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//Create\ engine}}
+\DoxyCodeLine{00046\ \ \ \ \ ma\_result\ \mbox{\hyperlink{classKeyFieldHandler_aae388da1535424ae9d65987f6b36c4b7}{createEngine}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//Create\ keyfield}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a6ba586ee13f7caa4624e9ef304694cd5}{createKeyField}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//Setup\ the\ Key's\ sound\ file\ and\ shortcut}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a9c7653bbba699903e574d4768e133c09}{setupKeyEvent}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a57f0f641d1134c711e20097e71f997de}{setupKey}}(\mbox{\hyperlink{classKey}{Key}}*\ button);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a592caa4d6fdf0985d9df7d0d7d93eff6}{setKeyBind}}(\mbox{\hyperlink{classKey}{Key}}*\ button);\ \textcolor{comment}{//binds\ Key\ with\ sound\ playing}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a7708dc3f412ccff398fe75fcbb535268}{resetKey}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//Refresh\ the\ slider\ panel}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_a91a447d97331d6fcd76cc0e20623e683}{refreshControls}}(\mbox{\hyperlink{classKey}{Key}}*\ button);}
+\DoxyCodeLine{00059\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//Update\ the\ slider\ panel\ to\ match\ the\ clicked\ button's\ attributes}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_afe62b80fbaa3f99b145e46e9c38cdfcc}{updateSliderPanel}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//Play\ sound}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_af78747849294524c9cd63de893aed845}{playSound}}(\mbox{\hyperlink{classKey}{Key}}*\ key);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//Listen\ to\ keyboard\ events}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyFieldHandler_ab3bb74aba37654d764dd8747f5d7122c}{listenToKbEvents}}(wxKeyEvent\&\ event);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00070\ \ \ \ \ wxPanel*\ getKeyPanel();}
+\DoxyCodeLine{00071\ \ \ \ \ std::vector<Key*>\&\ getKeys();}
+\DoxyCodeLine{00072\ \ \ \ \ ma\_engine*\ getEngine();}
+\DoxyCodeLine{00073\ \ \ \ \ std::map<char,\ Key*>\&\ getKeyMap();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

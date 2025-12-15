@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -o CMakeFiles/Virtual-Sampler.dir/libs/miniaudio/miniaudio.c.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio/miniaudio.c",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio/miniaudio.c",
+  "output": "CMakeFiles/Virtual-Sampler.dir/libs/miniaudio/miniaudio.c.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/app.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/app.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/app.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/app.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/base.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/base.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/base.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/base.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/filemanager.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/filemanager.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/filemanager.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/key.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/key.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/key.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/keyhandler.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/keyhandler.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/keyhandler.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/menubar.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/menubar.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/menubar.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/messages.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/messages.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/messages.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/namedialog.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/namedialog.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/namedialog.cpp.o"
+},
+{
+  "directory": "/home/mark/Programming/LP_hazi/Virtual-Sampler",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -D_UNICODE -D__WXGTK3__ -D__WXGTK__ -I/home/mark/Programming/LP_hazi/Virtual-Sampler/source/include -I/home/mark/Programming/LP_hazi/Virtual-Sampler/libs/miniaudio -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/mark/Programming/LP_hazi/Virtual-Sampler/libs/wx-install/include/wx-3.2 -g -std=c++17 -o CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o -c /home/mark/Programming/LP_hazi/Virtual-Sampler/source/sliderhandler.cpp",
+  "file": "/home/mark/Programming/LP_hazi/Virtual-Sampler/source/sliderhandler.cpp",
+  "output": "CMakeFiles/Virtual-Sampler.dir/source/sliderhandler.cpp.o"
+}
+]

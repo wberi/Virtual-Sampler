@@ -1,0 +1,89 @@
+\doxysection{Menu\+Bar\+Handler Class Reference}
+\hypertarget{classMenuBarHandler}{}\label{classMenuBarHandler}\index{MenuBarHandler@{MenuBarHandler}}
+
+
+Implements the menubar.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Bar\+Handler.\+hpp$>$}
+
+Inheritance diagram for Menu\+Bar\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMenuBarHandler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMenuBarHandler_a7eaac00616c9441c1c53ea8063f612f0}\label{classMenuBarHandler_a7eaac00616c9441c1c53ea8063f612f0} 
+{\bfseries Menu\+Bar\+Handler} (wx\+Frame \texorpdfstring{$\ast$}{*}parent, \mbox{\hyperlink{classMessages}{Messages}} \texorpdfstring{$\ast$}{*}messages, \mbox{\hyperlink{classKeyFieldHandler}{Key\+Field\+Handler}} \texorpdfstring{$\ast$}{*}k\+Field)
+\item 
+void \mbox{\hyperlink{classMenuBarHandler_a692247dbb34008b134d88a70669924b2}{save\+Profile}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classMenuBarHandler_a954854dd0e0c9955f264de1881eaaa50}{load\+Profile}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classMenuBarHandler_ade706193b2173d04ff2297f2df960f70}{show\+About}} (wx\+Command\+Event \&event)
+\item 
+void \mbox{\hyperlink{classMenuBarHandler_a7f5ffd6c8420b18f0f9e46047f6a3fb7}{on\+Exit}} (wx\+Command\+Event \&event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the menubar. 
+
+\label{doc-func-members}
+\Hypertarget{classMenuBarHandler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMenuBarHandler_a954854dd0e0c9955f264de1881eaaa50}\index{MenuBarHandler@{MenuBarHandler}!loadProfile@{loadProfile}}
+\index{loadProfile@{loadProfile}!MenuBarHandler@{MenuBarHandler}}
+\doxysubsubsection{\texorpdfstring{loadProfile()}{loadProfile()}}
+{\footnotesize\ttfamily \label{classMenuBarHandler_a954854dd0e0c9955f264de1881eaaa50} 
+void Menu\+Bar\+Handler\+::load\+Profile (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Starts the loading process. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMenuBarHandler_a7f5ffd6c8420b18f0f9e46047f6a3fb7}\index{MenuBarHandler@{MenuBarHandler}!onExit@{onExit}}
+\index{onExit@{onExit}!MenuBarHandler@{MenuBarHandler}}
+\doxysubsubsection{\texorpdfstring{onExit()}{onExit()}}
+{\footnotesize\ttfamily \label{classMenuBarHandler_a7f5ffd6c8420b18f0f9e46047f6a3fb7} 
+void Menu\+Bar\+Handler\+::on\+Exit (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Shows exit confirmation message. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMenuBarHandler_a692247dbb34008b134d88a70669924b2}\index{MenuBarHandler@{MenuBarHandler}!saveProfile@{saveProfile}}
+\index{saveProfile@{saveProfile}!MenuBarHandler@{MenuBarHandler}}
+\doxysubsubsection{\texorpdfstring{saveProfile()}{saveProfile()}}
+{\footnotesize\ttfamily \label{classMenuBarHandler_a692247dbb34008b134d88a70669924b2} 
+void Menu\+Bar\+Handler\+::save\+Profile (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Starts the saving process. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMenuBarHandler_ade706193b2173d04ff2297f2df960f70}\index{MenuBarHandler@{MenuBarHandler}!showAbout@{showAbout}}
+\index{showAbout@{showAbout}!MenuBarHandler@{MenuBarHandler}}
+\doxysubsubsection{\texorpdfstring{showAbout()}{showAbout()}}
+{\footnotesize\ttfamily \label{classMenuBarHandler_ade706193b2173d04ff2297f2df960f70} 
+void Menu\+Bar\+Handler\+::show\+About (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+Shows the about section. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event that activated the function. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/include/Menu\+Bar\+Handler.\+hpp\item 
+source/menubar.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\doxysection{Slider\+Field\+Handler.\+hpp}
+\hypertarget{SliderFieldHandler_8hpp_source}{}\label{SliderFieldHandler_8hpp_source}\index{source/include/SliderFieldHandler.hpp@{source/include/SliderFieldHandler.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SLIDERFIELDHANDLER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SLIDERFIELDHANDLER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <miniaudio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Key.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <wx/wxprec.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ WX\_PRECOMP}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <wx/wx.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//Refactoring\ of\ this\ file\ from\ AppBase.hpp\ was\ done\ with\ AI\ assistance!}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }SliderFieldHandler:\ \textcolor{keyword}{public}\ wxPanel}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//Parent\ object}}
+\DoxyCodeLine{00020\ \ \ \ \ wxFrame*\ parent;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//Content\ panel}}
+\DoxyCodeLine{00023\ \ \ \ \ wxFlexGridSizer*\ fieldGridSizer;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//Important\ sound\ references}}
+\DoxyCodeLine{00026\ \ \ \ \ ma\_sound\_group*\ current\_group\_ptr\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classKey}{Key}}*\ current\_key\_ptr\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//Display\ selected\ name}}
+\DoxyCodeLine{00030\ \ \ \ \ wxStaticText*\ selectedName;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//Volume\ slider}}
+\DoxyCodeLine{00033\ \ \ \ \ wxSlider*\ volumeSlider;}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//Pitch\ slider}}
+\DoxyCodeLine{00036\ \ \ \ \ wxSlider*\ pitchSlider;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//Pan\ slider}}
+\DoxyCodeLine{00039\ \ \ \ \ wxSlider*\ panSlider;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//ADSR\ sliders}}
+\DoxyCodeLine{00042\ \ \ \ \ wxSlider*\ attackSlider;}
+\DoxyCodeLine{00043\ \ \ \ \ wxSlider*\ decaySlider;}
+\DoxyCodeLine{00044\ \ \ \ \ wxSlider*\ sustainSlider;}
+\DoxyCodeLine{00045\ \ \ \ \ wxSlider*\ releaseSlider;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//Filter\ slider}}
+\DoxyCodeLine{00048\ \ \ \ \ wxSlider*\ cutoffSlider;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//Reset\ button}}
+\DoxyCodeLine{00051\ \ \ \ \ wxButton*\ resetButton;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//Helper\ functions}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ addSliderRow(wxString\ label\_text,\ wxString\ tooltip\_text,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ wxSlider*\&\ slider\_ptr,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ min\_val,\ \textcolor{keywordtype}{int}\ max\_val,\ \textcolor{keywordtype}{int}\ initial\_val);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ actualizeFadeOut();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00060\ \ \ \ \ SliderFieldHandler(wxFrame*\ parent);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//Methods\ for\ managing\ Key\ values}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_a0151a87b13ea2c8b5b82ac1a6a66f13c}{SetCurrentKey}}(\mbox{\hyperlink{classKey}{Key}}*\ key);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_aa3577b97994243d8affcf784dd575317}{UpdateControlsFromKey}}();\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ SaveControlsToKey();\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//Events}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_afdb63f2df3567c32ce1643f29f091087}{setVolume}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_ab7d1835d03756edf72c418af006bb890}{setPitch}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_ab41bd51fa4b467137249e63112b3f968}{setPan}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSliderFieldHandler_a7e3f68f7d80dd5b77d5afeb0eabcff7c}{setCutoff}}(wxCommandEvent\&\ event);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00074\ \ \ \ \ wxButton*\ getResetButton();}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{classKey}{Key}}*\ getCurrentKeyPtr();}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
